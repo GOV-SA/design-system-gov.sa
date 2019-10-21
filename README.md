@@ -134,14 +134,14 @@ gov.sa-design-system/
 ## Installation
 1. Clone the project
 2. Go to the project root directory
-3. Run `npm install`
+3. Run `yarn`
 
 ## Running on development using [dev server](https://github.com/webpack/webpack-dev-server)
 
-Run `npm run start:dev` to start to webpack dev server with HMR ready
+Run `yarn  start:dev` to start to webpack dev server with HMR ready
 
 ## For production 
 
-Run `npm run build` to build project's all assets in `dist` folder.
+Run `yarn  build` to build project's all assets in `dist` folder.
 
 
