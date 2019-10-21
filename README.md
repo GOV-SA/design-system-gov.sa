@@ -138,10 +138,10 @@ gov.sa-design-system/
 
 ## Running on development using [dev server](https://github.com/webpack/webpack-dev-server)
 
-Run `yarn run start:dev` to start to webpack dev server with HMR ready
+Run `yarn  start:dev` to start to webpack dev server with HMR ready
 
 ## For production 
 
-Run `yarn run build` to build project's all assets in `dist` folder.
+Run `yarn  build` to build project's all assets in `dist` folder.
 
 
