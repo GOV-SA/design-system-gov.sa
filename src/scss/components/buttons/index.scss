@@ -1,0 +1,129 @@
+.btn {
+  position: relative;
+  color: #fff;
+  &:focus {
+    color: #fff;
+    outline: 0;
+    box-shadow: $btn-focus-box-shadow;
+
+    &::after {
+      background: #ffdd40;
+      width: 108%;
+      content: "";
+      height: 108%;
+      left: -4%;
+      top: -4%;
+      /* create a new stacking context */
+      position: absolute;
+      z-index: -1; /* to be below the parent element */
+    }
+  }
+ 
+}
+@each $color, $value in $theme-colors {
+    .btn--#{$color} {
+      @include button-variant($value, $value);
+    }
+  }
+  
+  @each $color, $value in $theme-colors {
+    .btn--outline--#{$color} {
+      @include button-outline-variant($value);
+    }
+  }
+/* Boostrap Buttons Styling */
+
+.btn--default {
+  &focus {
+    color: #fff;
+  }
+  &.btn--outline {
+    background: transparent;
+    &:focus {
+      background-color: #fff;
+    }
+  }
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.btn--primary {
+
+  &focus {
+    color: #fff;
+  }
+  &.btn--outline {
+    background: transparent;
+    &:focus {
+      background-color: #fff;
+    }
+  }
+  &:hover {
+    color: #fff;
+  }
+}
+.btn--success {
+
+  &focus {
+    color: #fff;
+  }
+  &.btn--outline {
+    background: transparent;
+    &:focus {
+      background-color: #fff;
+    }
+  }
+  &:hover {
+    color: #fff;
+  }
+}
+
+.btn--info {
+
+  &focus {
+    color: #fff;
+  }
+  &.btn--outline {
+    background: transparent;
+    &:focus {
+      background-color: #fff;
+    }
+  }
+  &:hover {
+    color: #fff;
+  }
+}
+
+.btn--warning {
+
+  &focus {
+    color: #fff;
+  }
+  &.btn--outline {
+    background: transparent;
+    &:focus {
+      background-color: #fff;
+    }
+  }
+  &:hover {
+    color: #fff;
+  }
+}
+
+.btn--danger {
+
+  &focus {
+    color: #fff;
+  }
+  &.btn--outline {
+    background: transparent;
+    &:focus {
+      background-color: #fff;
+    }
+  }
+  &:hover {
+    color: #fff;
+  }
+}
