@@ -1,0 +1,22 @@
+@import"./variables.scss";
+
+
+.card__tag-govsa{
+    background-color: $white;
+    border-radius: 8px 0px 0px 8px;
+    border-color: $green
+}
+
+.card-footer {
+    padding: 15px 0px 0px 0px;
+    background-color: $green;
+}  
+
+.card:hover{
+    background-color: $green;
+}
+.card:active{
+    border-color: $yellow;
+    border-radius: 0px;
+    border-width: 1px;
+}
