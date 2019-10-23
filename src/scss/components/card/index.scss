@@ -30,6 +30,14 @@
 }
 .card:active{
     border-color: $yellow;
-    border-radius: 0px;
-    border-width: 1px;
+}
+.card:active::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: $yellow;
+    z-index: -1;
 }
