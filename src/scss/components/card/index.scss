@@ -1,19 +1,32 @@
-@import"./variables.scss";
+.govsa-card__tag{
+    float: right;
+    padding:0.25rem 0 0.25rem 0.25rem ;
 
-
-.card__tag-govsa{
+   p{
     background-color: $white;
     border-radius: 8px 0px 0px 8px;
-    border-color: $green
+    border-color: $green;
+    padding: 0.25rem;
+    @include font-size( $font-size-sm * .875 );
+    font-weight:  $font-weight-normal;
+   } 
+
 }
 
-.card-footer {
+.govsa-card__footer{
     padding: 15px 0px 0px 0px;
     background-color: $green;
-}  
+    border-radius: 0 0 6px 6px;
+
+    div > div > span{
+        font-weight: bold;
+        padding-left: 15px;
+    }
+}
 
 .card:hover{
     background-color: $green;
+    cursor: pointer;
 }
 .card:active{
     border-color: $yellow;

@@ -1,0 +1,30 @@
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif: thesansplain,thesansb4_semilight,thesansb5_plain_italic,thesansb8_extrabold;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif  ;
+// stylelint-enable value-keyword-case
+
+// $font-size-root effects the value of `rem`, which is used for as well font sizes, paddings and margins
+// $font-size-base effects the font size of the body text
+$font-size-root: null !default;
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg: $font-size-base * 1.25 !default;
+$font-size-sm: $font-size-base * 0.875 !default;
+
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+$headings-font-family: thesansb8_extrabold;
+$headings-ar-font-family: noto_naskh_arabicbold;
+
+$input-btn-font-family:       noto_naskh_arabicbold ;

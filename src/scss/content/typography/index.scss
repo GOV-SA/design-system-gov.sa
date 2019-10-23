@@ -1,0 +1,77 @@
+* {
+  font-family: thesansb4_semilight;
+}
+
+
+
+[lang="en"] * {
+  font-family: thesansb4_semilight;
+}
+
+[class^="subtitle--"]{
+  font-family: thesansb4_semilight;
+}
+
+.subtitle--1 {
+  @include font-size( $font-size-sm * .875 );
+  font-weight:  $font-weight-normal;
+}
+.subtitle--2 {
+  @include font-size($font-size-sm);
+  font-weight: $font-weight-normal;
+}
+
+
+[class^="body--"]{
+  font-family: thesansb4_semilight;
+}
+[class^="body--bold"]{
+  font-family: thesansb8_extrabold;
+}
+
+
+.body--bold--1,.body--1 {
+  @include font-size( $font-size-sm * .875 );
+  font-weight:  $font-weight-normal;
+}
+
+.body--bold--2,.body--2{
+  @include font-size($font-size-sm);
+  font-weight: $font-weight-normal;
+}
+[class^="body--bold"]{
+  font-family: thesansb8_extrabold;
+  font-weight: $font-weight-bold;
+
+}
+
+ button,button[class^="btn--"], a[class^="btn--"]{
+  font-family: thesansb8_extrabold ;
+}
+
+
+.btn--1{
+  @include font-size( $font-size-base * 1.5 );
+}
+.btn--2{
+  @include font-size( $font-size-sm );
+}
+.btn--1{
+  @include font-size( $font-size-base );
+}
+
+[class^="footer--"]{
+  font-family: thesansb4_semilight;
+}
+
+.footer--1 {
+  @include font-size( $font-size-sm * .875 );
+  font-weight:  $font-weight-normal;
+}
+.footer--2 {
+  @include font-size($font-size-sm);
+  font-weight: $font-weight-normal;
+}
+
+
+
