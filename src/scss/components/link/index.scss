@@ -1,0 +1,16 @@
+a{
+    @include font-size($font-size-sm);
+    font-weight: $font-weight-normal;
+    text-decoration: underline;
+}
+a:active{
+    background-color: $yellow;
+    color: $darkBlue;
+  
+  }
+
+  a.disabled{
+      color: $gray;
+      pointer-events: none;
+  }
+  
