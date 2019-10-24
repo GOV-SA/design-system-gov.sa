@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>icon/system/24/checked</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Atoms" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-80.000000, -429.000000)">
+            <g id="icon/system/24/checked" transform="translate(80.000000, 429.000000)">
+                <path d="M21.3333333,0 L2.66666667,0 C1.18666667,0 0,1.2 0,2.66666667 L0,21.3333333 C0,22.8 1.18666667,24 2.66666667,24 L21.3333333,24 C22.8133333,24 24,22.8 24,21.3333333 L24,2.66666667 C24,1.2 22.8133333,0 21.3333333,0 Z" id="Shape" fill="#160F3E" fill-rule="evenodd"></path>
+                <polyline id="Path-3" stroke="#FFFFFF" stroke-width="1.5" points="6 11.7417566 9.68645178 16 17 8"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

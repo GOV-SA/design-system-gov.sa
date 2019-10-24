@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="24px" viewBox="0 0 7 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>icon/system/24/options</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Atoms" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-217.000000, -266.000000)">
+            <g id="icon/system/24/options" transform="translate(208.000000, 266.000000)">
+                <g id="Group-7">
+                    <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                    <path d="M12.5,8.57668712 C14.4347222,8.57668712 16,10.1076687 16,12 C16,13.8923313 14.4347222,15.4233129 12.5,15.4233129 C10.5652778,15.4233129 9,13.8923313 9,12 C9,10.1076687 10.5652778,8.57668712 12.5,8.57668712 Z M9,3.42331288 C9,5.31564417 10.5652778,6.84662577 12.5,6.84662577 C14.4347222,6.84662577 16,5.31564417 16,3.42331288 C16,1.5309816 14.4347222,0 12.5,0 C10.5652778,0 9,1.5309816 9,3.42331288 Z M9,20.5766871 C9,22.4690184 10.5652778,24 12.5,24 C14.4347222,24 16,22.4690184 16,20.5766871 C16,18.6843558 14.4347222,17.1533742 12.5,17.1533742 C10.5652778,17.1533742 9,18.6843558 9,20.5766871 Z" id="Shape" fill="#160F3E"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

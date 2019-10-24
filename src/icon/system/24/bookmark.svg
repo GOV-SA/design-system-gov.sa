@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="20px" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>icon/system/24/bookmark</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Atoms" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-404.000000, -268.000000)">
+            <g id="icon/system/24/bookmark" transform="translate(400.000000, 266.000000)">
+                <rect id="Path" fill-rule="nonzero" x="0" y="0" width="24" height="24"></rect>
+                <path d="M18,19.0568107 L18,5 C18,4.44771525 17.5522847,4 17,4 L7,4 C6.44771525,4 6,4.44771525 6,5 L6,19.0568107 L11.4187618,15.1862665 C11.7664593,14.9379112 12.2335407,14.9379112 12.5812382,15.1862665 L18,19.0568107 Z M12,17.2289036 L5.58123819,21.8137335 C4.91936972,22.2864967 4,21.8133726 4,21 L4,5 C4,3.34314575 5.34314575,2 7,2 L17,2 C18.6568542,2 20,3.34314575 20,5 L20,21 C20,21.8133726 19.0806303,22.2864967 18.4187618,21.8137335 L12,17.2289036 Z" id="Color" fill="#160F3E" fill-rule="evenodd"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>icon/system/16/mail</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Atoms" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-421.000000, -669.000000)">
+            <g id="icon/system/16/mail" transform="translate(421.000000, 669.000000)">
+                <rect id="Path" fill-rule="nonzero" x="0" y="0" width="16" height="16"></rect>
+                <path d="M13.8181818,0.7 C15.0198435,0.7 16,1.68015655 16,2.88181818 L16,13.0636364 C16,14.265298 15.0198435,15.2454545 13.8181818,15.2454545 L2.18181818,15.2454545 C0.980156546,15.2454545 0,14.265298 0,13.0636364 L0,2.88181818 C0,1.68015655 0.980156546,0.7 2.18181818,0.7 L13.8181818,0.7 Z M14.545,3.075 L8.44650226,7.81952889 C8.18387646,8.0237934 7.81612354,8.0237934 7.55349774,7.81952889 L1.454,3.075 L1.45454545,13.0636364 C1.45454545,13.4619747 1.78347982,13.7909091 2.18181818,13.7909091 L13.8181818,13.7909091 C14.2165202,13.7909091 14.5454545,13.4619747 14.5454545,13.0636364 L14.545,3.075 Z M13.36,2.154 L2.639,2.154 L8,6.32410067 L13.36,2.154 Z" id="Color" fill="#160F3E" fill-rule="evenodd"></path>
+            </g>
+        </g>
+    </g>
+</svg>
