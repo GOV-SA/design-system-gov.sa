@@ -19,6 +19,7 @@
 .subtitle--2 {
   @include font-size($font-size-sm);
   font-weight: $font-weight-normal;
+  text-decoration: underline;
 }
 
 

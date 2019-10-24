@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>icon/system/24/closed</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Atoms" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-212.000000, -487.000000)">
+            <g id="icon/system/24/closed" transform="translate(208.000000, 483.000000)">
+                <polygon id="Path" fill="#000000" fill-rule="nonzero" points="19.5 6.01071429 17.9892857 4.5 12 10.4892857 6.01071429 4.5 4.5 6.01071429 10.4892857 12 4.5 17.9892857 6.01071429 19.5 12 13.5107143 17.9892857 19.5 19.5 17.9892857 13.5107143 12"></polygon>
+                <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

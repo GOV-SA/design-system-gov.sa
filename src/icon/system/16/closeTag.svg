@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>icon/system/16/closeTag</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Atoms" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-477.000000, -741.000000)">
+            <g id="icon/system/16/closeTag" transform="translate(477.000000, 741.000000)">
+                <circle id="Oval" fill="#CDCCD5" fill-rule="evenodd" cx="8" cy="8" r="8"></circle>
+                <polygon id="Path" fill="#000000" fill-rule="nonzero" points="13 4.00714286 11.9928571 3 8 6.99285714 4.00714286 3 3 4.00714286 6.99285714 8 3 11.9928571 4.00714286 13 8 9.00714286 11.9928571 13 13 11.9928571 9.00714286 8"></polygon>
+                <polygon id="Path" points="0 0 16 0 16 16 0 16"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

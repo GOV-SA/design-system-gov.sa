@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="12px" viewBox="0 0 6 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>icon/system/16/left</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Atoms" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-370.000000, -743.000000)">
+            <g id="icon/system/16/left" transform="translate(365.000000, 741.000000)">
+                <rect id="Path" fill-rule="nonzero" x="0" y="0" width="16" height="16"></rect>
+                <path d="M6.7378044,8 L10.8194293,12.7618957 C11.0889953,13.0763893 11.0525742,13.5498633 10.7380805,13.8194293 C10.4235869,14.0889953 9.95011294,14.0525742 9.68054694,13.7380805 L5.18055714,8.48809242 C4.93981429,8.20722576 4.93981429,7.79277424 5.18055714,7.51190758 L9.68054694,2.26191947 C9.95011294,1.9474258 10.4235869,1.91100473 10.7380805,2.18057074 C11.0525742,2.45013674 11.0889953,2.92361065 10.8194293,3.23810432 L6.7378044,8 Z" id="Color" fill="#160F3E" fill-rule="evenodd"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,25 @@
+$border-width: 2px 2px 2px 8px;
+
+.govsa-alert--warning{
+    border-color: $warning;
+    border-width: $border-width;
+}
+
+.govsa-alert--danger{
+    border-color: $danger;
+    border-width: $border-width;
+}
+.govsa-alert--info{
+    border-color: $info;
+    border-width: $border-width;
+}
+.govsa-alert--success{
+    border-color: $success;
+    border-width: $border-width;
+}
+.alert{
+    p{
+        margin-bottom: 0px;
+        padding-left: 20px
+    }
+}

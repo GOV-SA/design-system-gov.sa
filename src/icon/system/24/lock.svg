@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="22px" viewBox="0 0 20 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>icon/system/24/lock</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Atoms" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-530.000000, -322.000000)">
+            <g id="icon/system/24/lock" transform="translate(528.000000, 321.000000)">
+                <rect id="Path" fill-rule="nonzero" x="0" y="0" width="24" height="24"></rect>
+                <path d="M12,1 C15.3137085,1 18,3.6862915 18,7 L18,9 L19,9 C20.6568542,9 22,10.3431458 22,12 L22,20 C22,21.6568542 20.6568542,23 19,23 L5,23 C3.34314575,23 2,21.6568542 2,20 L2,12 C2,10.3431458 3.34314575,9 5,9 L6,9 L6,7 C6,3.6862915 8.6862915,1 12,1 Z M19,11 L5,11 C4.44771525,11 4,11.4477153 4,12 L4,20 C4,20.5522847 4.44771525,21 5,21 L19,21 C19.5522847,21 20,20.5522847 20,20 L20,12 C20,11.4477153 19.5522847,11 19,11 Z M12,3 C9.790861,3 8,4.790861 8,7 L8,9 L16,9 L16,7 C16,4.790861 14.209139,3 12,3 Z" id="Color" fill="#160F3E" fill-rule="evenodd"></path>
+            </g>
+        </g>
+    </g>
+</svg>
