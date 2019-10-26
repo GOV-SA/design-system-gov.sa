@@ -1,8 +1,11 @@
 // Create your SCSS variables here and it will override bootstrap styles
-@import"../components/color/variables";
+@import "../components/color/variables";
+
 @import "../content/typography/variables";
+@import "../content/govsa-font/variables";
 @import "../components/buttons/variables";
-@import"../components/card/variables";
-@import"../components/alert/variables";
-@import"../components/link/variables";
+@import "../components/card/variables";
+@import "../components/alert/variables";
+@import "../components/link/variables";
+@import"../components/checkbox/variables";
 $responsive-font-sizes: true;
