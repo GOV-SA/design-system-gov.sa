@@ -1,4 +1,4 @@
-.btn {
+.btn { 
   position: relative;
   color: #fff;
   &:focus {
@@ -18,21 +18,29 @@
       z-index: -1; /* to be below the parent element */
     }
   }
- 
+  &.disabled {
+    opacity: 0.4; //TODO there should be some css rules FOR .disabled where colors take the rgba of .4 for any color class mixed with a .disabled
+    pointer-events: none;
+    
+  }
 }
 @each $color, $value in $theme-colors {
-    .btn--#{$color} {
-      @include button-variant($value, $value);
-    }
+  .btn--#{$color} {
+    @include button-variant($value, $value);
   }
-  
-  @each $color, $value in $theme-colors {
-    .btn--outline--#{$color} {
-      @include button-outline-variant($value);
-    }
-  }
-/* Boostrap Buttons Styling */
+}
 
+@each $color, $value in $theme-colors {
+  .btn--outline--#{$color} {
+    @include button-outline-variant($value);
+    &:focus {
+      color: $value;
+      background-color:#fff;
+    }
+
+  }
+}
+/* Boostrap Buttons Styling */
 .btn--default {
   &focus {
     color: #fff;
@@ -50,7 +58,6 @@
 }
 
 .btn--primary {
-
   &focus {
     color: #fff;
   }
@@ -65,7 +72,6 @@
   }
 }
 .btn--success {
-
   &focus {
     color: #fff;
   }
@@ -81,7 +87,6 @@
 }
 
 .btn--info {
-
   &focus {
     color: #fff;
   }
@@ -97,7 +102,6 @@
 }
 
 .btn--warning {
-
   &focus {
     color: #fff;
   }
@@ -113,7 +117,6 @@
 }
 
 .btn--danger {
-
   &focus {
     color: #fff;
   }
