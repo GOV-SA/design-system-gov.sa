@@ -27,19 +27,40 @@
 @each $color, $value in $theme-colors {
   .btn--#{$color} {
     @include button-variant($value, $value);
+    &:focus {
+      box-shadow: none;
+
+    }
+  }
+ [dir] .btn--#{$color} {
+    
+    &:focus {
+      box-shadow: none;
+
+    }
   }
 }
 
 @each $color, $value in $theme-colors {
   .btn--outline--#{$color} {
     @include button-outline-variant($value);
+
     &:focus {
       color: $value;
       background-color:#fff;
+      box-shadow:none;
+    }
+
+  }
+  [dir] .btn--outline--#{$color} {
+
+    &:focus {
+      box-shadow:none;
     }
 
   }
 }
+
 /* Boostrap Buttons Styling */
 .btn--default {
   &focus {
