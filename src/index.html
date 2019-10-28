@@ -310,23 +310,36 @@
     <div class="row">
         <div class="col-12">
             <button type="button" class="btn btn--violet">Default</button>
+            <button type="button" class="btn btn--violet">Default <svg class="govsa-icon govsa--external"><use xlink:href="symbol-defs.svg#govsa--external"></use></svg></button>
+            <button type="button" class="btn btn--violet">Default <i class="govsa--external"></i></button>
+            <button type="button" class="btn btn--violet disabled">Default disabled</button>
             <button type="button" class="btn btn--outline--violet btn--outline">Default</button>
+            <button type="button" class="btn btn--outline--violet btn--outline disabled">Default</button>
 
             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
             <button type="button" class="btn btn--blue">Primary</button>
+            <button type="button" class="btn btn--blue disabled">Primary</button>
             <button type="button" class="btn btn--outline--blue btn--outline">Primary</button>
+            <button type="button" class="btn btn--outline--blue btn--outline disabled">Primary</button>
             <!-- Indicates a successful or positive action -->
             <button type="button" class="btn btn--tiffany">Success</button>
+            <button type="button" class="btn btn--tiffany disabled">Success</button>
             <button type="button" class="btn btn--outline--tiffany btn--outline">Success</button>
+            <button type="button" class="btn btn--outline--tiffany btn--outline disabled">Success</button>
 
             <!-- Contextual button for informational alert messages -->
             <button type="button" class="btn btn--darkBlue">Info</button>
+            <button type="button" class="btn btn--darkBlue disabled">Info</button>
             <button type="button" class="btn btn--outline--darkBlue btn--outline">Info</button>
+            <button type="button" class="btn btn--outline--darkBlue btn--outline disabled">Info</button>
             <!-- Indicates caution should be taken with this action -->
             <button type="button" class="btn btn--green">Warning</button>
+            <button type="button" class="btn btn--green disabled">Warning</button>
             <button type="button" class="btn btn--outline--green btn--outline">Warning</button>
+            <button type="button" class="btn btn--outline--green btn--outline disabled">Warning</button>
             <!-- Indicates a dangerous or potentially negative action -->
             <button type="button" class="btn btn--gray">Danger</button>
+            <button type="button" class="btn btn--outline--gray btn--outline">Danger</button>
             <button type="button" class="btn btn--outline--gray btn--outline">Danger</button>
         </div>
     </div>
@@ -344,7 +357,7 @@
                 <div class="govsa-card__footer">
                     <div class="row no-gutters">
                         <div class="col-5 text-white">
-                            <img class="px-3" src="../src/icon/system/24/download-white.svg">
+                            <img class="px-3" src="../src/icon/download-white.svg">
                         </div>
                         <div class="col-7 govsa-card__tag">
                             <p>Bylaws</p>
@@ -363,7 +376,7 @@
                 <div class="govsa-card__footer">
                     <div class="row no-gutters">
                         <div class="col-5 text-white">
-                            <img class="px-3" src="../src/icon/system/24/download-white.svg">
+                            <img class="px-3" src="../src/icon/download-white.svg">
                         </div>
                         <div class="col-7 govsa-card__tag">
                             <p>Bylaws</p>
@@ -382,7 +395,7 @@
                 <div class="govsa-card__footer">
                     <div class="row no-gutters">
                         <div class="col-5 text-white">
-                            <img class="px-3" src="../src/icon/system/24/download-white.svg">
+                            <img class="px-3" src="../src/icon/download-white.svg">
                         </div>
                         <div class="col-7 govsa-card__tag">
                             <p>Bylaws</p>
@@ -587,28 +600,28 @@
     <div class="row my-3">
         <div class="col-md-6">
             <div class="alert govsa-alert--warning" role="alert">
-                <h6><img src="../src//icon/system/16/warning.svg"> Warning alert</h6>
+                <h6><svg class="govsa-icon govsa--warning"><use xlink:href="symbol-defs.svg#govsa--warning"></use></svg> Warning alert</h6>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor </p>
             </div>
         </div>
         <div class="col-md-6">
             <div class="alert govsa-alert--success" role="alert">
-                <h6><img src="../src/icon/system/16/success.svg"> success alert</h6>
+                <h6><svg class="govsa-icon govsa--success"><use xlink:href="symbol-defs.svg#govsa--success"></use></svg> success alert</h6>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor </p>
             </div>
         </div>
         <div class="col-md-6">
             <div class="alert govsa-alert--danger" role="alert">
-                <h6><img src="../src/icon/system/16/error.svg"> danger alert</h6>
+                <h6><svg class="govsa-icon govsa--error"><use xlink:href="symbol-defs.svg#govsa--error"></use></svg> danger alert</h6>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor </p>
             </div>
         </div>
         <div class="col-md-6">
             <div class="alert govsa-alert--info" role="alert">
-                <h6><img src="../src/icon/system/16/info-blue.svg"> info alert</h6>
+                <h6><svg class="govsa-icon govsa--info-blue"><use xlink:href="symbol-defs.svg#govsa--info-blue"></use></svg> info alert</h6>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor </p>
             </div>
@@ -736,19 +749,19 @@
 
         <div class="col-md-3">
             <p>Link/standard/default</p>
-            <a href=""> <img src="../src/icon/system/16/arrowleft.svg"> Link text</a>
+            <a href=""> <svg class="govsa-icon govsa--arrowleft"><use xlink:href="symbol-defs.svg#govsa--arrowleft"></use></svg> Link text</a>
         </div>
         <div class="col-md-3">
             <p>Link/standard/over</p>
-            <a class="text-blue" href=""> <img src="../src/icon/system/16/arrowleft.svg"> Link text</a>
+            <a class="text-blue" href=""> <svg class="govsa-icon govsa--arrowleft"><use xlink:href="symbol-defs.svg#govsa--arrowleft"></use></svg> Link text</a>
         </div>
         <div class="col-md-3">
             <p>Link/standard/click</p>
-            <a class="bg-warning" href=""> <img src="../src/icon/system/16/arrowleft.svg"> Link text</a>
+            <a class="bg-warning" href=""> <svg class="govsa-icon govsa--arrowleft"><use xlink:href="symbol-defs.svg#govsa--arrowleft"></use></svg> Link text</a>
         </div>
         <div class="col-md-3">
             <p>Link/standard/disabled</p>
-            <a href="" class="disabled"> <img src="../src/icon/system/16/arrowleft.svg"> Link text</a>
+            <a href="" class="disabled"> <svg class="govsa-icon govsa--arrowleft"><use xlink:href="symbol-defs.svg#govsa--arrowleft"></use></svg> Link text</a>
         </div>
     </div>
 
