@@ -1,42 +1,61 @@
 .accordion {
      .card {
-      border:none;
-    
-      .card-header {
-      background-color: $white;
-      border: 1px solid $darkBlue;
-      padding: 0px;
-  
-      &:hover{
-        background-color: $darkBlue;
-      }
-      button{
-        color: $black;
-        &:hover,
-        &:active{
-            text-decoration: none;
-        }
-        p{
-            margin-bottom: 0px;
+      border: none;
 
-            font-size: 16px;
-            font-weight: bold;
-            
-        }
-      }
-      &:active{
-        border-bottom-color: $yellow;
-        border: 1px solid $yellow;
-       }
-       }
-       
-       .card-body{
+      .card-body {
         border: 1px solid $darkBlue;
+        border-bottom: none;
         margin-top: 4px;
-       }
-       
-             
       }
+      .card-header {
+         background-color: $white;
+         border: 1px solid $darkBlue;
+         padding: 0px;
+  
+           button{
+             color: $black;
+
+              p{
+                  margin-bottom: 0px;
+                }
+                
+              &:hover,
+              &:active{
+                  text-decoration: none;
+                }
+          }
+
+          i{
+            float:right;
+            margin: 16px 12px;
+            color: $black;
+            font-size: 7px;
+          }
+
+           &:hover{
+            background-color: $darkBlue-tint;
+                 i{
+                 color: $white;
+                  }
+             }
+
+             &:active{
+               border-bottom-color: $yellow;
+                border: 1px solid $yellow;
+             }
+       }
+        
+      }
+
+      .card:last-child{
+        border-bottom: 1px solid $darkBlue;
+        border-radius: 0px 0px 8px 8px !important;
+        .card-body {
+          border-radius: 0px 0px 7px 7px;
+        }       
+      }
+
 
     }
   
+
