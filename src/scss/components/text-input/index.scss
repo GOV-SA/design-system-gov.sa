@@ -2,14 +2,25 @@
   border: $input-border-width solid $input-border-color;
   border-radius: $input-border-radius;
   color: $darkBlue;
-  width: 100%;
+  width: 70%;
+  height: 40px;
   padding-left: 7px;
   &:focus {
-    border: 1px solid red!important;
+    box-shadow: 0px 0 0 2px $yellow;
+    outline: none;
   }
   // Placeholder
   &::placeholder {
     color: $darkBlue;
     opacity: 1;
   }
+  &:disabled,  &[readonly]{
+    background-color: $gray-pastel;
+    border-color: $gray-pastel;
+  }
+  
 }
+.govsa--form-input-label{
+  margin: 0;
+}
+
