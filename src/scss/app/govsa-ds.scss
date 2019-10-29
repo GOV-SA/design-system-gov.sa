@@ -1,8 +1,8 @@
-@import "./icons";
 @import "../content/govsa-font/style.scss";
+@import "../components/color/index.scss";
+@import "./icons";
 @import "../content/typography/index";
 @import "../content/typography/typography-ar.scss";
-@import "../components/color/index.scss";
 @import "../components/buttons/index";
 @import"../components/card/index";
 @import"../components/alert/index";
@@ -10,3 +10,4 @@
 @import"../components/link/index";
 @import"../components/checkbox/index.scss";
 @import"../components/radio/index.scss";
+@import"../components/text-input/index";

@@ -1,0 +1,15 @@
+.govsa--form-control {
+  border: $input-border-width solid $input-border-color;
+  border-radius: $input-border-radius;
+  color: $darkBlue;
+  width: 100%;
+  padding-left: 7px;
+  &:focus {
+    border: 1px solid red!important;
+  }
+  // Placeholder
+  &::placeholder {
+    color: $darkBlue;
+    opacity: 1;
+  }
+}
