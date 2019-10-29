@@ -24,14 +24,14 @@
     }
 }
 
-.card:hover{
+.govsa-card:hover{
     background-color: $green;
     cursor: pointer;
 }
-.card:active{
+.govsa-card:active{
     border-color: $yellow;
 }
-.card:active::after {
+.govsa-card:active::after {
     content: '';
     position: absolute;
     top: -2px;

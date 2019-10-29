@@ -1,0 +1,42 @@
+.accordion {
+     .card {
+      border:none;
+    
+      .card-header {
+      background-color: $white;
+      border: 1px solid $darkBlue;
+      padding: 0px;
+  
+      &:hover{
+        background-color: $darkBlue;
+      }
+      button{
+        color: $black;
+        &:hover,
+        &:active{
+            text-decoration: none;
+        }
+        p{
+            margin-bottom: 0px;
+
+            font-size: 16px;
+            font-weight: bold;
+            
+        }
+      }
+      &:active{
+        border-bottom-color: $yellow;
+        border: 1px solid $yellow;
+       }
+       }
+       
+       .card-body{
+        border: 1px solid $darkBlue;
+        margin-top: 4px;
+       }
+       
+             
+      }
+
+    }
+  
