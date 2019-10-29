@@ -30,6 +30,7 @@
   width: 18px;
   background-color: #fff;
   border: 1px solid black;
+  border-radius: 2px;
 }
 
 /* On mouse-over */
@@ -39,9 +40,11 @@
     // background-color: #ccc;
     box-shadow: 0 0 0 3px #EAEAEA;
   }
+  input:active ~ .govsa--checkbox-checkmark {
+    box-shadow: 0 0 0 3px $yellow;
+  }
   input:checked ~ .govsa--checkbox-checkmark {
     background-color: #160f3e;
-    box-shadow: 0 0 0 1px #ffc107;  
   }
 }
 
@@ -61,8 +64,8 @@
   }
 
   .govsa--checkbox-checkmark:after {
-    left: 5px;
-    top: 2px;
+    left: 6px;
+    top: 1px;
     width: 5px;
     height: 12px;
     border: solid white;
