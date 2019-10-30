@@ -37,7 +37,6 @@
 
 .govsa-checkbox-container {
   &:hover input ~ .govsa-checkbox-checkmark {
-    // background-color: #ccc;
     box-shadow: 0 0 0 3px #eaeaea;
   }
   input:active ~ .govsa-checkbox-checkmark {
