@@ -1,4 +1,4 @@
-.govsa--form-control {
+.govsa-form-control {
   border: $input-border-width solid $input-border-color;
   border-radius: $input-border-radius;
   color: $darkBlue;
@@ -21,15 +21,15 @@
   }
   
 }
-.govsa--form-input-label{
+.govsa-form-input-label{
   margin: 0;
 }
-.govsa--form-error-input{
+.govsa-form-error-input{
   color: $red;
   font-size: 14px;
   padding-right: 10px;
   padding-left: 10px;
 }
-.govsa--form-error-input-border{
+.govsa-form-error-input-border{
   border-color: $red ;
 }

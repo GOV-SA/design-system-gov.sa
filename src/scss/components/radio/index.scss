@@ -1,4 +1,4 @@
-.govsa--radio-container {
+.govsa-radio-container {
   display: block;
   position: relative;
   padding-left: $form-check-padding-left;
@@ -21,7 +21,7 @@
 
 /* Create a custom radio */
 
-.govsa--radio-checkmark {
+.govsa-radio-checkmark {
   position: absolute;
   top: 5px;
   left: 0;
@@ -34,22 +34,22 @@
 
 /* On mouse-over */
 
-.govsa--radio-container {
-  &:hover input ~ .govsa--radio-checkmark {
+.govsa-radio-container {
+  &:hover input ~ .govsa-radio-checkmark {
     // background-color: #ccc;
     box-shadow: 0 0 0 3px $gray-pastel;
   }
-  input:active ~ .govsa--radio-checkmark {
+  input:active ~ .govsa-radio-checkmark {
     box-shadow: 0 0 0 3px $yellow;
   }
-  input:checked ~ .govsa--radio-checkmark {
+  input:checked ~ .govsa-radio-checkmark {
     background-color: white;
   }
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
 
-.govsa--radio-checkmark:after {
+.govsa-radio-checkmark:after {
   content: "";
   position: absolute;
   display: none;
@@ -57,12 +57,12 @@
 
 /* Show the checkmark when checked */
 
-.govsa--radio-container {
-  input:checked ~ .govsa--radio-checkmark:after {
+.govsa-radio-container {
+  input:checked ~ .govsa-radio-checkmark:after {
     display: block;
   }
 
-  .govsa--radio-checkmark:after {
+  .govsa-radio-checkmark:after {
     left: 3px;
     top: 3px;
     border: 1px solid $darkBlue;

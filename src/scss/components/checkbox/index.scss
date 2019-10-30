@@ -1,4 +1,4 @@
-.govsa--checkbox-container {
+.govsa-checkbox-container {
   display: block;
   position: relative;
   padding-left: $form-check-padding-left;
@@ -22,7 +22,7 @@
 
 /* Create a custom checkbox */
 
-.govsa--checkbox-checkmark {
+.govsa-checkbox-checkmark {
   position: absolute;
   top: 5px;
   left: 0;
@@ -35,22 +35,22 @@
 
 /* On mouse-over */
 
-.govsa--checkbox-container {
-  &:hover input ~ .govsa--checkbox-checkmark {
+.govsa-checkbox-container {
+  &:hover input ~ .govsa-checkbox-checkmark {
     // background-color: #ccc;
-    box-shadow: 0 0 0 3px #EAEAEA;
+    box-shadow: 0 0 0 3px #eaeaea;
   }
-  input:active ~ .govsa--checkbox-checkmark {
+  input:active ~ .govsa-checkbox-checkmark {
     box-shadow: 0 0 0 3px $yellow;
   }
-  input:checked ~ .govsa--checkbox-checkmark {
+  input:checked ~ .govsa-checkbox-checkmark {
     background-color: #160f3e;
   }
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
 
-.govsa--checkbox-checkmark:after {
+.govsa-checkbox-checkmark:after {
   content: "";
   position: absolute;
   display: none;
@@ -58,12 +58,12 @@
 
 /* Show the checkmark when checked */
 
-.govsa--checkbox-container {
-  input:checked ~ .govsa--checkbox-checkmark:after {
+.govsa-checkbox-container {
+  input:checked ~ .govsa-checkbox-checkmark:after {
     display: block;
   }
 
-  .govsa--checkbox-checkmark:after {
+  .govsa-checkbox-checkmark::after {
     left: 6px;
     top: 1px;
     width: 5px;
@@ -74,4 +74,5 @@
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
+  
 }
