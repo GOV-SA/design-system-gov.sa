@@ -4,8 +4,7 @@
   &:focus {
     color: #fff;
     outline: 0;
-    box-shadow: $btn-focus-box-shadow;
-
+    box-shadow:  $btn-focus-box-shadow;
     &::after {
       background: #ffdd40;
       width: 108%;
@@ -13,6 +12,7 @@
       height: 108%;
       left: -4%;
       top: -4%;
+      box-shadow: 0 0 0px 3px #ffdd40;
       /* create a new stacking context */
       position: absolute;
       z-index: -1; /* to be below the parent element */
@@ -92,7 +92,7 @@
   }
 }
 .btn--success {
-  &focus {
+  &:focus {
     color: #fff;
   }
   &.btn--outline {

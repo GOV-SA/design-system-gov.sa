@@ -2,7 +2,12 @@ a{
     @include font-size($font-size-sm);
     font-weight: $font-weight-normal;
     text-decoration: underline;
+    i{
+        text-decoration: none !important;
+        color: $yellow;
+    }
 }
+
 a:active{
     background-color: $yellow;
     color: $darkBlue;

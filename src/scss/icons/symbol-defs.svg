@@ -15,7 +15,7 @@
 </symbol>
 <symbol id="govsa--arrowleft" viewBox="0 0 32 32">
 <title>arrowleft</title>
-<path fill="#160f3e" style="fill: var(--color1, #160f3e)" d="M16 0l2.82 2.82-11.16 11.18h24.34v4h-24.34l11.16 11.18-2.82 2.82-16-16z"></path>
+<path  d="M16 0l2.82 2.82-11.16 11.18h24.34v4h-24.34l11.16 11.18-2.82 2.82-16-16z"></path>
 </symbol>
 <symbol id="govsa--arrowright" viewBox="0 0 32 32">
 <title>arrowright</title>
