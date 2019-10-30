@@ -1,6 +1,5 @@
 // Create your SCSS variables here and it will override bootstrap styles
 @import "../components/color/variables";
-
 @import "../content/typography/variables";
 @import "../content/govsa-font/variables";
 @import "../components/buttons/variables";
@@ -10,4 +9,5 @@
 @import"../components/checkbox/variables";
 @import"../components/radio/variables";
 @import"../components/text-input/variables";
+@import"../components/dropdown/variables";
 $responsive-font-sizes: true;

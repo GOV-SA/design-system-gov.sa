@@ -317,33 +317,60 @@
     <div class="row">
         <div class="col-2">
             <div class="col">
-                <label class="govsa--checkbox-container">Label
-                    <input type="checkbox" class="govsa--input-checkbox">
-                    <span class="govsa--checkbox-checkmark"></span>
+                <label class="govsa-checkbox-container">Label
+                    <input type="checkbox" class="govsa-input-checkbox">
+                    <span class="govsa-checkbox-checkmark"></span>
                 </label>
             </div>
         </div>
-        <div class="col-2" dir="rtl">
+        <div class="col-2">
             <div class="col">
-                <label class="govsa--checkbox-container">العنوان
-                    <input type="checkbox" class="govsa--input-checkbox">
-                    <span class="govsa--checkbox-checkmark"></span>
-                </label>
+                <div dir="rtl">
+                    <label class="govsa-checkbox-container">العنوان
+                        <input type="checkbox" class="govsa-input-checkbox">
+                        <span class="govsa-checkbox-checkmark"></span>
+                    </label>
+                </div>
             </div>
         </div>
     </div>
     <div>
         <hr>
     </div>
-    <h3>Radio Buttons</h3>
+    <div class="row">
+        <div class="col-3">
+            <h3>Radio Buttons - English</h3>
+        </div>
+        <div class="col-3">
+            <h3>Radio Buttons - Arabic</h3>
+        </div>
+    </div>
     <hr>
     <div class="row">
-        <div class="col">
-
+        <div class="col-2">
+            <form action="">
+                <div class="form-group col-md-3">
+                    <label class="govsa-radio-container">Label
+                        <input type="radio" class="govsa-input-checkbox">
+                        <span class="govsa-radio-checkmark"></span>
+                    </label>
+                </div>
+            </form>
+        </div>
+        <div class="col-2" dir="rtl">
+            <form action="">
+                <div class="form-group col-md-3">
+                    <label class="govsa-radio-container">عنوان
+                        <input type="radio" class="govsa-input-checkbox">
+                        <span class="govsa-radio-checkmark"></span>
+                    </label>
+                </div>
+            </form>
         </div>
     </div>
     <h3>buttons</h3>
     <hr>
+
     <div class="row">
         <div class="col-12">
             <button type="button" class="btn btn--violet">Default</button>
@@ -483,54 +510,83 @@
             <h3>Text Input - Arabic</h3>
         </div>
     </div>
-
     <hr>
     <div class="row">
         <div class="col-6">
             <form action="">
                 <div class="form-group">
-                    <input class="govsa--form-control" type="text" placeholder="Label">
+                    <input class="govsa-form-control" type="text" placeholder="Label">
                 </div>
                 <div class="form-group">
-                    <input class="govsa--form-control" type="text" placeholder="Label" disabled>
+                    <input class="govsa-form-control" type="text" placeholder="Label" disabled>
                 </div>
                 <div class="d-md-flex flex-column">
-                    <label class="govsa--form-input-label" for="">Label</label>
-                    <input class="govsa--form-control" type="text" placeholder="Input text |">
+                    <label class="govsa-form-input-label" for="">Label</label>
+                    <input class="govsa-form-control" type="text" placeholder="Input text |">
                 </div>
                 <div class="mt-3 d-md-flex flex-column">
-                    <label class="govsa--form-input-label" for="">Label *</label>
-                    <input class="govsa--form-control" type="text" placeholder="Input text |">
+                    <label class="govsa-form-input-label" for="">Label *</label>
+                    <input class="govsa-form-control" type="text" placeholder="Input text |">
                 </div>
                 <div class="mt-3 d-md-flex flex-column">
-                    <label class="govsa--form-input-label" for="">Label</label>
-                    <input class="govsa--form-control" type="text" placeholder="Input text |">
-                    <span class="govsa--form-error-input">! Error message</span>
+                    <label class="govsa-form-input-label" for="">Label</label>
+                    <input class="govsa-form-control govsa-form-error-input-border" type="text"
+                        placeholder="Input text |">
+                    <span class="govsa-form-error-input">! Error message</span>
                 </div>
             </form>
         </div>
         <div class="col-6" dir="rtl">
             <form action="">
                 <div class="form-group">
-                    <input class="govsa--form-control" type="text" placeholder="العنوان">
+                    <input class="govsa-form-control" type="text" placeholder="العنوان">
                 </div>
                 <div class="form-group">
-                    <input class="govsa--form-control" type="text" placeholder="العنوان" disabled>
+                    <input class="govsa-form-control" type="text" placeholder="العنوان" disabled>
                 </div>
                 <div class="mt-3 d-md-flex flex-column">
-                    <label class="govsa--form-input-label" for="">عنوان</label>
-                    <input class="govsa--form-control" type="text" placeholder="أدخل النص">
+                    <label class="govsa-form-input-label" for="">عنوان</label>
+                    <input class="govsa-form-control" type="text" placeholder="أدخل النص">
                 </div>
                 <div class="mt-3 d-md-flex flex-column">
-                    <label class="govsa--form-input-label" for="">عنوان *</label>
-                    <input class="govsa--form-control" type="text" placeholder="أدخل النص">
+                    <label class="govsa-form-input-label" for="">عنوان *</label>
+                    <input class="govsa-form-control" type="text" placeholder="أدخل النص">
                 </div>
                 <div class="mt-3 d-md-flex flex-column">
-                    <label class="govsa--form-input-label" for="">عنوان</label>
-                    <input class="govsa--form-control" type="text" placeholder="أدخل النص">
-                    <span class="govsa--form-error-input">رسالة خطأ</span>
+                    <label class="govsa-form-input-label" for="">عنوان</label>
+                    <input class="govsa-form-control" type="text" placeholder="أدخل النص">
+                    <span class="govsa-form-error-input">رسالة خطأ</span>
                 </div>
             </form>
+        </div>
+    </div>
+    <hr>
+
+    <div class="row">
+        <div class="col-3">
+            <h3>Dropdown - English</h3>
+        </div>
+        <div class="col-3">
+            <h3>Dropdown - Arabic</h3>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-3">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown button
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            
         </div>
     </div>
     <hr>
@@ -539,7 +595,7 @@
     <div class="row my-3">
         <div class="col-md-6">
             <div class="alert govsa-alert--warning" role="alert">
-                <h6><svg class="govsa-icon govsa--warning">
+                <h6><svg class="govsa-icon govsa-warning">
                         <use xlink:href="symbol-defs.svg#govsa--warning"></use>
                     </svg> Warning alert</h6>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

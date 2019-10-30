@@ -1,14 +1,20 @@
-.govsa--form-control {
+.govsa-form-control {
   border: $input-border-width solid $input-border-color;
   border-radius: $input-border-radius;
   color: $darkBlue;
+<<<<<<< HEAD
   //width: 70%;
   //height: 40px;
+=======
+  height: 2.32em;
+  
+>>>>>>> 29c2e5098a77ab9f686de62f704fffcd19fea69d
   padding-left: 7px;
   &:focus {
     box-shadow: 0px 0 0 2px $yellow;
     outline: none;
   }
+  
   // Placeholder
   &::placeholder {
     color: $darkBlue;
@@ -20,11 +26,15 @@
   }
   
 }
-.govsa--form-input-label{
+.govsa-form-input-label{
   margin: 0;
 }
-.govsa--form-error-input{
+.govsa-form-error-input{
   color: $red;
+  font-size: 14px;
   padding-right: 10px;
   padding-left: 10px;
+}
+.govsa-form-error-input-border{
+  border-color: $red ;
 }
