@@ -1,0 +1,57 @@
+ 
+.govsa-file__name{
+    background-color: white ; 
+    border:none;      
+}
+
+.govsa-fileuploader{
+    color: $darkBlue;
+    input[type='file']{
+        opacity: 0;
+    }
+    input:read-only{
+        &::placeholder {
+            color: $darkBlue;
+            opacity: 1;
+          }
+    }
+    .btn{
+        top: -35px; 
+        z-index: -1;
+    } 
+    P{
+         margin-bottom: 0px;
+    }
+}
+
+.custom-file{
+    input[type='file']{
+       // opacity: 0;
+    }
+}
+
+.custom-file-input{
+    border: 1px solid yellow;
+    color: black;
+    background-color: aqua;
+}
+
+.custom-file-input::before{
+    border: 2px solid yellow;
+    color: red;
+    background-color: green;
+}
+
+.custom-file-input ~ .custom-file-label::after {
+    content: "Button Text";
+    background-color: white;
+    border: none;
+}
+
+.custom-file-input::before{
+    border: none;
+}
+
+.custom-file{
+    border: none;  
+}

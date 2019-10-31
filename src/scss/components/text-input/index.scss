@@ -2,13 +2,8 @@
   border: $input-border-width solid $input-border-color;
   border-radius: $input-border-radius;
   color: $darkBlue;
-<<<<<<< HEAD
   //width: 70%;
-  //height: 40px;
-=======
-  height: 2.32em;
-  
->>>>>>> 29c2e5098a77ab9f686de62f704fffcd19fea69d
+  height: 40px;
   padding-left: 7px;
   &:focus {
     box-shadow: 0px 0 0 2px $yellow;

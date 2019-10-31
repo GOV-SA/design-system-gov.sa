@@ -41,12 +41,9 @@
              }
 
              &:active{
-               border-bottom-color: $yellow;
-                border: 1px solid $yellow;
-               // box-shadow: 0px 0 0 2px $yellow;
-              //  box-shadow: 0 8px 7px -6px $black;
-              //box-shadow: rgba(0,0,0,0.8) 0 25px 0px -10px;
-             }
+               border: 1px solid $yellow;
+               box-shadow: 0px 0 0 1px $yellow;
+             }    
        }
         
       }
@@ -54,7 +51,14 @@
       .card:last-child{
         border-bottom: 1px solid $darkBlue;
         border-radius: 0px 0px 8px 8px !important;
-
+&::before{
+  border-bottom: 1px solid $darkBlue;
+  border-radius: 0px 0px 8px 8px !important;
+}
+&::after{
+  border-bottom: 1px solid $darkBlue;
+  border-radius: 0px 0px 8px 8px !important;
+}
         .card-body {
           border-radius: 0px 0px 7px 7px;
         }       
