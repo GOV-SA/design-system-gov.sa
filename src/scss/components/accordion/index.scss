@@ -1,71 +1,138 @@
+.govsa-collapse {
+  .govsa-collapse__header {
+    border: 1px solid $darkBlue;
+    border-radius: 8px;
+    padding: 10px 15px;
+
+    &:hover {
+      background-color: $darkBlue-tint;
+      color: $white;
+
+      i {
+        color: $white;
+      }
+    }
+
+    i {
+      float: right;
+      margin: 10px 5px;
+      font-size: 8px;
+    }
+
+    &:active {
+      box-shadow: 0px 0 0 1px $yellow;
+      border-color: $yellow;
+    }
+
+    &[aria-expanded="true"] {
+      border-radius: 8px 8px 0px 0px;
+
+      i {
+        -ms-transform: rotate(180deg);
+        /* IE 9 */
+        -webkit-transform: rotate(180deg);
+        /* Safari 3-8 */
+        transform: rotate(180deg);
+      }
+    }
+  }
+  .card {
+    border-radius: 0px 0px 8px 8px;
+    border-color: $darkBlue;
+    padding: 10px 15px;
+    margin-top: 5px;
+  }
+}
+
 .govsa-accordion {
-     .card {
-      border: none;
+  .card {
+    border: none;
 
-      .card-body {
-        border: 1px solid $darkBlue;
-        border-bottom: none;
-        margin-top: 4px;
-        padding-top: 0.5rem;
-      }
-      .card-header {
-         background-color: $white;
-         border: 1px solid $darkBlue;
-         padding: 0px;
-  
-           button{
-             color: $black;
+    .card-header {
+      background-color: $white;
+      border: 1px solid $darkBlue;
+      padding: 0px;
+      margin-bottom: 0px;
 
-              p{
-                  margin-bottom: 0px;
-                }
-                
-              &:hover,
-              &:active{
-                  text-decoration: none;
-                }
-          }
+      p {
+        padding: 10px 15px;
+        margin-bottom: 0px;
 
-          i{
-            float:right;
-            margin: 16px 12px;
-            color: $black;
-            font-size: 7px;
-          }
-
-           &:hover{
-            background-color: $darkBlue-tint;
-                 i{
-                 color: $white;
-                  }
-             }
-
-             &:active{
-               border: 1px solid $yellow;
-               box-shadow: 0px 0 0 1px $yellow;
-             }    
-       }
-        
+        i {
+          float: right;
+          color: $black;
+          font-size: 7px;
+          padding: 10px;
+        }
       }
 
-      .card:last-child{
-        border-bottom: 1px solid $darkBlue;
-        border-radius: 0px 0px 8px 8px !important;
-&::before{
-  border-bottom: 1px solid $darkBlue;
-  border-radius: 0px 0px 8px 8px !important;
-}
-&::after{
-  border-bottom: 1px solid $darkBlue;
-  border-radius: 0px 0px 8px 8px !important;
-}
-        .card-body {
-          border-radius: 0px 0px 7px 7px;
-        }       
+      &:hover {
+        background-color: $darkBlue-tint;
+        cursor: pointer;
+
+        p,
+        i {
+          color: $white;
+        }
       }
 
+      &:active {
+        border: 1px solid $yellow;
+        box-shadow: 0px 0 0 2px $yellow;
+      }
+
+      &[aria-expanded="true"] {
+        i {
+          margin-top: 10px;
+          padding: 0px;
+          // float: right;
+          -ms-transform: rotate(180deg);
+          /* IE 9 */
+          -webkit-transform: rotate(180deg);
+          /* Safari 3-8 */
+          transform: rotate(180deg);
+        }
+      }
 
     }
-  
 
+    .card-body {
+      border: 1px solid $darkBlue;
+      margin-top: 4px;
+      padding-top: 0.5rem;
+    }
 
+    &:not(:first-of-type) {
+      .card-header {
+        border-top: 0px;
+      }
+    }
+
+    &:first-of-type {
+      .card-header:first-child {
+        border-top-left-radius: 8px !important;
+        border-top-right-radius: 8px !important;
+
+        &[aria-expanded="true"] {
+          border-top-left-radius: 8px !important;
+          border-top-right-radius: 8px !important;
+        }
+      }
+    }
+
+    &:last-of-type {
+      .card-body {
+        border-radius: 0px 0px 8px 8px;
+      }
+
+      .card-header {
+        border-radius: 0px 0px 8px 8px !important;
+
+        &[aria-expanded="true"] {
+          border-radius: 0px !important;
+        }
+      }
+    }
+  }
+
+}
