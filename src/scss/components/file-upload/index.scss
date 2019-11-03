@@ -1,57 +1,57 @@
  
-.govsa-file__name{
-    background-color: white ; 
-    border:none;      
-}
-
 .govsa-fileuploader{
-    color: $darkBlue;
-    input[type='file']{
-        opacity: 0;
-    }
-    input:read-only{
+    .govsa-file__name{
+        background-color: white ; 
+        color: $darkBlue;
+        border:none;     
         &::placeholder {
             color: $darkBlue;
-            opacity: 1;
-          }
+            // opacity: 1;
+          } 
     }
-    .btn{
-        top: -35px; 
+    a{
+        left: 15px;
+        position: absolute;
         z-index: -1;
-    } 
+        font-size: 16px;
+    }
     P{
-         margin-bottom: 0px;
-    }
-}
-
-.custom-file{
+        color: $darkBlue;
+        margin-bottom: 0px;
+   }
     input[type='file']{
-       // opacity: 0;
+        opacity: 0;
+        height: 0px;
     }
 }
 
-.custom-file-input{
-    border: 1px solid yellow;
-    color: black;
-    background-color: aqua;
-}
 
-.custom-file-input::before{
-    border: 2px solid yellow;
-    color: red;
-    background-color: green;
-}
 
-.custom-file-input ~ .custom-file-label::after {
-    content: "Button Text";
-    background-color: white;
+
+
+.custom-file-label::after {
+    content: "choose your file";
+    background-color:$white;
     border: none;
-}
+    left: auto;
+    right: auto;
+    font-size: 16px;
+    color: $darkBlue;
+    font-weight: normal;
+    
 
-.custom-file-input::before{
-    border: none;
 }
-
-.custom-file{
-    border: none;  
+.custom-file-label,
+.custom-file-label::after {
+  height: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: none;
+}
+.custom-file-label,
+.custom-file-label::before {
+  background-color: aqua;
+  border: none;
+  position: relative;
+  display: table-footer-group;
 }

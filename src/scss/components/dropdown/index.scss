@@ -6,13 +6,16 @@
   width: 100%; // For `<button>`s
   height: 40px;
   align-items: center;
-  padding-left: 5px;
+  // padding-left: 5px;
   margin: 0 auto;
   clear: both;
   color: $dropdown-link-color;
-  text-align: inherit; // For `<button>`s
+  text-align: left;
+  padding-left: 4px;
+  padding-top: 6px;
   white-space: nowrap; // prevent links from randomly breaking onto new lines    border: 0; // For `<button>`s
   text-decoration: none;
+  padding-bottom: 0;
 
   &:hover,
   &:focus {
@@ -20,9 +23,10 @@
     text-decoration: none;
     background-color: $darkBlue-tint;
   }
+
   &:active {
     background-color: $white;
-    border: 1px solid $yellow;
+    border: 3px solid $yellow;
     color: $dropdown-link-color;
   }
 }
@@ -41,35 +45,40 @@
   &:hover {
     background-color: $darkBlue-tint;
     color: $white;
-    outline-color: none !important;
-    box-shadow: none;
   }
   &:focus {
+    -webkit-box-shadow: 0 0 0 3px $yellow;
+    -moz-box-shadow: 0 0 0 3px $yellow;
+    box-shadow: 0 0 0 3px $yellow;
+    outline: 3px solid $yellow;
     border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0px;
-    box-shadow: none;
-    outline-color: $yellow;
+    border-bottom-right-radius: 0;
   }
   &:active {
-    outline-color: $yellow;
-    box-shadow: none;
+    -webkit-box-shadow: 0 0 0 3px $yellow;
+    -moz-box-shadow: 0 0 0 3px $yellow;
+    box-shadow: 0 0 0 3px $yellow;
+    outline: 3px solid $yellow;
   }
 }
+
 .dropdown-menu {
   width: 100%;
   border-color: $darkBlue;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  padding-top: 5px;
-  padding-bottom: 0;
+
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 0;
+  & .govsa-dropdown-item:last-child:hover {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
 }
 .scrollable-menu {
   height: auto;
   max-height: 120px;
   overflow-x: hidden;
   scrollbar-track-color: red;
-  // &::-webkit-scrollbar{
-  //   -webkit-box-shadow: inset 0 0 6px red;
-    
-  // }
 }

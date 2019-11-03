@@ -593,11 +593,11 @@
                         Label
                     </button>
                     <div class="dropdown-menu govsa-dropdown-menu scrollable-menu">
-                            <a class="govsa-dropdown-item" href="#">Lorem ipsum</a>
-                            <a class="govsa-dropdown-item" href="#">Lorem ipsum</a>
-                            <a class="govsa-dropdown-item" href="#">Lorem ipsum</a>
-                            <a class="govsa-dropdown-item" href="#">Lorem ipsum</a>
-                            <a class="govsa-dropdown-item" href="#">Lorem ipsum</a>
+                        <a class="govsa-dropdown-item" href="#">Lorem ipsum</a>
+                        <a class="govsa-dropdown-item" href="#">Lorem ipsum</a>
+                        <a class="govsa-dropdown-item" href="#">Lorem ipsum</a>
+                        <a class="govsa-dropdown-item" href="#">Lorem ipsum</a>
+                        <a class="govsa-dropdown-item" href="#">Lorem ipsum</a>
                     </div>
                 </div>
             </div>
@@ -629,7 +629,7 @@
                         <a class="govsa-dropdown-item" href="#">الاختيار ٣</a>
                         <a class="govsa-dropdown-item" href="#">الاختيار ٣</a>
                         <a class="govsa-dropdown-item" href="#">الاختيار ٣</a>
-                        
+
                     </div>
                 </div>
             </div>
@@ -820,9 +820,9 @@
             <div class="accordion govsa-accordion" id="accordionExample">
                 <div class="card">
                     <div class="card-header collapsed" id="headingOne" data-toggle="collapse" data-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
+                        aria-expanded="true" aria-controls="collapseOne">
                         <p>Lable #1 <i class=" govsa-icon govsa--arrowdown"></i></p>
-                        
+
                     </div>
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                         data-parent="#accordionExample">
@@ -833,10 +833,10 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header collapsed" id="headingTwo" data-toggle="collapse"
-                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="card-header collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
                         <p>Lable #2 <i class=" govsa-icon govsa--arrowdown"></i> </p>
-                       
+
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                         <div class="card-body">
@@ -847,9 +847,9 @@
                 </div>
                 <div class="card">
                     <div class="card-header collapsed" id="headingThree" data-toggle="collapse"
-                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         <p>Lable #3 <i class=" govsa-icon govsa--arrowdown"></i> </p>
-                        
+
                     </div>
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                         data-parent="#accordionExample">
@@ -862,22 +862,22 @@
             </div>
         </div>
         <div class="col-3">
-                <div class="accordion govsa-accordion" id="accordionExample">
-                    <div class="card">
-                        <div class="card-header collapsed" id="headingOne" data-toggle="collapse" data-target="#collapseOne1"
-                        aria-expanded="true" aria-controls="collapseOne1">
-                            <p>Lable #1 <i class=" govsa-icon govsa--arrowdown"></i></p>
-                            
-                        </div>
-                        <div id="collapseOne1" class="collapse show" aria-labelledby="headingOne"
-                            data-parent="#accordionExample">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                squid.
-                            </div>
+            <div class="accordion govsa-accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header collapsed" id="headingOne" data-toggle="collapse"
+                        data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                        <p>Lable #1 <i class=" govsa-icon govsa--arrowdown"></i></p>
+
+                    </div>
+                    <div id="collapseOne1" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid.
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
         <div class="col-3">
             <div class="govsa-collapse">
@@ -895,44 +895,21 @@
     <h3>File upload</h3>
     <hr>
     <div class="row my-3">
-        <div class="col-2">
+        <div class="col-4">
             <form>
                 <div class="govsa-fileuploader">
-                    <P>Choose your file</p>
-                    <P>Only .jpg and .png files. 500kb max file size</p>
-                    <input name="filename" class="govsa-file__name mb-2" placeholder="No file choosen" readonly>
                     <input type="file" name="file"
                         onchange="this.form.filename.value = this.files.length ? this.files[0].name : ''" />
-                    <button type="button" class="btn btn--darkBlue">UPLOAD</button>
+                    <a href="#">Choose your file</a>
+                    <P>Only .jpg and .png files. 500kb max file size</p>
+                    <input name="filename" class="govsa-file__name" placeholder="No file choosen" readonly>
+                    <div>
+                        <!-- <span class="govsa-form-error-input">! Error message</span> -->
+                        <button type="button" class="btn btn--darkBlue">UPLOAD</button>
+                    </div>
+
                 </div>
             </form>
-        </div>
-
-        <div class="col-2">
-                <form>
-                    <div class="govsa-fileuploader">
-                        <P>Choose your file</p>
-                        <P>Only .jpg and .png files. 500kb max file size</p>
-                        <input name="filename" class="govsa-file__name mb-2" placeholder="No file choosen" readonly>
-                        <input type="file" name="file"
-                            onchange="this.form.filename.value = this.files.length ? this.files[0].name : ''" />
-                        <button type="button" class="btn btn--darkBlue">UPLOAD</button>
-                        <span class="govsa-form-error-input">! Error message</span>
-                    </div>
-                </form>
-            </div>
-    </div>
-    <div class="row my-3">
-        <div class="col-6">
-            <div class=" mb-3">
-                <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="inputGroupFile02" />
-                    <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
-                </div>
-                <!-- <div class="input-group-append">
-                    <button class="btn btn-primary">Upload</button>
-                </div> -->
-            </div>
         </div>
     </div>
     <br>
@@ -951,7 +928,7 @@
 </body>
 <script>
 
-    
+
 
     // $('#inputGroupFile02').on('change',function(){
     //             //get the file name
@@ -959,8 +936,9 @@
     //             //replace the "Choose a file" label
     //             $(this).next('.custom-file-label').html(fileName);
     //         })
-    
+
         // Add the following code if you want the name of the file appear on select
-          
-        </script>
+
+</script>
+
 </html>
