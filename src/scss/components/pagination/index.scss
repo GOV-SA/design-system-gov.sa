@@ -1,0 +1,32 @@
+.page-item a {
+  text-decoration: none;
+}
+
+.page-link {
+  border: none;
+  &:hover {
+    background-color: $gray-pastel;
+    border-radius: 50px;
+    & i{
+        color: white;
+    }
+  }
+  &:active {
+    background-color: $darkBlue;
+    border-radius: 50px;
+    color: $white;
+  }
+ 
+}
+.page-item {
+  text-decoration: none;
+  border: none;
+  &:last-child .page-link,
+  &:first-child .page-link {
+    border-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+}
