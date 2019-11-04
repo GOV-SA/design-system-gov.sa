@@ -1,6 +1,7 @@
-.govsa-dropdown {
-}
 
+.govsa-dropdown-btn::after{
+  display: none;
+}
 .govsa-dropdown-item {
   display: block;
   width: 100%; // For `<button>`s
@@ -26,7 +27,7 @@
 
   &:active {
     background-color: $white;
-    border: 3px solid $yellow;
+    border: 2px solid $yellow;
     color: $dropdown-link-color;
   }
 }
@@ -77,8 +78,6 @@
   }
 }
 .scrollable-menu {
-  height: auto;
   max-height: 120px;
   overflow-x: hidden;
-  scrollbar-track-color: red;
 }

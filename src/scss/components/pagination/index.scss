@@ -1,0 +1,57 @@
+.page-item a {
+  text-decoration: none;
+}
+
+.page-link {
+  border: none;
+  &:hover {
+    background-color: $gray-pastel;
+    border-radius: 50px;
+    & i {
+      color: white;
+    }
+  }
+  &:active {
+    background-color: $darkBlue;
+    border-radius: 50px;
+    color: $white;
+  }
+  &:focus {
+    z-index: 3;
+    outline: none;
+    box-shadow: none;
+  }
+}
+.page-item {
+  text-decoration: none;
+  border: none;
+  &:last-child .page-link,
+  &:first-child .page-link {
+    border-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  &:last-child .page-link:focus,
+  &:first-child .page-link:focus {
+    border-radius: 0;
+    border: 1px solid $yellow;
+    outline: 1px solid $yellow;
+    background-color: transparent;
+  }
+  &.active-page .page-link {
+    z-index: 3;
+    color: $white;
+    background-color: $darkBlue;
+    border-color: none;
+    border-radius: 20px;
+  }
+  &.disabled .page-link {
+    color: $gray-pastel;
+    pointer-events: none;
+    cursor: auto;
+    background-color: transparent;
+    border-color: none;
+  }
+}
