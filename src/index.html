@@ -796,7 +796,7 @@
             <a href="" class="disabled">Link text</a>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-3" dir="rtl">
             <p>Link/standard/default</p>
             <a href=""> <i class="govsa-icon govsa--arrowleft"></i> Link text</a>
         </div>
@@ -898,7 +898,7 @@
         <div class="col-4">
             <form>
                 <div class="govsa-fileuploader">
-                    <input type="file" name="file"
+                    <input class="test-f" type="file" name="file"
                         onchange="this.form.filename.value = this.files.length ? this.files[0].name : ''" />
                     <a href="#">Choose your file</a>
                     <P>Only .jpg and .png files. 500kb max file size</p>
@@ -911,6 +911,23 @@
                 </div>
             </form>
         </div>
+        <div class="col-4">
+                <form>
+                    <div class="govsa-fileuploader">
+                        <input type="file" name="file"
+                            onchange="this.form.filename.value = this.files.length ? this.files[0].name : ''" />
+                        <a href="#">Choose your file</a>
+                        <P>Only .jpg and .png files. 500kb max file size</p>
+                        <input name="filename" class="govsa-file__name" placeholder="No file choosen" readonly>
+
+                        <span class="govsa-form-error-input d-block">! Error message</span>
+                        <div>
+                            <button type="button" class="btn btn--darkBlue-pastel btn-clear">UPLOAD</button>
+                        </div>
+    
+                    </div>
+                </form>
+            </div>
     </div>
     <div class="row my-3">
         <div class="col-4">
@@ -922,6 +939,13 @@
                 <!-- <div class="input-group-append">
                     <button class="btn btn-primary">Upload</button>
                 </div> -->
+            </div>
+        </div>
+        <div class="col-4">
+            <p>Custom file:</p>
+            <div class="custom-file mb-3">
+                <input type="file" class="custom-file-input" id="customFile" name="filename">
+                <label class="custom-file-label" for="customFile">Choose file</label>
             </div>
         </div>
     </div>
@@ -940,19 +964,12 @@
     </div>
 
 </body>
+
 <script>
-
-
-
-    // $('#inputGroupFile02').on('change',function(){
-    //             //get the file name
-    //             var fileName = $(this).val();
-    //             //replace the "Choose a file" label
-    //             $(this).next('.custom-file-label').html(fileName);
-    //         })
-
         // Add the following code if you want the name of the file appear on select
-
-</script>
-
+        $(".custom-file-input").on("change", function() {
+          var fileName = $(this).val().split("\\").pop();
+          $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+        </script>
 </html>

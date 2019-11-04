@@ -18,39 +18,69 @@
         color: $darkBlue;
         margin-bottom: 0px;
    }
-    input[type='file']{
+    input[type='file']
+    , input[type='file']::after{
         opacity: 0;
-        height: 0px;
+        height: 17px; 
+        
     }
+
 }
 
 
-
+.custom-file-label{
+    border: none;
+    padding: 0;
+    color: $darkBlue;
+  &:focus{
+      background-color: $yellow !important;
+  }
+}
 
 
 .custom-file-label::after {
-    content: "choose your file";
-    background-color:$white;
-    border: none;
-    left: auto;
-    right: auto;
-    font-size: 16px;
-    color: $darkBlue;
-    font-weight: normal;
-    
-
+    // content: "choose your file";
+    // background-color:$white;
+    // border: none;
+    // left: auto;
+    // right: auto;
+    // font-size: 16px;
+    // color: $darkBlue;
+    // font-weight: normal;
+  
+    // &:active{
+    //     background-color: $yellow;
+    // }
+// position: absolute;
+// top: none;
+// bottom: none;
+// z-index: 3;
+// display: none;
+// height: 0;
+// line-height: 1.5;
+// color:white;
+// border: none;
+// content: "";
+&:focus{
+    background-color: $yellow !important;
 }
+&:active{
+    background-color: $yellow;
+}
+}
+
+
 .custom-file-label,
 .custom-file-label::after {
-  height: auto;
-  padding-top: 0;
-  padding-bottom: 0;
-  border: none;
+//   height: auto;
+//   padding-top: 0;
+//   padding-bottom: 0;
+//   border: none;
 }
 .custom-file-label,
 .custom-file-label::before {
-  background-color: aqua;
-  border: none;
-  position: relative;
-  display: table-footer-group;
+//   background-color: aqua;
+//   border: none;
+//   position: relative;
+//   display: table-footer-group;
 }
