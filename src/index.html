@@ -326,9 +326,9 @@
         <div class="col-2">
             <div class="col">
                 <div dir="rtl">
-                    <label class="govsa-checkbox-container">العنوان
+                    <label class="govsa-checkbox-container rtl">العنوان
                         <input type="checkbox" class="govsa-input-checkbox">
-                        <span class="govsa-checkbox-checkmark"></span>
+                        <span class="govsa-checkbox-checkmark" ></span>
                     </label>
                 </div>
             </div>
@@ -1000,15 +1000,14 @@
         <div class="col-6">
             <form>
                 <div class="govsa-fileuploader">
-                    <input class="test-f" type="file" name="file"
-                        onchange="this.form.filename.value = this.files.length ? this.files[0].name : ''" />
+                    <input class="choose-file" type="file" name="file"/>
                     <a href="#">Choose your file</a>
                     <P>Only .jpg and .png files. 500kb max file size</p>
-                    <input name="filename" class="govsa-file__name" placeholder="No file choosen" readonly>
-                    <i class="govsa--closed clear" onclick="clear()"></i>
+                    <label class="govsa-file__name">No file choosen</label>
+                    <i class="govsa--closed clear"></i>
                     <div>
                         <!-- <span class="govsa-form-error-input">! Error message</span> -->
-                        <button type="button" class="btn btn--darkBlue-pastel">UPLOAD</button>
+                        <button type="button" class="btn btn--violet disabled govsa-but--upload">UPLOAD</button>
                     </div>
 
                 </div>
@@ -1021,16 +1020,16 @@
                             onchange="this.form.filename.value = this.files.length ? this.files[0].name : ''" />
                         <a href="#">Choose your file</a>
                         <P>Only .jpg and .png files. 500kb max file size</p>
-                        <input name="filename" class="govsa-file__name" placeholder="No file choosen" readonly>
-
+                        <label class="govsa-file__name">No file choosen error</label>
+                        <i class="govsa--closed clear"></i>
                         <span class="govsa-form-error-input d-block">! Error message</span>
                         <div>
-                            <button type="button" class="btn btn--darkBlue-pastel btn-clear">UPLOAD</button>
+                            <button type="button" class="btn btn--violet disabled govsa-but--upload">UPLOAD</button>
                         </div>
     
                     </div>
                 </form>
-            </div>
+        </div>
     </div>
     <br>
     <h3>Icons</h3>
@@ -1047,15 +1046,19 @@
     </div>
 
 </body>
-
 <script>
-        // Add the following code if you want the name of the file appear on select
-        // $(".custom-file-input").on("change", function() {
-        //   var fileName = $(this).val().split("\\").pop();
-        //   $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
-        // });
-       function clear(){
-           $(".govsa-file__name").text("");
-       }
-        </script>
+    // Add the following code if you want the name of the file appear on select
+    $(".choose-file").on("change", function () {
+        var fileName = $(this).val().split("\\").pop();
+        $(this).siblings(".govsa-file__name").html(fileName);
+
+        $(this).parent().children().next().next().next().next().next().children('.govsa-but--upload').removeClass('disabled');
+    });
+   
+    $(".clear").click(function () {
+        $(this).parent().children().next().next().next(".govsa-file__name").text("No file choosen");
+        
+        $(this).parent().children().next().next().next().next().next().children('.govsa-but--upload').addClass('disabled');
+    });
+</script>
 </html>

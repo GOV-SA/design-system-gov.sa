@@ -17,6 +17,7 @@
     padding: 15px 0px 0px 0px;
     background-color: $green;
     border-radius: 0 0 6px 6px;
+    height: 60px;
 
     div > div > span{
         font-weight: bold;
@@ -40,4 +41,12 @@
     bottom: -2px;
     background: $yellow;
     z-index: -1;
+}
+.govsa-card{
+    height: 225px;
+    width: 302px;
+    & .row{
+        align-items: baseline;
+    }
+   
 }

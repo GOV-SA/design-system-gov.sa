@@ -1,12 +1,6 @@
 .govsa-fileuploader{
     .govsa-file__name{
-        background-color: white ; 
         color: $darkBlue;
-        border:none;     
-        &::placeholder {
-            color: $darkBlue;
-            // opacity: 1;
-          } 
     }
     a{
         left: 15px;
@@ -21,46 +15,14 @@
    i{
        font-size: 10px;
        cursor: pointer;
+       padding: 0px 10px;
+       color: $darkBlue;
    }
     input[type='file']
     , input[type='file']::after{
         opacity: 0;
-        height: 17px; 
-        
+        height: 17px;   
     }
 
 }
 
-
-
-
-
-.custom-file-label::after {
-    content: "choose your file";
-    background-color:$white;
-    border: none;
-    left: auto;
-    right: auto;
-    font-size: 16px;
-    color: $darkBlue;
-    font-weight: normal;
-  
-    &:active{
-        background-color: $yellow;
-    }
-
-}
-.custom-file-label,
-.custom-file-label::after {
-  height: auto;
-  padding-top: 0;
-  padding-bottom: 0;
-  border: none;
-}
-.custom-file-label,
-.custom-file-label::before {
-  background-color: aqua;
-  border: none;
-  position: relative;
-  display: table-footer-group;
-}
