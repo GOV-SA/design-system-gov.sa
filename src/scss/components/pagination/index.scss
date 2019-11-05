@@ -10,6 +10,7 @@
     & i {
       color: white;
     }
+    color: $darkBlue;
   }
   &:active {
     background-color: $darkBlue;
@@ -25,6 +26,9 @@
 .page-item {
   text-decoration: none;
   border: none;
+  &:not(:first-child) .page-link {
+    margin-left: 5px;
+  }
   &:last-child .page-link,
   &:first-child .page-link {
     border-radius: 0;
@@ -36,8 +40,8 @@
   &:last-child .page-link:focus,
   &:first-child .page-link:focus {
     border-radius: 0;
-    border: 1px solid $yellow;
-    outline: 1px solid $yellow;
+    // border: 1px solid $yellow;
+    outline: 2px solid $yellow;
     background-color: transparent;
   }
   &.active-page .page-link {
