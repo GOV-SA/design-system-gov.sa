@@ -1,14 +1,15 @@
 .govsa-card__tag{
     float: right;
     padding:0.25rem 0 0.25rem 0.25rem ;
-
+    text-align: center;
    p{
     background-color: $white;
     border-radius: 8px 0px 0px 8px;
     border-color: $green;
+    color: $black;
     padding: 0.25rem;
     @include font-size( $font-size-sm * .875 );
-    font-weight:  $font-weight-normal;
+    font-weight:  $font-weight-bold;
    } 
 
 }
@@ -28,6 +29,7 @@
 .govsa-card:hover{
     background-color: $green;
     cursor: pointer;
+    color: $white;
 }
 .govsa-card:active{
     border-color: $yellow;
@@ -44,7 +46,7 @@
 }
 .govsa-card{
     height: 225px;
-    width: 302px;
+    // width: 302px;
 }
 .govsa-img{
     padding: 0px 5px 0px 0px;
