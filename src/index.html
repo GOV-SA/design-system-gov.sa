@@ -512,23 +512,17 @@
     <div class="row">
         <div class="col-6">
             <form action="">
-                <div class="form-group">
-                    <input class="govsa-form-control" type="text" placeholder="Label">
-                </div>
-                <div class="form-group">
-                    <input class="govsa-form-control" type="text" placeholder="Label" disabled>
-                </div>
                 <div class="d-md-flex flex-column">
-                    <label class="govsa-form-input-label" for="">Label</label>
-                    <input class="govsa-form-control" type="text" placeholder="Input text |">
+                    <label class="govsa-input__label" for="">Label</label>
+                    <input class="govsa-input__text" type="text" placeholder="Input text |">
                 </div>
                 <div class="mt-3 d-md-flex flex-column">
-                    <label class="govsa-form-input-label" for="">Label *</label>
-                    <input class="govsa-form-control" type="text" placeholder="Input text |">
+                    <label class="govsa-input__label" for="">Label *</label>
+                    <input class="govsa-input__text" type="text" placeholder="Input text |">
                 </div>
                 <div class="mt-3 d-md-flex flex-column">
-                    <label class="govsa-form-input-label" for="">Label</label>
-                    <input class="govsa-form-control govsa-form-error-input-border" type="text"
+                    <label class="govsa-input__label" for="">Label</label>
+                    <input class="govsa-input__text govsa-form-error-input-border" type="text"
                         placeholder="Input text |">
                     <span class="govsa-form-error-input">! Error message</span>
                 </div>
@@ -536,23 +530,17 @@
         </div>
         <div class="col-6" dir="rtl">
             <form action="">
-                <div class="form-group">
-                    <input class="govsa-form-control" type="text" placeholder="العنوان">
-                </div>
-                <div class="form-group">
-                    <input class="govsa-form-control" type="text" placeholder="العنوان" disabled>
+                <div class="mt-3 d-md-flex flex-column">
+                    <label class="govsa-input__label" for="">عنوان</label>
+                    <input class="govsa-input__text" type="text" placeholder="أدخل النص">
                 </div>
                 <div class="mt-3 d-md-flex flex-column">
-                    <label class="govsa-form-input-label" for="">عنوان</label>
-                    <input class="govsa-form-control" type="text" placeholder="أدخل النص">
+                    <label class="govsa-input__label" for="">عنوان *</label>
+                    <input class="govsa-input__text" type="text" placeholder="أدخل النص">
                 </div>
                 <div class="mt-3 d-md-flex flex-column">
-                    <label class="govsa-form-input-label" for="">عنوان *</label>
-                    <input class="govsa-form-control" type="text" placeholder="أدخل النص">
-                </div>
-                <div class="mt-3 d-md-flex flex-column">
-                    <label class="govsa-form-input-label" for="">عنوان</label>
-                    <input class="govsa-form-control" type="text" placeholder="أدخل النص">
+                    <label class="govsa-input__label" for="">عنوان</label>
+                    <input class="govsa-input__text" type="text" placeholder="أدخل النص">
                     <span class="govsa-form-error-input">رسالة خطأ</span>
                 </div>
             </form>
@@ -997,15 +985,15 @@
     <div class="row my-3">
         <div class="col-6">
             <form>
-                <div class="govsa-fileuploader">
-                    <input class="choose-file" type="file" name="file"/>
+                <div class="govsa-fileupload">
+                    <input class="govsa-fileupload__input" type="file" name="file"/>
                     <a href="#">Choose your file</a>
                     <P>Only .jpg and .png files. 500kb max file size</p>
-                    <label class="govsa-file__name">No file choosen</label>
-                    <i class="govsa--closed clear"></i>
+                    <label class="govsa-fileupload__name">No file choosen</label>
+                    <i class="govsa--closed clear d-none"></i>
                     <div>
                         <!-- <span class="govsa-form-error-input">! Error message</span> -->
-                        <button type="button" class="btn btn--violet disabled govsa-but--upload">UPLOAD</button>
+                        <button type="button" class="btn btn--violet govsa-fileupload__bnt" disabled >UPLOAD</button>
                     </div>
 
                 </div>
@@ -1013,16 +1001,15 @@
         </div>
         <div class="col-6">
                 <form>
-                    <div class="govsa-fileuploader">
-                        <input type="file" name="file"
-                            onchange="this.form.filename.value = this.files.length ? this.files[0].name : ''" />
+                    <div class="govsa-fileupload">
+                        <input class="govsa-fileupload__input" type="file" name="file" />
                         <a href="#">Choose your file</a>
                         <P>Only .jpg and .png files. 500kb max file size</p>
-                        <label class="govsa-file__name">No file choosen error</label>
-                        <i class="govsa--closed clear"></i>
+                        <label class="govsa-fileupload__name">No file choosen error</label>
+                        <i class="govsa--closed clear d-none"></i>
                         <span class="govsa-form-error-input d-block">! Error message</span>
                         <div>
-                            <button type="button" class="btn btn--violet disabled govsa-but--upload">UPLOAD</button>
+                            <button type="button" class="btn btn--violet govsa-fileupload__bnt" disabled>UPLOAD</button>
                         </div>
     
                     </div>
@@ -1039,24 +1026,30 @@
         <i class="govsa--arrowup"></i>
         <i class="govsa--edit"></i>
         <i class="govsa--delete"></i>
-        <i class="govsa--closed"></i>
+        <i class="govsa--info-blue"></i>
+        <span class="govsa-icon govsa--info-blue"></span>
 
     </div>
 
 </body>
 <script>
     // Add the following code if you want the name of the file appear on select
-    $(".choose-file").on("change", function () {
+    $(".govsa-fileupload__input").on("change", function () {
         var fileName = $(this).val().split("\\").pop();
-        $(this).siblings(".govsa-file__name").html(fileName);
+        $(this).siblings(".govsa-fileupload__name").html(fileName);
 
-        $(this).parent().children().next().next().next().next().next().children('.govsa-but--upload').removeClass('disabled');
+        $(this).parent().children().next().next().next().next(".clear").removeClass("d-none");
+
+        $(this).parent().children().next().next().next().next().next().children('.govsa-fileupload__bnt').removeAttr("disabled");;
     });
    
     $(".clear").click(function () {
-        $(this).parent().children().next().next().next(".govsa-file__name").text("No file choosen");
+        $(this).parent().children().next().next().next(".govsa-fileupload__name").text("No file choosen");
 
-        $(this).parent().children().next().next().next().next().next().children('.govsa-but--upload').addClass('disabled');
+        $(this).parent().children().next().next().next().next().next().children('.govsa-fileupload__bnt').attr('disabled', 'disabled');
+        $(this).parent().children(".govsa-fileupload__input").val('');
+
+        $(this).parent().children().next().next().next().next(".clear").addClass("d-none");
     });
 </script>
 </html>
