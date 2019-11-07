@@ -301,6 +301,7 @@
         </div>
     </div>
     <br>
+    <h3>Checkboxes</h3>
     <hr>
     <div class="row">
         <div class="col-6">
@@ -317,26 +318,26 @@
     <div class="row">
         <div class="col-2">
             <div class="col">
-                <label class="govsa-checkbox-container">Label
-                    <input type="checkbox" class="govsa-input-checkbox">
-                    <span class="govsa-checkbox-checkmark"></span>
+                <label class="govsa-checkbox">Label
+                    <input type="checkbox">
+                    <span class="govsa-checkbox__checkmark"></span>
                 </label>
             </div>
         </div>
         <div class="col-2">
             <div class="col">
                 <div dir="rtl">
-                    <label class="govsa-checkbox-container rtl">العنوان
-                        <input type="checkbox" class="govsa-input-checkbox">
-                        <span class="govsa-checkbox-checkmark" ></span>
+                    <label class="govsa-checkbox">العنوان
+                        <input type="checkbox">
+                        <span class="govsa-checkbox__checkmark"></span>
                     </label>
                 </div>
             </div>
         </div>
     </div>
-    <div>
-        <hr>
-    </div>
+    <br>
+    <h3>Radio Buttons</h3>
+    <hr>
     <div class="row">
         <div class="col-3">
             <h3>Radio Buttons - English</h3>
@@ -350,9 +351,9 @@
         <div class="col-2">
             <form action="">
                 <div class="form-group col-md-3">
-                    <label class="govsa-radio-container">Label
+                    <label class="govsa-radio">Label
                         <input type="radio" class="govsa-input-checkbox">
-                        <span class="govsa-radio-checkmark"></span>
+                        <span class="govsa-radio__checkmark"></span>
                     </label>
                 </div>
             </form>
@@ -360,9 +361,9 @@
         <div class="col-2" dir="rtl">
             <form action="">
                 <div class="form-group col-md-3">
-                    <label class="govsa-radio-container">عنوان
+                    <label class="govsa-radio">عنوان
                         <input type="radio" class="govsa-input-checkbox">
-                        <span class="govsa-radio-checkmark"></span>
+                        <span class="govsa-radio__checkmark"></span>
                     </label>
                 </div>
             </form>
@@ -438,18 +439,19 @@
             <p>Card/agencies</p>
             <div class="govsa-card card">
                 <div class="card-body">
-                    <div class="row">
-                        <div class="col-7">
-                            <h6 class="">King Abdullah bin Abdulaziz Foundation for Development Housing Dedicated to His Parents</h6>
+                    <div class="d-md-flex align-items-center">
+                        <div class="govsa-card__container">
+                            <h6 class="">King Abdullah bin Abdulaziz Foundation for Development Housing Dedicated to His
+                                Parents</h6>
                         </div>
-                        <div class="col-5 govsa-img">
+                        <div class="govsa-card__container">
                             <img src="./images/mcit.jpg" style="width: 100%">
                         </div>
                     </div>
                 </div>
                 <div class="govsa-card__footer">
                     <div class="row no-gutters">
-                        <div class="col-5 text-white">
+                        <div class="col-5">
                             <span>95</span> services
                         </div>
                         <div class="col-7 govsa-card__tag">
@@ -459,6 +461,7 @@
                 </div>
             </div>
         </div>
+
     </div>
     <div class="row my-3">
         <div class="col-md-3">
@@ -486,7 +489,7 @@
             <p>Card/service/click</p>
             <div class="govsa-card card">
                 <div class="card-body">
-                    <h6 class="mb-4">Enquire About Troubled Real Estate Shareholding 
+                    <h6 class="mb-4">Enquire About Troubled Real Estate Shareholding
                         lines also)</h6>
                     <p class="body--2">This is a wider card with supporting text below as a natur. </p>
                 </div>
@@ -499,55 +502,43 @@
         </div>
     </div>
     <br>
+    <h3>Text Input</h3>
     <hr>
     <div class="row">
         <div class="col-6">
-            <h3>Text Input - English</h3>
-        </div>
-        <div class="col-6">
-            <h3>Text Input - Arabic</h3>
-        </div>
-    </div>
-    <hr>
-    <div class="row">
-        <div class="col-6">
-            <form action="">
-                <div class="d-md-flex flex-column">
-                    <label class="govsa-input__label" for="">Label</label>
-                    <input class="govsa-input__text" type="text" placeholder="Input text |">
-                </div>
-                <div class="mt-3 d-md-flex flex-column">
-                    <label class="govsa-input__label" for="">Label *</label>
-                    <input class="govsa-input__text" type="text" placeholder="Input text |">
-                </div>
-                <div class="mt-3 d-md-flex flex-column">
-                    <label class="govsa-input__label" for="">Label</label>
-                    <input class="govsa-input__text govsa-form-error-input-border" type="text"
-                        placeholder="Input text |">
-                    <span class="govsa-form-error-input">! Error message</span>
-                </div>
-            </form>
+            <div class="col-12">
+                <label class="govsa-input__label" for="">Label</label>
+                <input class="govsa-input" type="text" placeholder="Input text |">
+            </div>
+            <div class="col-12">
+                <label class="govsa-input__label" for="">Lable <span>*</span></label>
+                <input class="govsa-input" type="text" placeholder="Input text |">
+            </div>
+            <div class="col-12">
+                <label class="govsa-input__label" for="">Lable</label>
+                <input class="govsa-input govsa-border--red" type="text" placeholder="Input text |">
+                <span class="govsa-errorMessage">Error message</span>
+            </div>
         </div>
         <div class="col-6" dir="rtl">
-            <form action="">
-                <div class="mt-3 d-md-flex flex-column">
-                    <label class="govsa-input__label" for="">عنوان</label>
-                    <input class="govsa-input__text" type="text" placeholder="أدخل النص">
-                </div>
-                <div class="mt-3 d-md-flex flex-column">
-                    <label class="govsa-input__label" for="">عنوان *</label>
-                    <input class="govsa-input__text" type="text" placeholder="أدخل النص">
-                </div>
-                <div class="mt-3 d-md-flex flex-column">
-                    <label class="govsa-input__label" for="">عنوان</label>
-                    <input class="govsa-input__text" type="text" placeholder="أدخل النص">
-                    <span class="govsa-form-error-input">رسالة خطأ</span>
-                </div>
-            </form>
+            <div class="col-12">
+                <label class="govsa-input__label" for="">عنوان</label>
+                <input class="govsa-input" type="text" placeholder="أدخل النص">
+            </div>
+            <div class="col-12">
+                <label class="govsa-input__label" for="">عنوان <span>*</span></label>
+                <input class="govsa-input" type="text" placeholder="أدخل النص">
+            </div>
+            <div class="col-12">
+                <label class="govsa-input__label" for="">عنوان</label>
+                <input class="govsa-input govsa-border--red" type="text" placeholder="أدخل النص">
+                <span class="govsa-errorMessage">رسالة خطأ</span>
+            </div>
         </div>
     </div>
     <hr>
-
+    <h3>Dropdown </h3>
+    <hr>
     <div class="row">
         <div class="col-3">
             <h3>Dropdown - English</h3>
@@ -561,64 +552,64 @@
         <div class="col-2">
             <div>
                 <div class="dropdown govsa-dropdown">
-                    <button class="govsa-dropdown-btn dropdown-toggle" type="button" id="" data-toggle="dropdown"
+                    <button class="dropdown-toggle" type="button" id="" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                         Label
-                        <i class="govsa-icon govsa--arrowdown" style="font-size: 6px"></i>
+                        <i class="govsa-icon govsa--arrowdown"></i>
                     </button>
-                    <div class="dropdown-menu govsa-dropdown-menu ">
-                        <a class="govsa-dropdown-item" href="#">Lorem ipsum</a>
-                        <a class="govsa-dropdown-item" href="#">Lorem ipsum</a>
-                        <a class="govsa-dropdown-item" href="#">Lorem ipsum</a>
-                    </div>
+                    <div class="dropdown-menu">
+                        <a class="govsa-dropdown__item" href="#">Lorem ipsum</a>
+                        <a class="govsa-dropdown__item" href="#">Lorem ipsum</a>
+                        <a class="govsa-dropdown__item" href="#">Lorem ipsum</a>
+                    </div> 
                 </div>
             </div>
             <div class="mt-3">
                 <div class="dropdown govsa-dropdown">
-                    <button class="govsa-dropdown-btn dropdown-toggle" type="button" id="" data-toggle="dropdown"
+                    <button class="dropdown-toggle" type="button" id="" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                         Label
-                        <i class="govsa-icon govsa--arrowdown" style="font-size: 6px"></i>
+                        <i class="govsa-icon govsa--arrowdown"></i>
                     </button>
-                    <div class="dropdown-menu govsa-dropdown-menu scrollable-menu">
-                        <a class="govsa-dropdown-item" href="#">Lorem ipsum</a>
-                        <a class="govsa-dropdown-item" href="#">Lorem ipsum</a>
-                        <a class="govsa-dropdown-item" href="#">Lorem ipsum</a>
-                        <a class="govsa-dropdown-item" href="#">Lorem ipsum</a>
-                        <a class="govsa-dropdown-item" href="#">Lorem ipsum</a>
+                    <div class="dropdown-menu">
+                        <a class="govsa-dropdown__item" href="#">Lorem ipsum</a>
+                        <a class="govsa-dropdown__item" href="#">Lorem ipsum</a>
+                        <a class="govsa-dropdown__item" href="#">Lorem ipsum</a>
+                        <a class="govsa-dropdown__item" href="#">Lorem ipsum</a>
+                        <a class="govsa-dropdown__item" href="#">Lorem ipsum</a>
                     </div>
                 </div>
             </div>
 
         </div>
-        <div class="col-2">
+        <div class="col-2" dir="rtl">
             <div>
-                <div class="dropdown govsa-dropdown" dir="rtl">
-                    <button class="govsa-dropdown-btn dropdown-toggle" type="button" id="" data-toggle="dropdown"
+                <div class="dropdown govsa-dropdown">
+                    <button class="dropdown-toggle" type="button" id="" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                         العنوان
-                        <i class="govsa-icon govsa--arrowdown" style="font-size: 6px"></i>
+                        <i class="govsa-icon govsa--arrowdown"></i>
                     </button>
-                    <div class="dropdown-menu govsa-dropdown-menu ">
-                        <a class="govsa-dropdown-item" href="#">الاختيار ١</a>
-                        <a class="govsa-dropdown-item" href="#">الاختيار ٢</a>
-                        <a class="govsa-dropdown-item" href="#">الاختيار ٣</a>
+                    <div class="dropdown-menu">
+                        <a class="govsa-dropdown__item" href="#">الاختيار ١</a>
+                        <a class="govsa-dropdown__item" href="#">الاختيار ٢</a>
+                        <a class="govsa-dropdown__item" href="#">الاختيار ٣</a>
                     </div>
                 </div>
             </div>
-            <div class="mt-3">
-                <div class="dropdown govsa-dropdown" dir="rtl">
-                    <button class="govsa-dropdown-btn dropdown-toggle" type="button" id="" data-toggle="dropdown"
+            <div class="mt-3"  dir="rtl">
+                <div class="dropdown govsa-dropdown">
+                    <button class="dropdown-toggle" type="button" id="" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                         العنوان
-                        <i class="govsa-icon govsa--arrowdown" style="font-size: 6px"></i>
+                        <i class="govsa-icon govsa--arrowdown"></i>
                     </button>
-                    <div class="dropdown-menu govsa-dropdown-menu scrollable-menu">
-                        <a class="govsa-dropdown-item" href="#">الاختيار ١</a>
-                        <a class="govsa-dropdown-item" href="#">الاختيار ٢</a>
-                        <a class="govsa-dropdown-item" href="#">الاختيار ٣</a>
-                        <a class="govsa-dropdown-item" href="#">الاختيار ٣</a>
-                        <a class="govsa-dropdown-item" href="#">الاختيار ٣</a>
+                    <div class="dropdown-menu">
+                        <a class="govsa-dropdown__item" href="#">الاختيار ١</a>
+                        <a class="govsa-dropdown__item" href="#">الاختيار ٢</a>
+                        <a class="govsa-dropdown__item" href="#">الاختيار ٣</a>
+                        <a class="govsa-dropdown__item" href="#">الاختيار ٣</a>
+                        <a class="govsa-dropdown__item" href="#">الاختيار ٣</a>
                     </div>
                 </div>
             </div>
@@ -671,24 +662,24 @@
     <div class="row">
         <div class="col-3">
             <div>
-                <nav aria-label=" navigation example">
+                <nav aria-label="navigation">
                     <ul class="pagination">
-                        <li class="page-item"><a class="page-link" href="#"><i
-                                    class="govsa--icon govsa--arrowleft"></i></a>
+                        <li class="page-item"><a class="page-link" href="#">
+                            <i class="govsa--icon govsa--arrowleft"></i></a>
                         </li>
                         <li class="page-item"><a class="page-link" href="#">1</a></li>
                         <li class="page-item active-page"><a class="page-link" href="#">2</a></li>
                         <li class="page-item"><a class="page-link" href="#">3</a></li>
                         <li class="page-item"><a class="page-link" href="#">4</a></li>
-                        <li class="page-item"><a class="page-link" href="#"><i
-                                    class="govsa--icon govsa--arrowright"></i></a>
+                        <li class="page-item"><a class="page-link" href="#">
+                            <i class="govsa--icon govsa--arrowright"></i></a>
                         </li>
                     </ul>
                 </nav>
             </div>
-           
+
             <div>
-                <nav aria-label=" navigation ">
+                <nav aria-label="navigation">
                     <ul class="pagination">
                         <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1"
                                 aria-disabled="true"><i class="govsa--icon govsa--arrowleft"></i></a>
@@ -704,7 +695,7 @@
                 </nav>
             </div>
             <div>
-                <nav aria-label=" navigation ">
+                <nav aria-label=" navigation">
                     <ul class="pagination">
                         <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1"
                                 aria-disabled="true"><i class="govsa--icon govsa--arrowleft"></i></a>
@@ -740,21 +731,21 @@
                 </nav>
             </div>
             <div>
-                    <nav aria-label=" navigation ">
-                        <ul class="pagination">
-                            <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1"
-                                    aria-disabled="true"><i class="govsa--icon govsa--arrowright"></i></a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">١</a></li>
-                            <li class="page-item active-page"><a class="page-link" href="#">٢</a></li>
-                            <li class="page-item"><a class="page-link" href="#">٣</a></li>
-                            <li class="page-item"><a class="page-link" href="#">٤</a></li>
-                            <li class="page-item"><a class="page-link" href="#"><i
-                                        class="govsa--icon govsa--arrowleft"></i></a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                <nav aria-label=" navigation ">
+                    <ul class="pagination">
+                        <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1"
+                                aria-disabled="true"><i class="govsa--icon govsa--arrowright"></i></a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">١</a></li>
+                        <li class="page-item active-page"><a class="page-link" href="#">٢</a></li>
+                        <li class="page-item"><a class="page-link" href="#">٣</a></li>
+                        <li class="page-item"><a class="page-link" href="#">٤</a></li>
+                        <li class="page-item"><a class="page-link" href="#"><i
+                                    class="govsa--icon govsa--arrowleft"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
             <div>
                 <nav aria-label=" navigation ">
                     <ul class="pagination">
@@ -895,7 +886,7 @@
             <a href="" class="disabled">Link text</a>
         </div>
 
-        <div class="col-md-3" dir="rtl">
+        <div class="col-md-3">
             <p>Link/standard/default</p>
             <a href=""> <i class="govsa-icon govsa--arrowleft"></i> Link text</a>
         </div>
@@ -986,34 +977,34 @@
         <div class="col-6">
             <form>
                 <div class="govsa-fileupload">
-                    <input class="govsa-fileupload__input" type="file" name="file"/>
+                    <input class="govsa-fileupload__input" type="file" name="file" />
                     <a href="#">Choose your file</a>
                     <P>Only .jpg and .png files. 500kb max file size</p>
                     <label class="govsa-fileupload__name">No file choosen</label>
                     <i class="govsa--closed clear d-none"></i>
                     <div>
                         <!-- <span class="govsa-form-error-input">! Error message</span> -->
-                        <button type="button" class="btn btn--violet govsa-fileupload__bnt" disabled >UPLOAD</button>
+                        <button type="button" class="btn btn--violet govsa-fileupload__bnt" disabled>UPLOAD</button>
                     </div>
 
                 </div>
             </form>
         </div>
         <div class="col-6">
-                <form>
-                    <div class="govsa-fileupload">
-                        <input class="govsa-fileupload__input" type="file" name="file" />
-                        <a href="#">Choose your file</a>
-                        <P>Only .jpg and .png files. 500kb max file size</p>
-                        <label class="govsa-fileupload__name">No file choosen error</label>
-                        <i class="govsa--closed clear d-none"></i>
-                        <span class="govsa-form-error-input d-block">! Error message</span>
-                        <div>
-                            <button type="button" class="btn btn--violet govsa-fileupload__bnt" disabled>UPLOAD</button>
-                        </div>
-    
+            <form>
+                <div class="govsa-fileupload">
+                    <input class="govsa-fileupload__input" type="file" name="file" />
+                    <a href="#">Choose your file</a>
+                    <P>Only .jpg and .png files. 500kb max file size</p>
+                    <label class="govsa-fileupload__name">No file choosen error</label>
+                    <i class="govsa--closed clear d-none"></i>
+                    <span class="govsa-errorMessage">! Error message</span>
+                    <div>
+                        <button type="button" class="btn btn--violet govsa-fileupload__bnt" disabled>UPLOAD</button>
                     </div>
-                </form>
+
+                </div>
+            </form>
         </div>
     </div>
     <br>
@@ -1042,7 +1033,7 @@
 
         $(this).parent().children().next().next().next().next().next().children('.govsa-fileupload__bnt').removeAttr("disabled");;
     });
-   
+
     $(".clear").click(function () {
         $(this).parent().children().next().next().next(".govsa-fileupload__name").text("No file choosen");
 
@@ -1052,4 +1043,5 @@
         $(this).parent().children().next().next().next().next(".clear").addClass("d-none");
     });
 </script>
+
 </html>

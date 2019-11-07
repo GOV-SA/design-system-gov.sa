@@ -1,79 +1,68 @@
-.govsa-checkbox-container {
+/* Hide the browser's default checkbox */
+/* Create a custom checkbox */
+/* On mouse-over */
+/* Create the checkmark/indicator (hidden when not checked) */
+/* Show the checkmark when checked */
+
+.govsa-checkbox {
   display: block;
   position: relative;
   padding-left: $form-check-padding-left;
   padding-top: 3px;
-
   cursor: pointer;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 
   input {
-    position: absolute;
     opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
+
+    &:hover~.govsa-checkbox__checkmark {
+      box-shadow: 0 0 0 3px $gray-pastel;
+    }
+
+    &:active~.govsa-checkbox__checkmark {
+      box-shadow: 0 0 0 3px $yellow;
+    }
+
+    &:checked~.govsa-checkbox__checkmark {
+      background-color: $darkBlue;
+
+      &:after {
+        display: block;
+      }
+    }
+  }
+
+  .govsa-checkbox__checkmark {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: $white;
+    border: 1px solid $black;
+    border-radius: 2px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 6px;
+      top: 1px;
+      width: 5px;
+      height: 12px;
+      border: solid $white;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(4deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
   }
 }
 
-/* Hide the browser's default checkbox */
-
-/* Create a custom checkbox */
-
-.govsa-checkbox-checkmark {
-  position: absolute;
-  top: 5px;
-  left: 0;
-  height: 18px;
-  width: 18px;
-  background-color: #fff;
-  border: 1px solid black;
-  border-radius: 2px;
-}
-
-/* On mouse-over */
-
-.govsa-checkbox-container {
-  &:hover input ~ .govsa-checkbox-checkmark {
-    box-shadow: 0 0 0 3px #eaeaea;
+[dir="rtl"] {
+  .govsa-checkbox__checkmark {
+    transform: scaleX(-1);
   }
-  input:active ~ .govsa-checkbox-checkmark {
-    box-shadow: 0 0 0 3px $yellow;
-  }
-  input:checked ~ .govsa-checkbox-checkmark {
-    background-color: #160f3e;
-  }
-}
-
-/* Create the checkmark/indicator (hidden when not checked) */
-
-.govsa-checkbox-checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-/* Show the checkmark when checked */
-
-.govsa-checkbox-container {
-  input:checked ~ .govsa-checkbox-checkmark:after {
-    display: block;
-  }
-
-  .govsa-checkbox-checkmark::after {
-    left: 6px;
-    top: 1px;
-    width: 5px;
-    height: 12px;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    -webkit-transform: rotate(4deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-}
-.govsa-checkbox-container.rtl .govsa-checkbox-checkmark {
-  transform: scaleX(-1);
 }
