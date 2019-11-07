@@ -1,21 +1,34 @@
-a{
+.govsa-link {
     @include font-size($font-size-sm);
     font-weight: $font-weight-normal;
     text-decoration: underline;
-    i{
+
+    i {
         text-decoration: none !important;
-        color: $yellow;
+        color: $darkBlue;
+    }
+
+    &:active {
+        background-color: $yellow;
+        color: $darkBlue;
+
+        i {
+            color: $darkBlue;
+        }
+    }
+
+    &:hover {
+        i {
+            color: $blue;
+        }
     }
 }
 
-a:active{
-    background-color: $yellow;
-    color: $darkBlue;
-  
-  }
+.govsa-link.disabled {
+    color: $gray;
+    pointer-events: none;
 
-  a.disabled{
-      color: $gray;
-      pointer-events: none;
-  }
-  
+    i {
+        color: $gray;
+    }
+}

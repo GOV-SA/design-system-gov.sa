@@ -663,7 +663,7 @@
         <div class="col-3">
             <div>
                 <nav aria-label="navigation">
-                    <ul class="pagination">
+                    <ul class="pagination govsa-pagination">
                         <li class="page-item"><a class="page-link" href="#">
                             <i class="govsa--icon govsa--arrowleft"></i></a>
                         </li>
@@ -680,7 +680,7 @@
 
             <div>
                 <nav aria-label="navigation">
-                    <ul class="pagination">
+                    <ul class="pagination govsa-pagination">
                         <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1"
                                 aria-disabled="true"><i class="govsa--icon govsa--arrowleft"></i></a>
                         </li>
@@ -696,7 +696,7 @@
             </div>
             <div>
                 <nav aria-label=" navigation">
-                    <ul class="pagination">
+                    <ul class="pagination govsa-pagination">
                         <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1"
                                 aria-disabled="true"><i class="govsa--icon govsa--arrowleft"></i></a>
                         </li>
@@ -716,7 +716,7 @@
         <div class="col-3" dir="rtl">
             <div>
                 <nav aria-label=" navigation ">
-                    <ul class="pagination">
+                    <ul class="pagination govsa-pagination">
                         <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1"
                                 aria-disabled="true"><i class="govsa--icon govsa--arrowright"></i></a>
                         </li>
@@ -731,8 +731,8 @@
                 </nav>
             </div>
             <div>
-                <nav aria-label=" navigation ">
-                    <ul class="pagination">
+                <nav aria-label=" navigation">
+                    <ul class="pagination govsa-pagination">
                         <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1"
                                 aria-disabled="true"><i class="govsa--icon govsa--arrowright"></i></a>
                         </li>
@@ -747,8 +747,8 @@
                 </nav>
             </div>
             <div>
-                <nav aria-label=" navigation ">
-                    <ul class="pagination">
+                <nav aria-label=" navigation">
+                    <ul class="pagination govsa-pagination">
                         <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1"
                                 aria-disabled="true"><i class="govsa--icon govsa--arrowright"></i></a>
                         </li>
@@ -871,36 +871,20 @@
     <div class="row my-3">
         <div class="col-md-3">
             <p>Link/standard/default</p>
-            <a href="">Link text</a>
-        </div>
-        <div class="col-md-3">
-            <p>Link/standard/over</p>
-            <a class="text-blue" href="">Link text</a>
-        </div>
-        <div class="col-md-3">
-            <p>Link/standard/click</p>
-            <a class="bg-warning" href="">Link text</a>
+            <a class="govsa-link" href="">Link text</a>
         </div>
         <div class="col-md-3">
             <p>Link/standard/disabled</p>
-            <a href="" class="disabled">Link text</a>
+            <a class="govsa-link disabled" href="">Link text</a>
         </div>
 
         <div class="col-md-3">
             <p>Link/standard/default</p>
-            <a href=""> <i class="govsa-icon govsa--arrowleft"></i> Link text</a>
-        </div>
-        <div class="col-md-3">
-            <p>Link/standard/over</p>
-            <a class="text-blue" href=""> <i class="govsa-icon govsa--arrowleft"></i> Link text</a>
-        </div>
-        <div class="col-md-3">
-            <p>Link/standard/click</p>
-            <a class="bg-warning" href=""> <i class="govsa-icon govsa--arrowleft"></i> Link text</a>
+            <a class="govsa-link" href=""> <i class="govsa-icon govsa--arrowleft"></i> Link text</a>
         </div>
         <div class="col-md-3">
             <p>Link/standard/disabled</p>
-            <a href="" class="disabled"> <i class="govsa-icon govsa--arrowleft"></i> Link text</a>
+            <a class="govsa-link disabled" href=""> <i class="govsa-icon govsa--arrowleft"></i> Link text</a>
         </div>
     </div>
     <h3>Accordion</h3>
@@ -978,7 +962,7 @@
             <form>
                 <div class="govsa-fileupload">
                     <input class="govsa-fileupload__input" type="file" name="file" />
-                    <a href="#">Choose your file</a>
+                    <a class="govsa-link" href="#">Choose your file</a>
                     <P>Only .jpg and .png files. 500kb max file size</p>
                     <label class="govsa-fileupload__name">No file choosen</label>
                     <i class="govsa--closed clear d-none"></i>
@@ -994,7 +978,7 @@
             <form>
                 <div class="govsa-fileupload">
                     <input class="govsa-fileupload__input" type="file" name="file" />
-                    <a href="#">Choose your file</a>
+                    <a class="govsa-link" href="#">Choose your file</a>
                     <P>Only .jpg and .png files. 500kb max file size</p>
                     <label class="govsa-fileupload__name">No file choosen error</label>
                     <i class="govsa--closed clear d-none"></i>
@@ -1011,15 +995,41 @@
     <h3>Icons</h3>
     <hr>
     <div class="row my-3">
-        <i class="govsa--arrowdown"></i>
-        <i class="govsa--arrowleft"></i>
-        <i class="govsa--arrowright"></i>
-        <i class="govsa--arrowup"></i>
-        <i class="govsa--edit"></i>
-        <i class="govsa--delete"></i>
-        <i class="govsa--info-blue"></i>
-        <span class="govsa-icon govsa--info-blue"></span>
+        <i class="p-3 govsa--edit"></i>
+        <i class="p-3 govsa--delete"></i>
+        <i class="p-3 govsa--download"></i>
+        <i class="p-3 govsa--contact"></i>
+        <i class="p-3 govsa--options"></i>
+        <i class="p-3 govsa--favourite"></i>
+        <i class="p-3 govsa--star"></i>
+        <i class="p-3 govsa--user"></i>
+        <i class="p-3 govsa--info"></i>
+        <i class="p-3 govsa--zoom"></i>
+        <i class="p-3 govsa--alert"></i>
+        <i class="p-3 govsa--setting"></i>
+        <i class="p-3 govsa--mail"></i>
+        <i class="p-3 govsa--lock"></i>
+        <i class="p-3 govsa--external"></i>
+        <i class="p-3 govsa--image"></i>
+        <i class="p-3 govsa--eye"></i>
+        <i class="p-3 govsa--home"></i>
+        <i class="p-3 govsa--notification"></i>
+        <i class="p-3 govsa--renew"></i>
+        <i class="p-3 govsa--chat"></i>
+        <i class="p-3 govsa--close"></i>
+        <i class="p-3 govsa--closed"></i>
+        <i class="p-3 govsa--export"></i>
+        <i class="p-3 govsa--right"></i>
+        <i class="p-3 govsa--left"></i>
+        <i class="p-3 govsa--upload"></i>
+        <i class="p-3 govsa--menu"></i>
+        <i class="p-3 govsa--Color"></i>
+        <i class="p-3 govsa--arrowdown"></i>
+        <i class="p-3 govsa--arrowup"></i>
+        <i class="p-3 govsa--arrowleft"></i>
+        <i class="p-3 govsa--arrowright"></i>
 
+       
     </div>
 
 </body>
