@@ -659,7 +659,69 @@
         </div>
     </div>
     <hr>
-    <h3>Dropdown </h3>
+    <div class="row">
+        <div class="col-6">
+            <h3>Tables - English</h3>
+        </div>
+        <div class="col-6">
+            <h3>Tables - Arabic</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <table class='table govsa-table'>
+                <thead>
+                    <tr>
+                        <th>Column title</th>
+                        <th>Column title</th>
+                        <th>Column title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div>Line content</div>
+                        </td>
+                        <td>
+                            <div>Line content</div>
+                        </td>
+                        <td>
+                            <div>Line content</div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>Line content</div>
+                        </td>
+                        <td>
+                            <div>Line content</div>
+                        </td>
+                        <td>
+                            <div>Line content</div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>Line content</div>
+                        </td>
+                        <td>
+                            <div>Line content</div>
+                        </td>
+                        <td>
+                            <div>Line content</div>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="col-6">
+
+        </div>
+    </div>
     <hr>
     <div class="row">
         <div class="col-3">
@@ -1227,7 +1289,7 @@
     <h3>File upload</h3>
     <hr>
     <div class="row my-3">
-        <div class="col-md-6">
+        <div class="col-6">
             <form>
                 <div class="govsa-fileupload">
                     <input class="govsa-fileupload__input" type="file" name="file" />
@@ -1243,7 +1305,7 @@
                 </div>
             </form>
         </div>
-        <div class="col-md-6">
+        <div class="col-6">
             <form>
                 <div class="govsa-fileupload">
                     <input class="govsa-fileupload__input" type="file" name="file" />
@@ -1262,7 +1324,7 @@
         </div>
     </div>
     <div class="row my-3" dir="rtl">
-        <div class="col-md-6">
+        <div class="col-6">
             <form>
                 <div class="govsa-fileupload">
                     <input class="govsa-fileupload__input" type="file" name="file" />
@@ -1278,7 +1340,7 @@
                 </div>
             </form>
         </div>
-        <div class="col-md-6">
+        <div class="col-6">
             <form>
                 <div class="govsa-fileupload">
                     <input class="govsa-fileupload__input" type="file" name="file" />
@@ -1362,11 +1424,6 @@
 
 </body>
 <script>
-
-    $('.carousel').carousel({
-        interval: false,
-    });
-
     // Add the following code if you want the name of the file appear on select
     $(".govsa-fileupload__input").on("change", function () {
         var fileName = $(this).val().split("\\").pop();
@@ -1386,6 +1443,10 @@
         $(this).parent().children().next().next().next().next().next().children('.govsa-fileupload__bnt').attr('disabled', 'disabled');
         $(this).parent().children(".govsa-fileupload__input").val('');
         $(this).parent().children().next().next().next().next(".clear").addClass("d-none");
+    });
+
+    $('.carousel').carousel({
+        interval: false
     });
 </script>
 

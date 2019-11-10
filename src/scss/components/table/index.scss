@@ -1,0 +1,89 @@
+// table
+.govsa-table {
+  border-collapse: collapse;
+  border: 1px solid $green;
+  border-radius: 40px;
+  & td div{
+    // text-align: center;
+  }
+  & thead {
+    background-color: $green;
+    color: $white;
+    & th {
+      border: none !important;
+      // font-weight: 600;
+      padding-top: 5px !important;
+      padding-bottom: 5px !important;
+      // margin: 30px 27px !important;
+
+      &:first-child {
+        // border-top-left-radius: 10px;
+        padding-left: 10px;
+      }
+
+      &:last-child {
+        // border-top-right-radius: 10px;
+        padding-left: 0;
+      }
+    }
+  }
+  & tbody {
+    color: $black;
+    & tr {
+      & td {
+        border-color: $gray-pastel;
+        padding-top: 10px;
+        // padding-bottom: 10px !important;
+      }
+
+      &:first-child {
+        & td div {
+          border-top: 0 !important;
+        }
+      }
+
+      & td:first-child {
+        border-left: 1px solid $green;
+        padding-left: 10px;
+        padding-top: 0;
+        padding-right: 0;
+        border-top: none;
+        & div {
+          border-top: 1px solid $gray-pastel;
+          padding-top: 10px;
+          // padding-right: 8px;
+        }
+      }
+
+      & td:last-child {
+        border-right: 1px solid $green;
+        padding-top: 0;
+        padding-left: 0;
+        border-top: 0;
+        // padding-right: 10px;
+        div {
+          border-top: 1px solid $gray-pastel;
+          padding-top: 10px;
+          // padding-left: 8px;
+          // text-align: right;
+        }
+      }
+
+      &:first-child td {
+        border-top: none;
+      }
+
+      &:last-child td {
+        border-bottom: 1px solid $green;
+
+        &:first-child {
+          // border-bottom-left-radius: 10px;
+        }
+
+        &:last-child {
+          // border-bottom-right-radius: 10px;
+        }
+      }
+    }
+  }
+}
