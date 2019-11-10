@@ -1,18 +1,21 @@
 .btn { 
   position: relative;
   color: #fff;
+  i{
+    margin: 0px 0px 0px 15px;
+  }
   &:focus {
     color: #fff;
     outline: 0;
     box-shadow:  $btn-focus-box-shadow;
     &::after {
-      background: #ffdd40;
+      background: $yellow;
       width: 108%;
       content: "";
       height: 108%;
       left: -4%;
       top: -4%;
-      box-shadow: 0 0 0px 3px #ffdd40;
+      box-shadow: 0 0 0px 3px $yellow;
       /* create a new stacking context */
       position: absolute;
       z-index: -1; /* to be below the parent element */
@@ -21,132 +24,41 @@
   &.disabled {
     opacity: 0.4; //TODO there should be some css rules FOR .disabled where colors take the rgba of .4 for any color class mixed with a .disabled
     pointer-events: none;
-    
   }
 }
+
+
 @each $color, $value in $theme-colors {
-  .btn--#{$color} {
+  .govsa-btn--#{$color} {
     @include button-variant($value, $value);
+    min-width: 100px;
     &:focus {
       box-shadow: none;
-
     }
-  }
- [dir] .btn--#{$color} {
-    
-    &:focus {
-      box-shadow: none;
-
+    &:active:focus{
+      box-shadow: none !important;
+    }
+    &:disabled{
+      opacity: 0.4;
     }
   }
 }
 
 @each $color, $value in $theme-colors {
-  .btn--outline--#{$color} {
+  .govsa-btn--outline--#{$color} {
     @include button-outline-variant($value);
-
+    min-width: 100px;
     &:focus {
       color: $value;
       background-color:#fff;
       box-shadow:none;
     }
 
-  }
-  [dir] .btn--outline--#{$color} {
-    &:focus {
-      box-shadow:none;
+    &:active:focus{
+      box-shadow: none !important;
     }
 
   }
+ 
 }
 
-/* Boostrap Buttons Styling */
-.btn--default {
-  &focus {
-    color: #fff;
-  }
-  &.btn--outline {
-    background: transparent;
-    &:focus {
-      background-color: #fff;
-    }
-  }
-
-  &:hover {
-    color: #fff;
-  }
-}
-
-.btn--primary {
-  &focus {
-    color: #fff;
-  }
-  &.btn--outline {
-    background: transparent;
-    &:focus {
-      background-color: #fff;
-    }
-  }
-  &:hover {
-    color: #fff;
-  }
-}
-.btn--success {
-  &:focus {
-    color: #fff;
-  }
-  &.btn--outline {
-    background: transparent;
-    &:focus {
-      background-color: #fff;
-    }
-  }
-  &:hover {
-    color: #fff;
-  }
-}
-
-.btn--info {
-  &focus {
-    color: #fff;
-  }
-  &.btn--outline {
-    background: transparent;
-    &:focus {
-      background-color: #fff;
-    }
-  }
-  &:hover {
-    color: #fff;
-  }
-}
-
-.btn--warning {
-  &focus {
-    color: #fff;
-  }
-  &.btn--outline {
-    background: transparent;
-    &:focus {
-      background-color: #fff;
-    }
-  }
-  &:hover {
-    color: #fff;
-  }
-}
-
-.btn--danger {
-  &focus {
-    color: #fff;
-  }
-  &.btn--outline {
-    background: transparent;
-    &:focus {
-      background-color: #fff;
-    }
-  }
-  &:hover {
-    color: #fff;
-  }
-}

@@ -6,6 +6,7 @@
     i {
         text-decoration: none !important;
         color: $darkBlue;
+        margin: 0px 10px 0px 0px;
     }
 
     &:active {
@@ -22,6 +23,7 @@
             color: $blue;
         }
     }
+
 }
 
 .govsa-link.disabled {
@@ -30,5 +32,13 @@
 
     i {
         color: $gray;
+    }
+}
+
+[dir="rtl"] {
+    .govsa-link {
+        .govsa--arrowleft {
+            transform: scaleX(-1);
+        }
     }
 }
