@@ -461,7 +461,6 @@
                 </div>
             </div>
         </div>
-
     </div>
     <div class="row my-3">
         <div class="col-md-3">
@@ -537,7 +536,69 @@
         </div>
     </div>
     <hr>
-    <h3>Dropdown </h3>
+    <div class="row">
+        <div class="col-6">
+            <h3>Tables - English</h3>
+        </div>
+        <div class="col-6">
+            <h3>Tables - Arabic</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <table class='table govsa-table'>
+                <thead>
+                    <tr>
+                        <th>Column title</th>
+                        <th>Column title</th>
+                        <th>Column title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div>Line content</div>
+                        </td>
+                        <td>
+                            <div>Line content</div>
+                        </td>
+                        <td>
+                            <div>Line content</div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>Line content</div>
+                        </td>
+                        <td>
+                            <div>Line content</div>
+                        </td>
+                        <td>
+                            <div>Line content</div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                            <td>
+                                <div>Line content</div>
+                            </td>
+                            <td>
+                                <div>Line content</div>
+                            </td>
+                            <td>
+                                <div>Line content</div>
+                            </td>
+    
+                        </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="col-6">
+
+        </div>
+    </div>
     <hr>
     <div class="row">
         <div class="col-3">
@@ -552,8 +613,8 @@
         <div class="col-2">
             <div>
                 <div class="dropdown govsa-dropdown">
-                    <button class="dropdown-toggle" type="button" id="" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
+                    <button class="dropdown-toggle" type="button" id="" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
                         Label
                         <i class="govsa-icon govsa--arrowdown"></i>
                     </button>
@@ -561,13 +622,13 @@
                         <a class="govsa-dropdown__item" href="#">Lorem ipsum</a>
                         <a class="govsa-dropdown__item" href="#">Lorem ipsum</a>
                         <a class="govsa-dropdown__item" href="#">Lorem ipsum</a>
-                    </div> 
+                    </div>
                 </div>
             </div>
             <div class="mt-3">
                 <div class="dropdown govsa-dropdown">
-                    <button class="dropdown-toggle" type="button" id="" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
+                    <button class="dropdown-toggle" type="button" id="" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
                         Label
                         <i class="govsa-icon govsa--arrowdown"></i>
                     </button>
@@ -585,8 +646,8 @@
         <div class="col-2" dir="rtl">
             <div>
                 <div class="dropdown govsa-dropdown">
-                    <button class="dropdown-toggle" type="button" id="" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
+                    <button class="dropdown-toggle" type="button" id="" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
                         العنوان
                         <i class="govsa-icon govsa--arrowdown"></i>
                     </button>
@@ -597,10 +658,10 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-3"  dir="rtl">
+            <div class="mt-3" dir="rtl">
                 <div class="dropdown govsa-dropdown">
-                    <button class="dropdown-toggle" type="button" id="" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
+                    <button class="dropdown-toggle" type="button" id="" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
                         العنوان
                         <i class="govsa-icon govsa--arrowdown"></i>
                     </button>
@@ -665,14 +726,14 @@
                 <nav aria-label="navigation">
                     <ul class="pagination">
                         <li class="page-item"><a class="page-link" href="#">
-                            <i class="govsa--icon govsa--arrowleft"></i></a>
+                                <i class="govsa--icon govsa--arrowleft"></i></a>
                         </li>
                         <li class="page-item"><a class="page-link" href="#">1</a></li>
                         <li class="page-item active-page"><a class="page-link" href="#">2</a></li>
                         <li class="page-item"><a class="page-link" href="#">3</a></li>
                         <li class="page-item"><a class="page-link" href="#">4</a></li>
                         <li class="page-item"><a class="page-link" href="#">
-                            <i class="govsa--icon govsa--arrowright"></i></a>
+                                <i class="govsa--icon govsa--arrowright"></i></a>
                         </li>
                     </ul>
                 </nav>
@@ -976,8 +1037,8 @@
     <div class="row my-3">
         <div class="col-6">
             <form>
-                <div class="govsa-fileupload">
-                    <input class="govsa-fileupload__input" type="file" name="file" />
+                <div class="govsa-fileuploader">
+                    <input class="choose-file" type="file" name="file" />
                     <a href="#">Choose your file</a>
                     <P>Only .jpg and .png files. 500kb max file size</p>
                     <label class="govsa-fileupload__name">No file choosen</label>
@@ -992,15 +1053,16 @@
         </div>
         <div class="col-6">
             <form>
-                <div class="govsa-fileupload">
-                    <input class="govsa-fileupload__input" type="file" name="file" />
+                <div class="govsa-fileuploader">
+                    <input type="file" name="file"
+                        onchange="this.form.filename.value = this.files.length ? this.files[0].name : ''" />
                     <a href="#">Choose your file</a>
                     <P>Only .jpg and .png files. 500kb max file size</p>
-                    <label class="govsa-fileupload__name">No file choosen error</label>
-                    <i class="govsa--closed clear d-none"></i>
-                    <span class="govsa-errorMessage">! Error message</span>
+                    <label class="govsa-file__name">No file choosen error</label>
+                    <i class="govsa--closed clear"></i>
+                    <span class="govsa-form-error-input d-block">! Error message</span>
                     <div>
-                        <button type="button" class="btn btn--violet govsa-fileupload__bnt" disabled>UPLOAD</button>
+                        <button type="button" class="btn btn--violet disabled govsa-but--upload">UPLOAD</button>
                     </div>
 
                 </div>
