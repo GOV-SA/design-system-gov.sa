@@ -27,16 +27,10 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.govsa--24 {
-  &:before {
-    content: $govsa--24;     
-    color: #160f3e;
-  }
-}
+
 .govsa--alert {
   &:before {
     content: $govsa--alert;     
-    color: #160f3e;
   }
 }
 .govsa--arrowdown {
@@ -47,13 +41,13 @@ i {
 .govsa--arrowleft {
   &:before {
     content: $govsa--arrowleft;     
-    color: #160f3e;
+    // color: #160f3e;
   }
 }
 .govsa--arrowright {
   &:before {
     content: $govsa--arrowright;     
-    color: #160f3e;
+    // color: #160f3e;
   }
 }
 .govsa--arrowup {
@@ -338,7 +332,6 @@ i {
 .govsa--bookmark {
   &:before {
     content: $govsa--bookmark;     
-    color: #160f3e;
   }
 }
 .govsa--chat {
@@ -371,8 +364,7 @@ i {
 }
 .govsa--Color {
   &:before {
-    content: $govsa--Color;     
-    color: #160f3e;
+    content: $govsa--Color;     ;
   }
 }
 .govsa--colored_backgrounds_vs_colored_element_documents .path1 {
@@ -738,31 +730,21 @@ i {
 .govsa--contact {
   &:before {
     content: $govsa--contact;     
-    color: #160f3e;
   }
 }
 .govsa--delete {
   &:before {
     content: $govsa--delete;     
-    color: #160f3e;
   }
 }
 .govsa--download {
   &:before {
     content: $govsa--download;     
-    color: #160f3e;
-  }
-}
-.govsa--download-white {
-  &:before {
-    content: $govsa--download-white;     
-    color: #fff;
   }
 }
 .govsa--edit {
   &:before {
     content: $govsa--edit;     
-    color: #160f3e;
   }
 }
 .govsa--error .path1 {
@@ -786,7 +768,6 @@ i {
 .govsa--external {
   &:before {
     content: $govsa--external;     
-    color: #160f3e;
   }
 }
 .govsa--eye {
@@ -797,7 +778,6 @@ i {
 .govsa--favourite {
   &:before {
     content: $govsa--favourite;     
-    color: #160f3e;
   }
 }
 .govsa--Filled_payment .path1 {
@@ -1078,7 +1058,6 @@ i {
 .govsa--image {
   &:before {
     content: $govsa--image;     
-    color: #160f3e;
   }
 }
 .govsa--info-copy .path1 {
@@ -1097,9 +1076,9 @@ i {
 .govsa--info {
   &:before {
     content: $govsa--info;     
-    color: #160f3e;
   }
 }
+
 .govsa--info-blue .path1 {
   &:before {
     content: $govsa--info-blue-path1;  
@@ -1116,13 +1095,11 @@ i {
 .govsa--left {
   &:before {
     content: $govsa--left;     
-    color: #160f3e;
   }
 }
 .govsa--lock {
   &:before {
     content: $govsa--lock;     
-    color: #160f3e;
   }
 }
 .govsa--mail {
@@ -1432,7 +1409,6 @@ i {
 .govsa--options {
   &:before {
     content: $govsa--options;     
-    color: #160f3e;
   }
 }
 .govsa--Path {
@@ -1448,7 +1424,6 @@ i {
 .govsa--renew {
   &:before {
     content: $govsa--renew;     
-    color: #160f3e;
   }
 }
 .govsa--right {
@@ -1464,7 +1439,6 @@ i {
 .govsa--star {
   &:before {
     content: $govsa--star;     
-    color: #160f3e;
   }
 }
 .govsa--success .path1 {
@@ -1488,7 +1462,6 @@ i {
 .govsa--user {
   &:before {
     content: $govsa--user;     
-    color: #160f3e;
   }
 }
 .govsa--white_background_vs_colored_elements_documents .path1 {
@@ -1818,7 +1791,6 @@ i {
 .govsa--zoom {
   &:before {
     content: $govsa--zoom;     
-    color: #160f3e;
   }
 }
 
