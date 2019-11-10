@@ -1065,6 +1065,54 @@
             <a class="govsa-link disabled" href=""> <i class="govsa-icon govsa--arrowleft"></i> عوده</a>
         </div>
     </div>
+    <h3>Breadcrumbs</h3>
+    <hr>
+    <div class="row my-3">
+        <div class="col-md-3">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">Home</li>
+                </ol>
+            </nav>
+        
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                </ol>
+            </nav>
+        
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Library</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="col-md-3" dir="rtl">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">الصفحة الرئيسية</li>
+                </ol>
+            </nav>
+        
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">الصفحة الرئيسية</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">نص</li>
+                </ol>
+            </nav>
+        
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">الصفحة الرئيسية</a></li>
+                    <li class="breadcrumb-item"><a href="#">نص</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">نص</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
     <h3>Accordion</h3>
     <hr>
     <div class="row my-3">
@@ -1238,7 +1286,30 @@
         <i class="p-3 govsa--arrowright"></i>
         <i class="p-3 govsa--arrowdown"></i>
         <i class="p-3 govsa--arrowup"></i>
-
+    </div>
+    <h3>thank you page</h3>
+    <hr>
+    <div class="container text-center">
+        <div class="col-6 offset-3">
+            <h2 class="my-5">thank you</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</p>
+            <div class="my-5">
+                <button type="button" class="btn govsa-btn--darkBlue px-5">Go to homepage</button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div dir="rtl">
+            <div class="container">
+                    <div class="col-6 offset-3">
+                        <h2 class="my-5 text-center">شكراً</h2>
+                        <p class="text-center"> نص يوضح رسالة الإنذار في جملة واحدة نص يوضح رسالة الإنذار في جملة واحدة نص يوضح رسالة الإنذار في جملة واحدة. </p>
+                        <div class="my-5 text-center">
+                            <button type="button" class="btn govsa-btn--darkBlue px-5">الرجوع الى الصفحه الرئيسيه</button>
+                        </div>
+                    </div>
+                </div>
     </div>
 
 </body>
@@ -1249,8 +1320,7 @@
         $(this).siblings(".govsa-fileupload__name").html(fileName);
 
         $(this).parent().children().next().next().next().next(".clear").removeClass("d-none");
-
-        $(this).parent().children().next().next().next().next().next().children('.govsa-fileupload__bnt').removeAttr("disabled");;
+        $(this).parent().children().next().next().next().next().next().children('.govsa-fileupload__bnt').removeAttr("disabled");
     });
 
     $(".clear").click(function () {
@@ -1262,7 +1332,6 @@
 
         $(this).parent().children().next().next().next().next().next().children('.govsa-fileupload__bnt').attr('disabled', 'disabled');
         $(this).parent().children(".govsa-fileupload__input").val('');
-
         $(this).parent().children().next().next().next().next(".clear").addClass("d-none");
     });
 </script>
