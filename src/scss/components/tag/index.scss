@@ -1,0 +1,21 @@
+.govsa-tag{
+    border: 1px solid $darkBlue;
+    border-radius: 8px;
+    padding: 4px 10px 4px 10px;
+    color: $darkBlue;
+    font-size: 0.88rem;
+    img{
+        margin: 0px 0px 0px 20px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+[dir="rtl"] {
+    .govsa-tag {
+        img {
+           margin-top: 2px;
+        }
+    }
+}
