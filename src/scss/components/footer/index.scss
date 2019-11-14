@@ -1,0 +1,10 @@
+.govsa-footer{
+    background: $green;
+    color: $white;
+    .govsa-footer-link{
+        color: white;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
