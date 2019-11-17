@@ -1,10 +1,52 @@
 .govsa-footer{
-    background: $green;
+    background: $green-dark;
     color: $white;
     .govsa-footer-link{
         color: white;
         &:hover{
             text-decoration: none;
         }
+    }
+    .feedback-container{
+        background: $green;
+    }
+}
+
+// for switch button in footer
+.custom-control-input:checked ~ .custom-control-label::before {
+    border-color:$white;
+    background-color: #26634B;
+}
+.footer-bordered-div{
+    &:not(first-child){
+        margin-top: 5px;
+    }
+    vertical-align: middle;
+    
+}
+.footer-div-border{
+    border: 1px solid $white;
+    border-radius: 8px;
+    width: 300px;
+    &:not(first-child){
+        margin-top: 5px;
+    }
+
+}
+// quick links
+.footer-link{
+    color: white;
+    &:hover{
+        color: white;
+
+    }
+}
+.quick-links{
+    list-style: none;
+    & li:not(:first-child){
+        padding-top: 10px;
+    }
+    li .footer-link{
+        color: $white;
     }
 }
