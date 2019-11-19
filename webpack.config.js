@@ -28,14 +28,8 @@ module.exports = function() {
         plugins: [
             new HtmlWebpackPlugin({
                 title: 'Webpack starter project',
-                template: path.resolve('./src/index.html'),
-                filename: 'index.html',
+                template: path.resolve('./src/index.html')
             }),
-            new HtmlWebpackPlugin({
-                title: 'شارك',
-                template: path.resolve('./src/landing.html'),
-                filename: 'landing.html',
-              }),
             new webpack.HotModuleReplacementPlugin()
         ],
         module: {
