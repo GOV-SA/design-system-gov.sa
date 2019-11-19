@@ -1,0 +1,44 @@
+[dir="rtl"] * {
+  text-align: right;
+}
+[dir="rtl"] * {
+  font-family: noto_naskh_arabicregular;
+}
+[lang="ar"] * {
+  font-family: noto_naskh_arabicregular;
+}
+
+[dir="rtl"] [class^="subtitle--"] {
+  font-family: noto_naskh_arabicregular;
+}
+
+[dir="rtl"] [class^="body--"] {
+  font-family: noto_naskh_arabicregular;
+}
+[dir="rtl"] [class^="body--bold"] {
+  font-family: noto_naskh_arabicbold;
+  font-weight: $font-weight-bold;
+}
+[dir="rtl"] button,button[class^="btn--"], a[class^="btn--"]{
+    font-family: noto_naskh_arabicbold ;
+  }
+
+[dir="rtl"] [class^="footer--"] {
+  font-family: noto_naskh_arabicregular;
+}
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6,
+[dir="rtl"] .h1,
+[dir="rtl"] .h2,
+[dir="rtl"] .h3,
+[dir="rtl"] .h4,
+[dir="rtl"] .h5,
+[dir="rtl"] .h6 {
+    font-family: $headings-ar-font-family;
+    font-weight: 500;
+    line-height: 1.2;
+}

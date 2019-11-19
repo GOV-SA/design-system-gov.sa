@@ -1,0 +1,1796 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?r85vz');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?r85vz#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?r85vz') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?r85vz') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?r85vz##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.govsa--alert {
+  &:before {
+    content: $govsa--alert;     
+  }
+}
+.govsa--arrowdown {
+  &:before {
+    content: $govsa--arrowdown; 
+  }
+}
+.govsa--arrowleft {
+  &:before {
+    content: $govsa--arrowleft;     
+    // color: #160f3e;
+  }
+}
+.govsa--arrowright {
+  &:before {
+    content: $govsa--arrowright;     
+    // color: #160f3e;
+  }
+}
+.govsa--arrowup {
+  &:before {
+    content: $govsa--arrowup; 
+  }
+}
+.govsa--black_white_documents .path1 {
+  &:before {
+    content: $govsa--black_white_documents-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_documents .path2 {
+  &:before {
+    content: $govsa--black_white_documents-path2;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_documents .path3 {
+  &:before {
+    content: $govsa--black_white_documents-path3;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_documents .path4 {
+  &:before {
+    content: $govsa--black_white_documents-path4;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_documents .path5 {
+  &:before {
+    content: $govsa--black_white_documents-path5;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_documents .path6 {
+  &:before {
+    content: $govsa--black_white_documents-path6;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_documents .path7 {
+  &:before {
+    content: $govsa--black_white_documents-path7;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_documents .path8 {
+  &:before {
+    content: $govsa--black_white_documents-path8;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_documents .path9 {
+  &:before {
+    content: $govsa--black_white_documents-path9;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--black_white_documents .path10 {
+  &:before {
+    content: $govsa--black_white_documents-path10;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_payment .path1 {
+  &:before {
+    content: $govsa--black_white_payment-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_payment .path2 {
+  &:before {
+    content: $govsa--black_white_payment-path2;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_payment .path3 {
+  &:before {
+    content: $govsa--black_white_payment-path3;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_payment .path4 {
+  &:before {
+    content: $govsa--black_white_payment-path4;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_payment .path5 {
+  &:before {
+    content: $govsa--black_white_payment-path5;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_payment .path6 {
+  &:before {
+    content: $govsa--black_white_payment-path6;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_payment .path7 {
+  &:before {
+    content: $govsa--black_white_payment-path7;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_payment .path8 {
+  &:before {
+    content: $govsa--black_white_payment-path8;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_payment .path9 {
+  &:before {
+    content: $govsa--black_white_payment-path9;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--black_white_payment .path10 {
+  &:before {
+    content: $govsa--black_white_payment-path10;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_regulations {
+  &:before {
+    content: $govsa--black_white_regulations; 
+  }
+}
+.govsa--black_white_setting .path1 {
+  &:before {
+    content: $govsa--black_white_setting-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_setting .path2 {
+  &:before {
+    content: $govsa--black_white_setting-path2;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_setting .path3 {
+  &:before {
+    content: $govsa--black_white_setting-path3;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_setting .path4 {
+  &:before {
+    content: $govsa--black_white_setting-path4;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_setting .path5 {
+  &:before {
+    content: $govsa--black_white_setting-path5;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_setting .path6 {
+  &:before {
+    content: $govsa--black_white_setting-path6;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_setting .path7 {
+  &:before {
+    content: $govsa--black_white_setting-path7;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--black_white_setting .path8 {
+  &:before {
+    content: $govsa--black_white_setting-path8;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_statistics .path1 {
+  &:before {
+    content: $govsa--black_white_statistics-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--black_white_statistics .path2 {
+  &:before {
+    content: $govsa--black_white_statistics-path2;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_statistics .path3 {
+  &:before {
+    content: $govsa--black_white_statistics-path3;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_statistics .path4 {
+  &:before {
+    content: $govsa--black_white_statistics-path4;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_statistics .path5 {
+  &:before {
+    content: $govsa--black_white_statistics-path5;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_statistics .path6 {
+  &:before {
+    content: $govsa--black_white_statistics-path6;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_statistics .path7 {
+  &:before {
+    content: $govsa--black_white_statistics-path7;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_statistics .path8 {
+  &:before {
+    content: $govsa--black_white_statistics-path8;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_statistics .path9 {
+  &:before {
+    content: $govsa--black_white_statistics-path9;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--black_white_statistics .path10 {
+  &:before {
+    content: $govsa--black_white_statistics-path10;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--black_white_statistics .path11 {
+  &:before {
+    content: $govsa--black_white_statistics-path11;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--bookmark {
+  &:before {
+    content: $govsa--bookmark;     
+  }
+}
+.govsa--chat {
+  &:before {
+    content: $govsa--chat; 
+  }
+}
+.govsa--close {
+  &:before {
+    content: $govsa--close; 
+  }
+}
+.govsa--closed {
+  &:before {
+    content: $govsa--closed; 
+  }
+}
+.govsa--closeTag .path1 {
+  &:before {
+    content: $govsa--closeTag-path1;  
+    color: rgb(205, 204, 213);
+  }
+}
+.govsa--closeTag .path2 {
+  &:before {
+    content: $govsa--closeTag-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--Color {
+  &:before {
+    content: $govsa--Color;     ;
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_documents .path1 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_documents-path1;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_documents .path2 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_documents-path2;  
+    margin-left: -1.08203125em;  
+    color: rgb(215, 215, 215);  
+    opacity: 0.5;
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_documents .path3 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_documents-path3;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_documents .path4 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_documents-path4;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_documents .path5 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_documents-path5;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_documents .path6 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_documents-path6;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_documents .path7 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_documents-path7;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_documents .path8 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_documents-path8;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_documents .path9 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_documents-path9;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_documents .path10 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_documents-path10;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_documents .path11 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_documents-path11;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_documents .path12 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_documents-path12;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_documents .path13 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_documents-path13;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_documents .path14 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_documents-path14;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_documents .path15 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_documents-path15;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_payment .path1 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_payment-path1;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_payment .path2 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_payment-path2;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_payment .path3 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_payment-path3;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_payment .path4 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_payment-path4;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_payment .path5 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_payment-path5;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_payment .path6 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_payment-path6;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_payment .path7 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_payment-path7;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_payment .path8 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_payment-path8;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_payment .path9 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_payment-path9;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_payment .path10 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_payment-path10;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_payment .path11 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_payment-path11;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_regulations .path1 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_regulations-path1;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_regulations .path2 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_regulations-path2;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 254, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_regulations .path3 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_regulations-path3;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 254, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_regulations .path4 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_regulations-path4;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 254, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_regulations .path5 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_regulations-path5;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 254, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_regulations .path6 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_regulations-path6;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_regulations .path7 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_regulations-path7;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 254, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_setting .path1 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_setting-path1;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_setting .path2 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_setting-path2;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_setting .path3 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_setting-path3;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_setting .path4 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_setting-path4;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_setting .path5 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_setting-path5;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_setting .path6 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_setting-path6;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_setting .path7 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_setting-path7;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_setting .path8 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_setting-path8;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_setting .path9 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_setting-path9;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_statistics .path1 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_statistics-path1;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_statistics .path2 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_statistics-path2;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_statistics .path3 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_statistics-path3;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_statistics .path4 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_statistics-path4;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_statistics .path5 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_statistics-path5;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_statistics .path6 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_statistics-path6;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_statistics .path7 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_statistics-path7;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_statistics .path8 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_statistics-path8;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_statistics .path9 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_statistics-path9;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--colored_backgrounds_vs_colored_element_statistics .path10 {
+  &:before {
+    content: $govsa--colored_backgrounds_vs_colored_element_statistics-path10;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--contact {
+  &:before {
+    content: $govsa--contact;     
+  }
+}
+.govsa--delete {
+  &:before {
+    content: $govsa--delete;     
+  }
+}
+.govsa--download {
+  &:before {
+    content: $govsa--download;     
+  }
+}
+.govsa--edit {
+  &:before {
+    content: $govsa--edit;     
+  }
+}
+.govsa--error .path1 {
+  &:before {
+    content: $govsa--error-path1;  
+    color: rgb(175, 8, 24);
+  }
+}
+.govsa--error .path2 {
+  &:before {
+    content: $govsa--error-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--export {
+  &:before {
+    content: $govsa--export; 
+  }
+}
+.govsa--external {
+  &:before {
+    content: $govsa--external;     
+  }
+}
+.govsa--eye {
+  &:before {
+    content: $govsa--eye; 
+  }
+}
+.govsa--favourite {
+  &:before {
+    content: $govsa--favourite;     
+  }
+}
+.govsa--Filled_payment .path1 {
+  &:before {
+    content: $govsa--Filled_payment-path1;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--Filled_payment .path2 {
+  &:before {
+    content: $govsa--Filled_payment-path2;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Filled_payment .path3 {
+  &:before {
+    content: $govsa--Filled_payment-path3;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Filled_payment .path4 {
+  &:before {
+    content: $govsa--Filled_payment-path4;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--Filled_payment .path5 {
+  &:before {
+    content: $govsa--Filled_payment-path5;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Filled_payment .path6 {
+  &:before {
+    content: $govsa--Filled_payment-path6;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--Filled_payment .path7 {
+  &:before {
+    content: $govsa--Filled_payment-path7;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--Filled_payment .path8 {
+  &:before {
+    content: $govsa--Filled_payment-path8;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--Filled_payment .path9 {
+  &:before {
+    content: $govsa--Filled_payment-path9;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--Filled_payment .path10 {
+  &:before {
+    content: $govsa--Filled_payment-path10;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Filled_payment .path11 {
+  &:before {
+    content: $govsa--Filled_payment-path11;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--Filled_payment .path12 {
+  &:before {
+    content: $govsa--Filled_payment-path12;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--Filled_payment .path13 {
+  &:before {
+    content: $govsa--Filled_payment-path13;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--Filled_payment .path14 {
+  &:before {
+    content: $govsa--Filled_payment-path14;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Filled_payment .path15 {
+  &:before {
+    content: $govsa--Filled_payment-path15;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--Filled_regulations .path1 {
+  &:before {
+    content: $govsa--Filled_regulations-path1;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--Filled_regulations .path2 {
+  &:before {
+    content: $govsa--Filled_regulations-path2;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Filled_regulations .path3 {
+  &:before {
+    content: $govsa--Filled_regulations-path3;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Filled_regulations .path4 {
+  &:before {
+    content: $govsa--Filled_regulations-path4;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--Filled_regulations .path5 {
+  &:before {
+    content: $govsa--Filled_regulations-path5;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Filled_regulations .path6 {
+  &:before {
+    content: $govsa--Filled_regulations-path6;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--Filled_regulations .path7 {
+  &:before {
+    content: $govsa--Filled_regulations-path7;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Filled_regulations .path8 {
+  &:before {
+    content: $govsa--Filled_regulations-path8;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Filled_regulations .path9 {
+  &:before {
+    content: $govsa--Filled_regulations-path9;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--Filled_regulations .path10 {
+  &:before {
+    content: $govsa--Filled_regulations-path10;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Filled_statistics .path1 {
+  &:before {
+    content: $govsa--Filled_statistics-path1;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--Filled_statistics .path2 {
+  &:before {
+    content: $govsa--Filled_statistics-path2;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Filled_statistics .path3 {
+  &:before {
+    content: $govsa--Filled_statistics-path3;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Filled_statistics .path4 {
+  &:before {
+    content: $govsa--Filled_statistics-path4;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Filled_statistics .path5 {
+  &:before {
+    content: $govsa--Filled_statistics-path5;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Filled_statistics .path6 {
+  &:before {
+    content: $govsa--Filled_statistics-path6;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Filled_statistics .path7 {
+  &:before {
+    content: $govsa--Filled_statistics-path7;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Filled_statistics .path8 {
+  &:before {
+    content: $govsa--Filled_statistics-path8;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Filled_statistics .path9 {
+  &:before {
+    content: $govsa--Filled_statistics-path9;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Filled_statistics .path10 {
+  &:before {
+    content: $govsa--Filled_statistics-path10;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Filled_statistics .path11 {
+  &:before {
+    content: $govsa--Filled_statistics-path11;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Filled_statistics .path12 {
+  &:before {
+    content: $govsa--Filled_statistics-path12;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Filled_statistics .path13 {
+  &:before {
+    content: $govsa--Filled_statistics-path13;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--Filled_statistics .path14 {
+  &:before {
+    content: $govsa--Filled_statistics-path14;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--home {
+  &:before {
+    content: $govsa--home; 
+  }
+}
+.govsa--image {
+  &:before {
+    content: $govsa--image;     
+  }
+}
+.govsa--info-copy .path1 {
+  &:before {
+    content: $govsa--info-copy-path1;  
+    color: rgb(51, 158, 236);
+  }
+}
+.govsa--info-copy .path2 {
+  &:before {
+    content: $govsa--info-copy-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--info {
+  &:before {
+    content: $govsa--info;     
+  }
+}
+
+.govsa--info-blue .path1 {
+  &:before {
+    content: $govsa--info-blue-path1;  
+    color: rgb(51, 158, 236);
+  }
+}
+.govsa--info-blue .path2 {
+  &:before {
+    content: $govsa--info-blue-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--left {
+  &:before {
+    content: $govsa--left;     
+  }
+}
+.govsa--lock {
+  &:before {
+    content: $govsa--lock;     
+  }
+}
+.govsa--mail {
+  &:before {
+    content: $govsa--mail; 
+  }
+}
+.govsa--menu {
+  &:before {
+    content: $govsa--menu; 
+  }
+}
+.govsa--Monochrome_documents .path1 {
+  &:before {
+    content: $govsa--Monochrome_documents-path1;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_documents .path2 {
+  &:before {
+    content: $govsa--Monochrome_documents-path2;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_documents .path3 {
+  &:before {
+    content: $govsa--Monochrome_documents-path3;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_documents .path4 {
+  &:before {
+    content: $govsa--Monochrome_documents-path4;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_documents .path5 {
+  &:before {
+    content: $govsa--Monochrome_documents-path5;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_documents .path6 {
+  &:before {
+    content: $govsa--Monochrome_documents-path6;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_documents .path7 {
+  &:before {
+    content: $govsa--Monochrome_documents-path7;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_documents .path8 {
+  &:before {
+    content: $govsa--Monochrome_documents-path8;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_documents .path9 {
+  &:before {
+    content: $govsa--Monochrome_documents-path9;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_documents .path10 {
+  &:before {
+    content: $govsa--Monochrome_documents-path10;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--Monochrome_documents .path11 {
+  &:before {
+    content: $govsa--Monochrome_documents-path11;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--Monochrome_documents .path12 {
+  &:before {
+    content: $govsa--Monochrome_documents-path12;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--Monochrome_documents .path13 {
+  &:before {
+    content: $govsa--Monochrome_documents-path13;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_payment .path1 {
+  &:before {
+    content: $govsa--Monochrome_payment-path1;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_payment .path2 {
+  &:before {
+    content: $govsa--Monochrome_payment-path2;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_payment .path3 {
+  &:before {
+    content: $govsa--Monochrome_payment-path3;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_payment .path4 {
+  &:before {
+    content: $govsa--Monochrome_payment-path4;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_payment .path5 {
+  &:before {
+    content: $govsa--Monochrome_payment-path5;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_payment .path6 {
+  &:before {
+    content: $govsa--Monochrome_payment-path6;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_payment .path7 {
+  &:before {
+    content: $govsa--Monochrome_payment-path7;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_payment .path8 {
+  &:before {
+    content: $govsa--Monochrome_payment-path8;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_payment .path9 {
+  &:before {
+    content: $govsa--Monochrome_payment-path9;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--Monochrome_payment .path10 {
+  &:before {
+    content: $govsa--Monochrome_payment-path10;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_regulations {
+  &:before {
+    content: $govsa--Monochrome_regulations;     
+    color: #3ba07a;
+  }
+}
+.govsa--Monochrome_setting .path1 {
+  &:before {
+    content: $govsa--Monochrome_setting-path1;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_setting .path2 {
+  &:before {
+    content: $govsa--Monochrome_setting-path2;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_setting .path3 {
+  &:before {
+    content: $govsa--Monochrome_setting-path3;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_setting .path4 {
+  &:before {
+    content: $govsa--Monochrome_setting-path4;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_setting .path5 {
+  &:before {
+    content: $govsa--Monochrome_setting-path5;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_setting .path6 {
+  &:before {
+    content: $govsa--Monochrome_setting-path6;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_setting .path7 {
+  &:before {
+    content: $govsa--Monochrome_setting-path7;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--Monochrome_setting .path8 {
+  &:before {
+    content: $govsa--Monochrome_setting-path8;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_statistics .path1 {
+  &:before {
+    content: $govsa--Monochrome_statistics-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--Monochrome_statistics .path2 {
+  &:before {
+    content: $govsa--Monochrome_statistics-path2;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_statistics .path3 {
+  &:before {
+    content: $govsa--Monochrome_statistics-path3;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_statistics .path4 {
+  &:before {
+    content: $govsa--Monochrome_statistics-path4;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_statistics .path5 {
+  &:before {
+    content: $govsa--Monochrome_statistics-path5;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_statistics .path6 {
+  &:before {
+    content: $govsa--Monochrome_statistics-path6;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_statistics .path7 {
+  &:before {
+    content: $govsa--Monochrome_statistics-path7;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_statistics .path8 {
+  &:before {
+    content: $govsa--Monochrome_statistics-path8;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--Monochrome_statistics .path9 {
+  &:before {
+    content: $govsa--Monochrome_statistics-path9;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--Monochrome_statistics .path10 {
+  &:before {
+    content: $govsa--Monochrome_statistics-path10;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--notification {
+  &:before {
+    content: $govsa--notification; 
+  }
+}
+.govsa--options {
+  &:before {
+    content: $govsa--options;     
+  }
+}
+.govsa--Path {
+  &:before {
+    content: $govsa--Path; 
+  }
+}
+.govsa--plus {
+  &:before {
+    content: $govsa--plus; 
+  }
+}
+.govsa--renew {
+  &:before {
+    content: $govsa--renew;     
+  }
+}
+.govsa--right {
+  &:before {
+    content: $govsa--right; 
+  }
+}
+.govsa--setting {
+  &:before {
+    content: $govsa--setting; 
+  }
+}
+.govsa--star {
+  &:before {
+    content: $govsa--star;     
+  }
+}
+.govsa--success .path1 {
+  &:before {
+    content: $govsa--success-path1;  
+    color: rgb(0, 102, 4);
+  }
+}
+.govsa--success .path2 {
+  &:before {
+    content: $govsa--success-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--upload {
+  &:before {
+    content: $govsa--upload; 
+  }
+}
+.govsa--user {
+  &:before {
+    content: $govsa--user;     
+  }
+}
+.govsa--white_background_vs_colored_elements_documents .path1 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_documents-path1;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--white_background_vs_colored_elements_documents .path2 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_documents-path2;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--white_background_vs_colored_elements_documents .path3 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_documents-path3;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--white_background_vs_colored_elements_documents .path4 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_documents-path4;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--white_background_vs_colored_elements_documents .path5 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_documents-path5;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--white_background_vs_colored_elements_documents .path6 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_documents-path6;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--white_background_vs_colored_elements_documents .path7 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_documents-path7;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--white_background_vs_colored_elements_documents .path8 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_documents-path8;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--white_background_vs_colored_elements_documents .path9 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_documents-path9;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--white_background_vs_colored_elements_documents .path10 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_documents-path10;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--white_background_vs_colored_elements_documents .path11 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_documents-path11;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--white_background_vs_colored_elements_documents .path12 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_documents-path12;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--white_background_vs_colored_elements_payment .path1 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_payment-path1;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--white_background_vs_colored_elements_payment .path2 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_payment-path2;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--white_background_vs_colored_elements_payment .path3 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_payment-path3;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--white_background_vs_colored_elements_payment .path4 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_payment-path4;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--white_background_vs_colored_elements_payment .path5 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_payment-path5;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--white_background_vs_colored_elements_payment .path6 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_payment-path6;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--white_background_vs_colored_elements_payment .path7 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_payment-path7;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--white_background_vs_colored_elements_payment .path8 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_payment-path8;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--white_background_vs_colored_elements_payment .path9 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_payment-path9;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--white_background_vs_colored_elements_payment .path10 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_payment-path10;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--white_background_vs_colored_elements_regulations .path1 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_regulations-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--white_background_vs_colored_elements_regulations .path2 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_regulations-path2;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--white_background_vs_colored_elements_regulations .path3 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_regulations-path3;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--white_background_vs_colored_elements_regulations .path4 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_regulations-path4;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--white_background_vs_colored_elements_regulations .path5 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_regulations-path5;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--white_background_vs_colored_elements_regulations .path6 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_regulations-path6;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--white_background_vs_colored_elements_setting .path1 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_setting-path1;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--white_background_vs_colored_elements_setting .path2 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_setting-path2;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--white_background_vs_colored_elements_setting .path3 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_setting-path3;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--white_background_vs_colored_elements_setting .path4 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_setting-path4;  
+    margin-left: -1.08203125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.govsa--white_background_vs_colored_elements_setting .path5 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_setting-path5;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--white_background_vs_colored_elements_setting .path6 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_setting-path6;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--white_background_vs_colored_elements_setting .path7 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_setting-path7;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--white_background_vs_colored_elements_setting .path8 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_setting-path8;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--white_background_vs_colored_elements_statistics .path1 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_statistics-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--white_background_vs_colored_elements_statistics .path2 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_statistics-path2;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--white_background_vs_colored_elements_statistics .path3 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_statistics-path3;  
+    margin-left: -1.08203125em;  
+    color: rgb(59, 160, 122);
+  }
+}
+.govsa--white_background_vs_colored_elements_statistics .path4 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_statistics-path4;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--white_background_vs_colored_elements_statistics .path5 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_statistics-path5;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--white_background_vs_colored_elements_statistics .path6 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_statistics-path6;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--white_background_vs_colored_elements_statistics .path7 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_statistics-path7;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--white_background_vs_colored_elements_statistics .path8 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_statistics-path8;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--white_background_vs_colored_elements_statistics .path9 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_statistics-path9;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--white_background_vs_colored_elements_statistics .path10 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_statistics-path10;  
+    margin-left: -1.08203125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.govsa--white_background_vs_colored_elements_statistics .path11 {
+  &:before {
+    content: $govsa--white_background_vs_colored_elements_statistics-path11;  
+    margin-left: -1.08203125em;  
+    color: rgb(22, 16, 62);
+  }
+}
+.govsa--zoom {
+  &:before {
+    content: $govsa--zoom;     
+  }
+}
+

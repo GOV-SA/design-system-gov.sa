@@ -71,6 +71,16 @@ module.exports = function() {
                     }, ]
                 },
                 {
+                    test: /\.(woff|woff2|eot|ttf|otf)$/,
+                    use: [{
+                        loader: "file-loader",
+                        options: {
+                            outputPath: './scss/fonts',
+                            name: "[name].[ext]",
+                        },
+                    }, ]
+                },
+                {
                     test: /\.html$/,
                     use: {
                         loader: 'html-loader',

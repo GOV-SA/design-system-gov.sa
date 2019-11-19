@@ -1,0 +1,59 @@
+/* Hide the browser's default radio */
+/* Create a custom radio */
+/* On mouse-over */
+/* Create the checkmark/indicator (hidden when not checked) */
+/* Show the checkmark when checked */
+
+.govsa-radio {
+
+  display: block;
+  position: relative;
+  padding-left: $form-check-padding-left;
+  padding-top: 3px;
+  cursor: pointer;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  input {
+    opacity: 0;
+
+    &:hover~.govsa-radio__checkmark {
+      box-shadow: 0 0 0 3px $gray-pastel;
+    }
+
+    &:active~.govsa-radio__checkmark {
+      box-shadow: 0 0 0 3px $yellow;
+    }
+
+    &:checked~.govsa-radio__checkmark {
+      background-color: $white;
+
+      &:after {
+        display: block;
+      }
+    }
+  }
+
+  .govsa-radio__checkmark {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: $white;
+    border: 2px solid $darkBlue;
+    border-radius: 40px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 3px;
+      top: 3px;
+      border: 1px solid $darkBlue;
+      border-width: 4px;
+      border-radius: 50%;
+    }
+  }
+}

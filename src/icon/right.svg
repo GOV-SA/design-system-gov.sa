@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="16px" viewBox="0 0 8 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>icon/system/24/right</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Atoms" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-344.000000, -433.000000)" fill-rule="nonzero">
+            <g id="icon/system/24/right" transform="translate(336.000000, 429.000000)">
+                <rect id="Path" x="0" y="0" width="24" height="24"></rect>
+                <path d="M10.3170778,12.0000181 L15.7592566,18.3492268 C16.1186788,18.7685526 16.0701172,19.3998526 15.6507914,19.7592747 C15.2314655,20.1186969 14.6001655,20.0701353 14.2407434,19.6508095 L8.2407434,12.6508095 C7.9197522,12.2763198 7.9197522,11.7237165 8.2407434,11.3492268 L14.2407434,4.34922676 C14.6001655,3.92990091 15.2314655,3.88133938 15.6507914,4.24076153 C16.0701172,4.60018368 16.1186788,5.23148366 15.7592566,5.6508095 L10.3170778,12.0000181 Z" id="Color" fill="#080808" transform="translate(12.000009, 12.000018) scale(-1, 1) translate(-12.000009, -12.000018) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

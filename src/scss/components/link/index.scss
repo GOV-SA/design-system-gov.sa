@@ -1,0 +1,44 @@
+.govsa-link {
+    @include font-size($font-size-sm);
+    font-weight: $font-weight-normal;
+    text-decoration: underline;
+
+    i {
+        text-decoration: none !important;
+        color: $darkBlue;
+        margin: 0px 10px 0px 10px;
+    }
+
+    &:active {
+        background-color: $yellow;
+        color: $darkBlue;
+
+        i {
+            color: $darkBlue;
+        }
+    }
+
+    &:hover {
+        i {
+            color: $blue;
+        }
+    }
+
+}
+
+.govsa-link.disabled {
+    color: $gray;
+    pointer-events: none;
+
+    i {
+        color: $gray;
+    }
+}
+
+[dir="rtl"] {
+    .govsa-link {
+        .govsa--arrowleft {
+            transform: scaleX(-1);
+        }
+    }
+}

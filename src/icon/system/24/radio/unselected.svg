@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>icon/system/24/radio/unselected</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Atoms" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-144.000000, -483.000000)" fill="#FFFFFF" stroke="#160F3E" stroke-width="2">
+            <g id="icon/system/24/radio/unselected" transform="translate(144.000000, 483.000000)">
+                <path d="M12,1 C5.92828475,1 1,5.92828475 1,12 C1,18.0717153 5.92828475,23 12,23 C18.0717153,23 23,18.0717153 23,12 C23,5.92828475 18.0717153,1 12,1 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -49,6 +49,16 @@ module.exports = function(env, argv) {
                     }
                 },
                 {
+                    test: /\.(woff|woff2|eot|ttf|otf)$/,
+                    use: [{
+                        loader: "file-loader",
+                        options: {
+                            outputPath: './scss/fonts',
+                            name: "[name].[ext]",
+                        },
+                    }, ]
+                },
+                {
                     test: /\.(jpg|jpeg|gif|png|svg|webp)$/,
                     use: [{
                             loader: "file-loader",

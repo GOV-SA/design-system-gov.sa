@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>icon/system/16/alert/info</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/system/16/alert/info" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="#339EEC" cx="8" cy="8" r="8"></circle>
+        <path d="M9.5,13 L6.5,13 L6.5,10.25 L9.5,10.25 L9.5,13 Z M9.5,8.875 L6.5,8.875 L6.5,2 L9.5,2 L9.5,8.875 Z" id="Shape" fill="#FFFFFF" transform="translate(8.000000, 7.500000) scale(1, -1) translate(-8.000000, -7.500000) "></path>
+    </g>
+</svg>

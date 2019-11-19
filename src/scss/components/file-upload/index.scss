@@ -1,0 +1,37 @@
+.govsa-fileupload {
+    
+    .govsa-fileupload__input {
+        opacity: 0;
+        height: 17px;
+    } 
+
+    a {
+        left: 15px;
+        top: 0px;
+        position: absolute;
+        z-index: -1;
+        font-size: 16px;
+    }
+
+    P {
+        color: $darkBlue;
+        margin-bottom: 0px;
+    }
+
+    .govsa-fileupload__name {
+        color: $darkBlue;
+    }
+
+    i {
+        font-size: 10px;
+        cursor: pointer;
+        padding: 0px 35px;
+        color: $darkBlue;
+    }
+
+    .govsa-errorMessage {
+        margin-top: -8px;
+        margin-bottom: 9px;
+        padding: 0px;
+      }
+}

@@ -1,0 +1,14 @@
+ .carousel-indicators li{
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: $darkBlue-pastel;
+ }
+ .carousel-indicators li.active{
+    background-color: $darkBlue;
+ }
+
+ .govsa-icon--size{
+   width: 5rem;
+   height: 5rem;
+}
