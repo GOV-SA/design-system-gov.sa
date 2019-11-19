@@ -20,8 +20,14 @@ module.exports = function(env, argv) {
             new CleanWebpackPlugin(['dist']),
             new HtmlWebpackPlugin({
                 title: 'Gov.se Example Page',
-                template: path.resolve('./src/index.html')
+                template: path.resolve('./src/index.html'),
+                filename: './src/index.html',
             }),
+            new HtmlWebpackPlugin({
+                title: 'شارك',
+                template: path.resolve('./src/landing.html'),
+                filename: 'landing.html',
+              }),
             new MiniCssExtractPlugin({
                 filename: "[name].css",
                 chunkFilename: "[id].css"
