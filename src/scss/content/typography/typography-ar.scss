@@ -8,7 +8,7 @@
   font-family: noto_naskh_arabicregular;
 }
 
-[dir="rtl"] [class^="subtitle--"] {
+[dir="rtl"] [class^="govsa-subtitle--"] {
   font-family: noto_naskh_arabicregular;
 }
 
@@ -19,11 +19,11 @@
   font-family: noto_naskh_arabicbold;
   font-weight: $font-weight-bold;
 }
-[dir="rtl"] button,button[class^="btn--"], a[class^="btn--"]{
+[dir="rtl"] button,button[class^="govsa-btn--"], a[class^="btn--"]{
     font-family: noto_naskh_arabicbold ;
   }
 
-[dir="rtl"] [class^="footer--"] {
+[dir="rtl"] [class^="govsa-footer--"] {
   font-family: noto_naskh_arabicregular;
 }
 [dir="rtl"] h1,
