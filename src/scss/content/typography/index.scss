@@ -12,12 +12,13 @@
   font-family: thesansb4_semilight;
 }
 
-.subtitle--1 {
-  @include font-size( $font-size-sm * .875 );
+.govsa-subtitle {
+  @include font-size($font-size-sm);
   font-weight:  $font-weight-normal;
 }
-.subtitle--2 {
-  @include font-size($font-size-sm);
+
+.govsa-subtitle--underline {
+  @include font-size( $font-size-sm * .875 );
   font-weight: $font-weight-normal;
   text-decoration: underline;
 }
@@ -46,32 +47,32 @@
 
 }
 
- button,button[class^="btn--"], a[class^="btn--"]{
-  font-family: thesansb8_extrabold ;
+ .bnt,button,button[class^="btn--"], a[class^="btn--"]{
+  font-family: thesansb8_extrabold !important ;
 }
 
 
-.btn--1{
+.govsa-btn--1{
   @include font-size( $font-size-base * 1.5 );
 }
-.btn--2{
-  @include font-size( $font-size-sm );
-}
-.btn--1{
+.govsa-btn--2{
   @include font-size( $font-size-base );
+}
+.govsa-btn--3{
+  @include font-size( $font-size-sm );
 }
 
 [class^="footer--"]{
   font-family: thesansb4_semilight;
 }
 
-.footer--1 {
-  @include font-size( $font-size-sm * .875 );
-  font-weight:  $font-weight-normal;
-}
-.footer--2 {
+.govsa-footer--1 {
   @include font-size($font-size-sm);
   font-weight: $font-weight-normal;
+}
+.govsa-footer--2 {
+  @include font-size( $font-size-sm * .875 );
+  font-weight:  $font-weight-normal;
 }
 
 

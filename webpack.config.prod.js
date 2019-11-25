@@ -35,6 +35,14 @@ module.exports = function(env, argv) {
                     use: [
                         MiniCssExtractPlugin.loader,
                         "css-loader",
+                        {
+                            loader: 'postcss-loader',
+                            options: {
+                                plugins: function () {
+                                    return [require('postcss-rtl')()]
+                                }
+                            }
+                        },
                         "sass-loader"
                     ]
                 },
