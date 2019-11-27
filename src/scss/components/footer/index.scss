@@ -1,4 +1,5 @@
 .govsa-footer{
+    
     background: $green-dark;
     color: $white;
     .govsa-footer-link{
@@ -9,6 +10,38 @@
     }
     .feedback-container{
         background: $green;
+    }
+    .govsa-footer__feedback{
+        background: $green;
+        display: flex;
+        padding: 1.5rem ;
+        align-items: center !important;
+        justify-content: center !important;
+
+    }
+    .govsa-feedback__link{
+        color: white;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+
+    .govsa-footer__container{
+        padding-top: 25px;
+        justify-content: space-around;
+    }
+    .govsa-footer__contact{
+        a{
+            margin: 0px 0px 0px 3.5rem;
+            text-decoration:underline;
+        }
+        .govsa-contact__more{
+            line-height: 4.4;
+            vertical-align: bottom;
+        }
+        div{
+            padding: 0.5rem;
+        }
     }
 }
 

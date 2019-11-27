@@ -15,13 +15,12 @@
 
 .card-body {
     padding-bottom: 0.25rem;
+    align-items: center;
 }
 
 .govsa-card__tag {
     float: right;
-    padding: 0.25rem 0 0.25rem 0.25rem;
     text-align: center;
-
     p {
         background-color: $white;
         border-radius: 8px 0px 0px 8px;
@@ -35,11 +34,11 @@
 }
 
 .govsa-card__footer {
-    padding: 15px 0px 0px 0px;
+    padding: 15px 0px 0px 10px;
     background-color: $green;
     border-radius: 0 0 6px 6px;
     height: 60px;
-    color: $white;
+    color: $black;
 
     div>div>span {
         font-weight: bold;
