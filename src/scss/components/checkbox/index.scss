@@ -21,7 +21,8 @@
       box-shadow: 0 0 0 3px $gray-pastel;
     }
 
-    &:active~.govsa-checkbox__checkmark {
+    &:active~.govsa-checkbox__checkmark,
+    &:focus~.govsa-checkbox__checkmark {
       box-shadow: 0 0 0 3px $yellow;
     }
 

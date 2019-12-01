@@ -45,11 +45,6 @@
     }
 }
 
-// for switch button in footer
-.custom-control-input:checked ~ .custom-control-label::before {
-    border-color:$white;
-    background-color: #26634B;
-}
 .footer-bordered-div{
     &:not(first-child){
         margin-top: 5px;
