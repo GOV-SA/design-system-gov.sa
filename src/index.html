@@ -313,9 +313,9 @@
                     <a class="nav-link" href="#">item 3</a>
                 </li>
                 <li class="govsa-sideNavigation__dropdown nav-item">
-                    <p class="nav-link">Dropdown
-                        <i class="govsa--right"></i>
-                    </p>
+                    <button class="govsa-sideNavigation__button">
+                        Dropdown <i class="govsa--right"></i>
+                    </button>
                 </li>
                 <div class="govsa-dropdown-container flex-column">
                     <li class="nav-item">
@@ -332,15 +332,16 @@
                     <a class="nav-link" href="#">item 5</a>
                 </li>
                 <li class="govsa-sideNavigation__dropdown nav-item">
-                    <p class="nav-link">Dropdown
-                        <i class="govsa--right"></i>
-                    </p>
+                    <button class="govsa-sideNavigation__button">
+                        Dropdown <i class="govsa--right"></i>
+                    </button>
                 </li>
                 <div class="govsa-dropdown-container flex-column">
                     <li class="nav-item">
                         <a class="nav-link" href="#">item 1</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#">item 2</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">item 3</a>
@@ -362,9 +363,9 @@
                     <a class="nav-link" href="#">نص 3</a>
                 </li>
                 <li class="govsa-sideNavigation__dropdown nav-item">
-                    <p class="nav-link">نص
-                        <i class="govsa--right"></i>
-                    </p>
+                    <button class="govsa-sideNavigation__button">
+                        نص <i class="govsa--right"></i>
+                    </button>
                 </li>
                 <div class="govsa-dropdown-container flex-column">
                     <li class="nav-item">
@@ -381,9 +382,9 @@
                     <a class="nav-link" href="#">نص 5</a>
                 </li>
                 <li class="govsa-sideNavigation__dropdown nav-item">
-                    <p class="nav-link">نص
-                        <i class="govsa--right"></i>
-                    </p>
+                    <button class="govsa-sideNavigation__button">
+                        نص <i class="govsa--right"></i>
+                    </button>
                 </li>
                 <div class="govsa-dropdown-container flex-column">
                     <li class="nav-item">
@@ -3039,11 +3040,10 @@
         <div class="col-md-3">
             <div class="accordion govsa-accordion" id="accordionExample">
                 <div class="card">
-                    <div class="card-header collapsed" id="headingOne" data-toggle="collapse" data-target="#collapseOne"
-                        aria-expanded="true" aria-controls="collapseOne">
-                        <p>Lable #1 <i class=" govsa-icon govsa--arrowdown"></i></p>
-
-                    </div>
+                    <button class="collapsed card-header" id="headingOne" data-toggle="collapse"
+                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Lable #1 <i class=" govsa-icon govsa--arrowdown"></i>
+                    </button>
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                         data-parent="#accordionExample">
                         <div class="card-body">
@@ -3053,11 +3053,10 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo"
-                        aria-expanded="false" aria-controls="collapseTwo">
-                        <p>Lable #2 <i class=" govsa-icon govsa--arrowdown"></i> </p>
-
-                    </div>
+                    <button class="card-header collapsed" id="headingTwo" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Lable #2 <i class=" govsa-icon govsa--arrowdown"></i>
+                    </button>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                         <div class="card-body">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
@@ -3066,11 +3065,10 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header collapsed" id="headingThree" data-toggle="collapse"
+                    <button class="collapsed card-header" id="headingThree" data-toggle="collapse"
                         data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <p>Lable #3 <i class=" govsa-icon govsa--arrowdown"></i> </p>
-
-                    </div>
+                        Lable #3 <i class=" govsa-icon govsa--arrowdown"></i>
+                    </button>
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                         data-parent="#accordionExample">
                         <div class="card-body">
@@ -3084,11 +3082,10 @@
         <div class="col-md-3">
             <div class="accordion govsa-accordion" id="accordionExample">
                 <div class="card">
-                    <div class="card-header collapsed" id="headingOne" data-toggle="collapse"
+                    <button class="collapsed card-header" id="headingOne" data-toggle="collapse"
                         data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
-                        <p>Lable #1 <i class=" govsa-icon govsa--arrowdown"></i></p>
-
-                    </div>
+                        Lable #1 <i class=" govsa-icon govsa--arrowdown"></i>
+                    </button>
                     <div id="collapseOne1" class="collapse show" aria-labelledby="headingOne"
                         data-parent="#accordionExample">
                         <div class="card-body">
@@ -3107,7 +3104,8 @@
             <span class="govsa-tag">New</span>
         </div>
         <div class="col-md-2">
-            <span class="govsa-tag">New <img class="colsed-tag" src="../src/icon/closeTag.svg"> </span>
+            <span class="govsa-tag">New <button class="govsa-clear__button colsed-tag"><img
+                        src="../src/icon/closeTag.svg"></button> </span>
         </div>
     </div>
     <div class="row my-3" dir="rtl">
@@ -3115,7 +3113,8 @@
             <span class="govsa-tag">نص</span>
         </div>
         <div class="col-md-2">
-            <span class="govsa-tag">نص <img class="colsed-tag" src="../src/icon/closeTag.svg"> </span>
+            <span class="govsa-tag">نص <button class="govsa-clear__button colsed-tag"><img
+                src="../src/icon/closeTag.svg"></button> </span>
         </div>
     </div>
     <h3>Tabs</h3>

@@ -47,7 +47,8 @@
     }
 
     &:focus {
-        outline: none;
+        outline: 3px  auto $yellow;
+        box-shadow: 0 0 0 2px $yellow;
     }
 
     &:disabled {
@@ -64,7 +65,8 @@
     font-size: 12px;
 
     &:focus {
-        outline: none;
+        outline: 3px  auto $yellow;
+        box-shadow: 0 0 0 1px $yellow;
     }
 }
 

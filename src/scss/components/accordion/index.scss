@@ -5,33 +5,37 @@
     .card-header {
       background-color: $white;
       border: 1px solid $darkBlue;
-      padding: 0px;
+      padding: 0.75rem .5rem;
       margin-bottom: 0px;
+      color: $darkBlue;
+      text-align: inherit;
 
-      p {
-        padding: 10px 15px;
-        margin-bottom: 0px;
-
-        i {
-          float: right;
-          color: $black;
-          font-size: 7px;
-          padding: 10px;
-        }
+      i {
+        float: right;
+        color: $black;
+        font-size: 9px;
+        padding: 10px;
+        margin: 0px 5px 0px 0px;
       }
 
       &:hover {
         background-color: $darkBlue-tint;
+        color: $white;
         cursor: pointer;
 
-        p,
         i {
           color: $white;
+          background-color: $darkBlue-tint;
         }
       }
 
       &:active {
         border: 1px solid $yellow;
+        
+      }
+      &:focus{
+        outline: none;
+        text-decoration: underline;
       }
 
       &[aria-expanded="true"] {
