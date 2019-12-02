@@ -19,8 +19,8 @@
   font-family: noto_naskh_arabicbold;
   font-weight: $font-weight-bold;
 }
-[dir="rtl"] button,button[class^="govsa-btn--"], a[class^="btn--"]{
-    font-family: noto_naskh_arabicbold ;
+[dir="rtl"] .bnt,button,button[class^="govsa-btn--"], a[class^="btn--"]{
+    font-family: noto_naskh_arabicbold !important ;
   }
 
 [dir="rtl"] [class^="govsa-footer--"] {
