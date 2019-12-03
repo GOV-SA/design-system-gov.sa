@@ -22,4 +22,8 @@
     .custom-control-input:focus~.custom-control-label::before {
         box-shadow: 0 0 0 0.2rem $yellow;
     }
+
+    :hover{
+      cursor: pointer;  
+    }
 }

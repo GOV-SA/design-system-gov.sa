@@ -12,15 +12,18 @@
   font-family: noto_naskh_arabicregular;
 }
 
-[dir="rtl"] [class^="body--"] {
+[dir="rtl"] [class^="govsa-body--"] {
   font-family: noto_naskh_arabicregular;
 }
-[dir="rtl"] [class^="body--bold"] {
+[dir="rtl"] [class^="govsa-body--bold"] {
   font-family: noto_naskh_arabicbold;
   font-weight: $font-weight-bold;
 }
-[dir="rtl"] .bnt,button,button[class^="govsa-btn--"], a[class^="btn--"]{
-    font-family: noto_naskh_arabicbold !important ;
+[dir="rtl"] .bnt,
+[dir="rtl"] button,
+[dir="rtl"] button[class^="govsa-btn--"],
+[dir="rtl"] a[class^="govsa-btn--"]{
+    font-family: noto_naskh_arabicregular !important;
   }
 
 [dir="rtl"] [class^="govsa-footer--"] {

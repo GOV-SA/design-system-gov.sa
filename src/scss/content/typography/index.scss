@@ -2,13 +2,11 @@
   font-family: thesansb4_semilight;
 }
 
-
-
 [lang="en"] * {
   font-family: thesansb4_semilight;
 }
 
-[class^="subtitle--"]{
+[class^="govsa-subtitle--"]{
   font-family: thesansb4_semilight;
 }
 
@@ -24,31 +22,31 @@
 }
 
 
-[class^="body--"]{
+[class^="govsa-body--"]{
   font-family: thesansb4_semilight;
 }
-[class^="body--bold"]{
+[class^="govsa-body--bold"]{
   font-family: thesansb8_extrabold;
 }
 
 
-.body--bold--1,.body--1 {
+.govsa-body--bold--1,.govsa-body--1 {
   @include font-size( $font-size-sm * .875 );
   font-weight:  $font-weight-normal;
 }
 
-.body--bold--2,.body--2{
+.govsa-body--bold--2,.govsa-body--2{
   @include font-size($font-size-sm);
   font-weight: $font-weight-normal;
 }
-[class^="body--bold"]{
+[class^="govsa-body--bold"]{
   font-family: thesansb8_extrabold;
   font-weight: $font-weight-bold;
 
 }
 
- .bnt,button,button[class^="btn--"], a[class^="btn--"]{
-  font-family: thesansb4_semilight !important ;
+ .bnt,button,button[class^="govsa-btn--"], a[class^="govsa-btn--"]{
+  font-family: thesansb4_semilight !important;
 }
 
 
@@ -62,7 +60,7 @@
   @include font-size( $font-size-sm );
 }
 
-[class^="footer--"]{
+[class^="govsa-footer--"]{
   font-family: thesansb4_semilight;
 }
 
