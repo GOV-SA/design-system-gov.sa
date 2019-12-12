@@ -105,6 +105,7 @@
             display: flex;
             flex-wrap: wrap;
             list-style-type: none;
+            padding: 0px;
         }
 
         .govsa-header__list--width {
@@ -125,6 +126,9 @@
             border-color: $white;
             .govsa-header__list--width {
                 width: 100%;
+                .dropdown-item {
+                    padding: 0.25rem 0.5rem;
+                }
             }
         }
     }

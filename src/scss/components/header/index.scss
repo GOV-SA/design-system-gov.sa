@@ -4,6 +4,10 @@
 
     .navbar {
         padding: 0.25rem 1rem 0rem 1rem;
+
+        .navbar-toggler {
+            border-radius: 0px;
+        }
     }
 
     .govsa-logo {
@@ -66,14 +70,16 @@
             background-color: $green;
             width: 100%;
             position: absolute;
-            .govsa-advanced-search__btn{
+
+            .govsa-advanced-search__btn {
                 background-color: $green;
                 border: 0px;
                 color: $white;
                 width: 99%;
                 text-align: left;
-                &:focus{
-                   outline: $yellow auto 5px;
+
+                &:focus {
+                    outline: $yellow auto 5px;
                 }
             }
         }
