@@ -148,6 +148,24 @@
                 margin: -8px 0px 0px 0px;
             }
         }
+
+        .govsa-header__open-search{
+            padding: 0.25rem 0.25rem 0rem 0.25rem;
+            .govsa-logo {
+                text-align: center;
+                width: 35%;
+                padding: 10px 0px 0px 0px;
+                img {
+                    margin: -8px 0px 0px 0px;
+                }
+            }
+            .govsa-header__search__button{
+                padding: 0px;
+                i{
+                    font-size: 16px;
+                }
+            }
+        }
     }
 
     .govsa-search--header{
