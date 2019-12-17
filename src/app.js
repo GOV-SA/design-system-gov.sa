@@ -7,3 +7,4 @@ import'./scss/components/file-upload/file-upload';
 import '../src/lib/svgxuse';
 import './scss/style.scss';
 import'./scss/components/side-navigation/side-navigation';
+import'./scss/components/header/header-search';
