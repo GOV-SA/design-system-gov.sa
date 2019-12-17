@@ -19,7 +19,7 @@ module.exports = function(env, argv) {
         plugins: [
             new CleanWebpackPlugin(['dist']),
             new HtmlWebpackPlugin({
-                title: 'Gov.se Example Page',
+                title: 'Gov.sa Example Page',
                 template: path.resolve('./src/index.html')
             }),
             new MiniCssExtractPlugin({

@@ -1,10 +1,11 @@
 import'../node_modules/jquery/src/jquery';
 import'popper.js';
 import 'bootstrap';
-import './scss/components/search/search';
-import'./scss/components/tag/tag';
-import'./scss/components/file-upload/file-upload';
+
+import './js/search';
+import'./js/tag';
+import'./js/file-upload';
 import '../src/lib/svgxuse';
 import './scss/style.scss';
-import'./scss/components/side-navigation/side-navigation';
-import'./scss/components/header/header-search';
+import'./js/side-navigation';
+import'./js/header-search';

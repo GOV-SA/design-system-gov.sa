@@ -1,7 +1,7 @@
 // Create your SCSS variables here and it will override bootstrap styles
 @import "../components/color/variables";
-@import "../content/typography/variables";
-@import "../content/govsa-font/variables";
+@import "../../typography/variables";
+@import "../../govsa-icons/variables";
 @import "../components/buttons/variables";
 @import "../components/card/variables";
 @import "../components/alert/variables";
