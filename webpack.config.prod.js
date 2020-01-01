@@ -9,7 +9,7 @@ module.exports = function(env, argv) {
     return {
         mode: 'production',
         entry: [
-            './src/app.js'
+            './src/js/app.js'
         ],
         optimization: {
             minimizer: [
@@ -23,7 +23,7 @@ module.exports = function(env, argv) {
                 template: path.resolve('./src/index.html')
             }),
             new MiniCssExtractPlugin({
-                filename: "[name].css",
+                filename: "govsa-ds.css",
                 chunkFilename: "[id].css"
             }),
             new MinifyPlugin(),
@@ -61,7 +61,7 @@ module.exports = function(env, argv) {
                     use: [{
                         loader: "file-loader",
                         options: {
-                            outputPath: './scss/fonts',
+                            outputPath: './fonts',
                             name: "[name].[ext]",
                         },
                     }, ]
