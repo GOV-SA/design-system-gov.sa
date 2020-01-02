@@ -27,8 +27,8 @@
         border-color: $green;
         color: $black;
         padding: 0.25rem;
-        @include font-size($font-size-sm * .875);
-        font-weight: $font-weight-bold;
+        // @include font-size($font-size-sm * .875);
+        // font-weight: $font-weight-bold;
     }
 
 }

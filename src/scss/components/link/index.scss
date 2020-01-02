@@ -1,6 +1,5 @@
 .govsa-link {
-    @include font-size($font-size-sm);
-    font-weight: $font-weight-normal;
+    font-size: 0.875rem;
     text-decoration: underline;
 
     i {
