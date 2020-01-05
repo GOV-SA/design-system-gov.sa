@@ -1,72 +1,34 @@
-// Add the following code if you want the name of the file appear on select
-$(".govsa-fileupload__input").on("change", function() {
-  var fileName = $(this)
-    .val()
-    .split("\\")
-    .pop();
-  $(this)
-    .siblings(".govsa-fileupload__name")
-    .html(fileName);
+//Add the following code if you want the name of the file appear on select
+var fileupload_buttons = document.getElementsByClassName("govsa-fileupload__input");
+for (var i = 0; i < fileupload_buttons.length; i++) {
+  fileupload_buttons[i].addEventListener("change", function() {
+    var fileName = this.value.split("\\").pop();
+    console.log(i);
+    this.nextElementSibling.nextElementSibling.nextElementSibling.innerHTML= fileName;
+    this.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.classList.remove("d-none");
 
-  $(this)
-    .parent()
-    .children()
-    .next()
-    .next()
-    .next()
-    .next(".clear")
-    .removeClass("d-none");
-  $(this)
-    .parent()
-    .children()
-    .next()
-    .next()
-    .next()
-    .next()
-    .next()
-    .children(".govsa-fileupload__bnt")
-    .removeAttr("disabled");
-});
-//to clear file name slected
-$(".clear").click(function() {
-  if (document.dir == "ltr") {
-    $(this)
-      .parent()
-      .children()
-      .next()
-      .next()
-      .next(".govsa-fileupload__name")
-      .text("No file choosen");
-  } else {
-    $(this)
-      .parent()
-      .children()
-      .next()
-      .next()
-      .next(".govsa-fileupload__name")
-      .text("لا يوجد مرفق");
-  }
+    var fileupload_buttons2 = document.getElementsByClassName("govsa-fileupload__bnt");
+    for (var i = 0; i < fileupload_buttons2.length; i++) {
+    this.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.children[i].removeAttribute("disabled");
+    }
+  });
+}
 
-  $(this)
-    .parent()
-    .children()
-    .next()
-    .next()
-    .next()
-    .next()
-    .next()
-    .children(".govsa-fileupload__bnt")
-    .attr("disabled", "disabled");
-  $(this)
-    .parent()
-    .children(".govsa-fileupload__input")
-    .val("");
-  $(this)
-    .parent()
-    .children()
-    .next()
-    .next()
-    .next()
-    .next(".clear")
-    .addClass("d-none");
-});
+var clear_buttons = document.getElementsByClassName("clear");
+for (var i = 0; i < clear_buttons.length; i++) {
+  clear_buttons[i].addEventListener("click", function() {
+  
+   if (document.dir == "ltr") {
+       this.previousElementSibling.innerHTML="No file choosen";
+      } else {
+        this.previousElementSibling.innerHTML="لا يوجد مرفق";
+      }
+
+   var fileupload_buttons3 = document.getElementsByClassName("govsa-fileupload__bnt");
+   for (var i = 0; i < fileupload_buttons3.length; i++) {
+    this.nextElementSibling.children[i].setAttribute("disabled",false);
+   }
+   this.classList.add("d-none");
+   this.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.value="";
+  });
+}
