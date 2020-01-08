@@ -78,7 +78,9 @@ Gov.sa-design-system/
 │   └── govsa-ds.js
 └── scss/
 ```
-2.  Copy the Gov.sa-design-system folder into a relevant place in your project’s code base. Here is an example structure for how this might look:
+2.  Copy the Gov.sa-design-system folder into a relevant place in your project’s code base.
+
+ Here is an example structure for how this might look:
 
 ```bash
   example-project/
@@ -89,7 +91,7 @@ Gov.sa-design-system/
 │   └── javascript/
 └── index.html
 ```
-3.  Reference the CSS and JavaScript files in each HTML page We also provide Sass (.scss) files in the zip package which you can use to generate new CSS. 
+3.  Reference the CSS and JavaScript files in each HTML page We also provide Sass files in the zip package which you can use to generate new CSS. 
 
  **Here is an example of how to reference these assets in your index.html file:**
 
@@ -110,7 +112,7 @@ Gov.sa-design-system/
   </body>
 </html>
 ```
-And that’s it :simple_smile:
+And that’s it :)
 
 ## Install using npm:
 1.  Install Node and npm.
