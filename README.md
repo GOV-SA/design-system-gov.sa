@@ -47,7 +47,8 @@ gov.sa-design-system/
 
 
 ## Installation:
-How you implement the design system depends on the needs of your project and your workstyle.
+How you to use the Gov.sa design system depends on the needs of your project.
+
 First, the Gov.sa design system built on Bootstrap, so you need to install below dependencies packages:
 1.  [Bootstrap](https://getbootstrap.com/).
 2.  [Jquery](https://jquery.com/).
@@ -163,7 +164,28 @@ scss/
 ├──packges/
 │   ├── govsa-accordion.scss
 │   ├── govsa-alert.scss
-│   ├── 
+│   ├── govsa-breadcrumb.scss
+│   ├── govsa-button.scss
+│   ├── govsa-card.scss
+│   ├── govsa-checkbox.scss
+│   ├── govsa-dropdown.scss
+│   ├── govsa-header.scss
+│   ├── govsa-footer.scss
+│   ├── govsa-file-upload.scss
+│   ├── govsa-icons.scss
+│   ├── govsa-image.scss
+│   ├── govsa-link.scss
+│   ├── govsa-outlin.scss
+│   ├── govsa-pagniation.scss
+│   ├── govsa-radio.scss
+│   ├── govsa-search.scss
+│   ├── govsa-sid-navigation.scss
+│   ├── govsa-switch.scss
+│   ├── govsa-table.scss
+│   ├── govsa-tabs.scss
+│   ├── govsa-tage.scss
+│   ├── govsa-text-input.scss
+
 ```
 - govsa-theme-required.scss: include the required theme (color, font)
 - govsa-theme-global.scss: include all design system
