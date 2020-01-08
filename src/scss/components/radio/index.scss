@@ -9,6 +9,9 @@
   display: block;
   position: relative;
   padding-left: $form-check-padding-left;
+  [dir="rtl"] & {
+    padding-right: $form-check-padding-left;
+  }
   padding-top: 3px;
   cursor: pointer;
   -moz-user-select: none;
@@ -41,6 +44,9 @@
     position: absolute;
     top: 5px;
     left: 0;
+    [dir="rtl"] & {
+      right: 0;
+    }
     height: 18px;
     width: 18px;
     background-color: $white;

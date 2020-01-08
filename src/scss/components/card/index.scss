@@ -51,3 +51,22 @@
     margin: 0px 5px;
     padding: 0px 5px 0px 0px;
 }
+
+[dir="rtl"]  {
+    .govsa-card__tag {
+        float: left;
+        p {
+            border-radius: 0px 8px 8px 0px;
+        }
+    }
+    .govsa-card__footer {
+        padding: 15px 10px 0px 0px;
+        div>div>span {
+            padding-right: 15px;
+        }
+    }
+    .govsa-card__container {
+        padding: 0px 0px 0px 5px;
+    }
+   
+}

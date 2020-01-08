@@ -13,7 +13,12 @@
     .govsa-logo {
         img {
             margin: -8px 80px 0px 0px;
+
+            [dir="rtl"] & {
+                margin: -8px 0px 0px 80px;
+            }
         }
+
     }
 
     .gosa-header__search-box {
@@ -41,6 +46,11 @@
             background-color: $white;
             color: $darkBlue;
             margin: 0px 0px 0px 1px;
+
+            [dir="rtl"] & {
+                margin: 0px 1px 0px 0px;
+            }
+
             padding-top: 8px;
             font-size: 12px;
             border-color: $white !important;
@@ -78,13 +88,17 @@
                 width: 99%;
                 text-align: left;
 
+                [dir="rtl"] & {
+                    text-align: right;
+                }
+
                 &:focus {
                     outline: $yellow auto 5px;
                 }
             }
         }
 
-   
+
     }
 
     .navbar-collapse {
@@ -95,9 +109,18 @@
     .nav-item {
         margin: 0px 4px 4px 0px;
 
+        [dir="rtl"] & {
+            margin: 0px 0px 4px 4px;
+        }
+
         .nav-link {
             color: $white;
             margin: 10px 10px 0px 0px;
+
+            [dir="rtl"] & {
+                margin: 10px 0px 0px 10px;
+            }
+
             padding-bottom: 0px;
         }
 
@@ -121,6 +144,10 @@
 
     .govsa-vison-2030 {
         margin: 0px 0px 0px 30px;
+
+        [dir="rtl"] & {
+            margin: 0px 30px 0px 0px;
+        }
     }
 
     @media (max-width: 991px) {
@@ -144,31 +171,40 @@
             text-align: center;
             width: 67%;
             padding: 10px 0px 0px 14px;
+
+            [dir="rtl"] & {
+                padding: 10px 14px 0px 0px;
+            }
+
             img {
                 margin: -8px 0px 0px 0px;
             }
         }
 
-        .govsa-header__open-search{
+        .govsa-header__open-search {
             padding: 0.25rem 0.25rem 0rem 0.25rem;
+
             .govsa-logo {
                 text-align: center;
                 width: 35%;
                 padding: 10px 0px 0px 0px;
+
                 img {
                     margin: -8px 0px 0px 0px;
                 }
             }
-            .govsa-header__search__button{
+
+            .govsa-header__search__button {
                 padding: 0px;
-                i{
+
+                i {
                     font-size: 16px;
                 }
             }
         }
     }
 
-    .govsa-search--header{
+    .govsa-search--header {
         .govsa-search__button {
             background-color: $darkBlue;
             border: 0;
@@ -181,7 +217,7 @@
         }
 
         .govsa-header__search__button {
-            
+
             background-color: $darkBlue;
             border: 0;
             width: 100%;
@@ -189,33 +225,48 @@
             border-radius: 0px 8px 8px 0px;
             margin: 0px 0px 0px 2px;
             font-size: 25px;
-            padding:8px 15px 0px 20px;
-        
+            padding: 8px 15px 0px 20px;
+
+            [dir="rtl"] & {
+                border-radius: 8px 0px 0px 8px;
+                margin: 0px 2px 0px 0px;
+                padding: 8px 20px 0px 15px;
+            }
+
             &:active {
                 box-shadow: 0px 0 0 2px $yellow;
                 outline: none;
                 margin: 0px 0px 0px 5px;
+
+                [dir="rtl"] & {
+                    margin: 0px 5px 0px 0px;
+                }
             }
-        
+
             &:focus {
                 outline: none;
                 box-shadow: 0 0 0 2px $yellow;
             }
         }
-        
-        .govsa-input{
+
+        .govsa-input {
             border-color: $white;
         }
 
         .govsa-header__search__input {
             color: $darkBlue;
             border-radius: 8px 0px 0px 8px;
+
+            [dir="rtl"] & {
+                border-radius: 0px 8px 8px 0px;
+            }
+
             position: relative;
             flex: 1 1 auto;
             width: 1%;
             padding: 5px 10px 5px 10px;
             height: auto;
-        
+
             &:focus {
                 box-shadow: 0px 0 0 2px $yellow;
             }

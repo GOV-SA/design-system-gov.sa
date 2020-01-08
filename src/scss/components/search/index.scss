@@ -130,3 +130,39 @@
     margin: 0px 0px 0px -2px;
 }
     
+    
+[dir="rtl"] {
+    .govsa-search--small {
+        .govsa-search__button {
+            i {
+                right: -10px;
+            }
+        }
+    }
+
+    .govsa-search__input {
+        border-radius: 0px 8px 8px 0px;
+    }
+
+    .govsa-search__button {
+        border-radius: 8px 0px 0px 8px;
+        margin: 0px 2px 0px 0px;
+        padding: 8px 20px 0px 15px;
+    }
+
+    .govsa-clear__button {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .govsa-search__container {
+        .govsa-search__result {
+            padding: 0px 10px 5px 0px;
+        }
+    }
+
+    .govsa-advanced-search {
+        border-radius: 0px 0px 7px 7px;
+        padding: 5px 10px 5px 0px;
+
+    }
+}

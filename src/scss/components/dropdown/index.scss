@@ -83,3 +83,13 @@
     }
   }
 }
+
+[dir="rtl"]  {
+  .dropdown-menu{
+    .govsa-dropdown__item{
+      text-align: right;
+      padding-right: 4px;
+    }
+  }
+  
+  }
