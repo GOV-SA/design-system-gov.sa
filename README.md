@@ -5,12 +5,12 @@
 - Gov.sa is built on [Bootstrap](https://getbootstrap.com).
 - The CSS foundation of Gov.sa is built with the Sass language.
 - Gov.sa built mobile first.
-- CSS selectors are prefixed with govsa (For example: .govsa-button). This identifier helps the design system avoid conflicts with other styles on a site which are not part of gov.sa design system.
+- CSS selectors are prefixed with govsa (For example: .govsa-button). This identifier helps the design system avoid conflicts with other styles on a site which are not part of GOV.SA design system.
 - Uses a [BEM](http://getbem.com/introduction/) approach for naming CSS selectors. Blocks are separated from elements with two underscores (__) For example: .govsa-button__elem.  Modifier classes consist of the base class plus a modifier suffix, separated by two dashes (--) for example: govsa-button--disabled , govsa-button__secondary--disabled.
 
 **CSS and SCSS File Organization:**
 ```bash
-gov.sa-design-system/ 
+GOV.SA-design-system/ 
  ├── css/ 
  │   ├── govsa-ds.min.css.map  
  │   ├── govsa-ds.min.css
@@ -55,18 +55,18 @@ gov.sa-design-system/
 
 
 ## Installation:
-How to you use the Gov.sa design system depends on the needs of your project.
+How to you use the Gov.SA design system depends on the needs of your project.
 
-First, the Gov.sa design system built on Bootstrap, so you need to install below dependencies packages:
+First, the Gov.SA design system built on Bootstrap, so you need to install below dependencies packages:
 1.  [Bootstrap](https://getbootstrap.com/).
 2.  [Jquery](https://jquery.com/).
 3.  [Popper.js](https://popper.js.org/).
 
 You have two options to get the design system:
--   **Download the design system** if you are not familiar with npm and package management.
--   **Use the design system npm package** if you are familiar with using npm and package management.
+-   **Download the design system**  if you are not familiar with npm and package management.
+-   [Use the design system npm package](#npm) if you are familiar with using npm and package management.
 
-We recommend that you install gov.sa design system using npm because it is easier way to be installed and updated and you will be able to select individual SCSS and JS of gov.sa design system.
+We recommend that you install GOV.SA design system using npm because it is easier way to be installed and updated and you will be able to select individual SCSS and JS of GOV.SA design system.
 
 ## Download the design system: 
 1.  Download the govsa-ds zip file from the latest govsa-ds release and open that file.
@@ -122,11 +122,11 @@ Gov.sa-design-system/
 ```
 And that’s it :)
 
-## Install using npm:
+## Install using npm:{#npm}
 1.  Install Node and npm.
 2.  Create a package.json file if you don’t already have one. You can create a default package.json file by running npm init from the root of your project. 
 3.  Install Gov.sa design system in your project  Npm install govsa-ds.
-Now, the gov.sa design system package installed as a dependency.
+Now, the GOV.SA design system package installed as a dependency.
 
 **Gov.sa design system folder structure:**
 
@@ -158,10 +158,10 @@ node_modules/govsa-ds/
 ```
 **Note**: We do not recommend directly editing the design system files in node_modules.
 
-## Using the gov.sa design system package:
-If you want to take full advantage of gov.sa design system custom settings and add build new styles and components with the gov.sa design system toolset, you’ll need a way to access the assets in the gov.sa design system package and compile custom CSS from the gov.sa design system source files.
-Use the task manager [Gulp](https://gulpjs.com/) as a way to add gov.sa design system assets to a project and compile our CSS from the package source.
-Go to [govsa-gulp](https://github.com/GOV-SA/Gulp) repo to see more details.
+## Using the GOV.SA design system package:
+If you want to take full advantage of GOV.SA design system custom settings and add build new styles and components with the GOV.SA design system toolset, you’ll need a way to access the assets in the GOV.SA design system package and compile custom CSS from the GOV.SA design system source files.
+Use the task manager [Gulp](https://gulpjs.com/) as a way to add GOV.SA design system assets to a project and compile our CSS from the package source.
+Go to [GOV.SA-gulp](https://github.com/GOV-SA/Gulp) repo to see more details.
 
 **Import Styles:**
 
