@@ -8,6 +8,7 @@
 - CSS selectors are prefixed with govsa (For example: .govsa-button). This identifier helps the design system avoid conflicts with other styles on a site which are not part of gov.sa design system.
 - Uses a [BEM](http://getbem.com/introduction/) approach for naming CSS selectors. Blocks are separated from elements with two underscores (__) For example: .govsa-button__elem.  Modifier classes consist of the base class plus a modifier suffix, separated by two dashes (--) for example: govsa-button--disabled , govsa-button__secondary--disabled.
 
+
 **CSS and SCSS File Organization:**
 ```bash
 gov.sa-design-system/ 
@@ -43,16 +44,7 @@ gov.sa-design-system/
 
 ```
 
-## JavaScript architecture:
-```bash
-├── js/
-│   ├── file-upload.js 
-│   ├── search.js 
-│   ├── side-navigation.js 
-│   ├── tag.js 
-│   ├── govsa-ds.js 
-│
-```
+
 
 ## Installation:
 How you implement the design system depends on the needs of your project and your workstyle.
@@ -65,10 +57,11 @@ You have two options to get the design system:
 -   **Download the design system** if you are not familiar with npm and package management.
 -   **Use the design system npm package** if you are familiar with using npm and package management.
 
-
 We recommend that you install gov.sa design system using npm because it is easier way to be installed and updated and you will be able to select individual SCSS and JS of gov.sa design system.
+
 ## Download the design system: 
 1.  Download the govsa-ds zip file from the latest govsa-ds release and open that file.
+
 After extracting the zip file you should see the following file and folder structure:
 ```bash
 Gov.sa-design-system/
@@ -98,7 +91,7 @@ Gov.sa-design-system/
 3.  Reference the CSS and JavaScript files in each HTML page We also provide Sass (.scss) files in the zip package which you can use to generate new CSS. 
 
  **Here is an example of how to reference these assets in your index.html file:**
- 
+
 **Note**: if you are going to use Arabic language, kindly change the language to “ar” and        direction to “rtl” in the body.
 
 ```bash
@@ -117,6 +110,7 @@ Gov.sa-design-system/
 </html>
 ```
 And that’s it :simple_smile:
+
 ## Install using npm:
 1.  Install Node and npm.
 2.  Create a package.json file if you don’t already have one. You can create a default package.json file by running npm init from the root of your project. 
@@ -152,6 +146,7 @@ node_modules/govsa-ds/
 ├──index.html
 ```
 **Note**: We do not recommend directly editing the design system files in node_modules.
+
 ## Using the gov.sa design system package:
 If you want to take full advantage of gov.sa design system custom settings and add build new styles and components with the gov.sa design system toolset, you’ll need a way to access the assets in the gov.sa design system package and compile custom CSS from the gov.sa design system source files.
 Use the task manager [Gulp](https://gulpjs.com/) as a way to add gov.sa design system assets to a project and compile our CSS from the package source.
@@ -174,6 +169,7 @@ scss/
 - govsa-theme-global.scss: include all design system
 
 **you have two way to import govsa-ds:**
+
 if you want to import all govsa-ds add the below to your Sass file:
 ```bash
 @import " govsa-ds "
@@ -204,7 +200,7 @@ JavaScript architecture:
 - govsa-ds.js: include the all JavaScript file.
 
 
-## Installation design system project
+## Installation the design system project
 1. Clone the project
 2. Go to the project root directory
 3. Run `yarn`
