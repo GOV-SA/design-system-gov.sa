@@ -60,9 +60,12 @@ First, the Gov.sa design system built on Bootstrap, so you need to install below
 1.  [Bootstrap](https://getbootstrap.com/).
 2.  [Jquery](https://jquery.com/).
 3.  [Popper.js](https://popper.js.org/).
+</br>
 You have two options to get the design system:
 -   **Download the design system** if you are not familiar with npm and package management.
 -   **Use the design system npm package** if you are familiar with using npm and package management.
+</br>
+
 We recommend that you install gov.sa design system using npm because it is easier way to be installed and updated and you will be able to select individual SCSS and JS of gov.sa design system.
 ## Download the design system: 
 1.  Download the govsa-ds zip file from the latest govsa-ds release and open that file.
@@ -93,7 +96,9 @@ Gov.sa-design-system/
 └── index.html
 ```
 3.  Reference the CSS and JavaScript files in each HTML page We also provide Sass (.scss) files in the zip package which you can use to generate new CSS. 
+</br>
  **Here is an example of how to reference these assets in your index.html file:**
+ </br>
 **Note**: if you are going to use Arabic language, kindly change the language to “ar” and        direction to “rtl” in the body.
 
 ```bash
@@ -106,7 +111,7 @@ Gov.sa-design-system/
     <link rel="stylesheet" 
     href="assets/Gov.sa-design-system/css/govsa-ds.min.css" />
   </head>
-  <body lang="en" dirc= "tr ">
+  <body lang="en" dirc= "tr">
     <script src="assets/ Gov.sa-design-system /js/govsa-ds.min.js"></script>
   </body>
 </html>
@@ -117,6 +122,7 @@ And that’s it :simple_smile:
 2.  Create a package.json file if you don’t already have one. You can create a default package.json file by running npm init from the root of your project. 
 3.  Install Gov.sa design system in your project  Npm install govsa-ds.
 Now, the gov.sa design system package installed as a dependency.
+</br>
 **Gov.sa design system folder structure:**
 
 ```bash
@@ -150,6 +156,7 @@ node_modules/govsa-ds/
 If you want to take full advantage of gov.sa design system custom settings and add build new styles and components with the gov.sa design system toolset, you’ll need a way to access the assets in the gov.sa design system package and compile custom CSS from the gov.sa design system source files.
 Use the task manager [Gulp](https://gulpjs.com/) as a way to add gov.sa design system assets to a project and compile our CSS from the package source.
 Go to [govsa-gulp](https://github.com/GOV-SA/Gulp) repo to see more details.
+</br>
 **Import Styles:**
 
 ```bash
@@ -165,6 +172,7 @@ scss/
 ```
 - govsa-theme-required.scss: include the required theme (color, font)
 - govsa-theme-global.scss: include all design system
+</br>
 **you have two way to import govsa-ds:**
 if you want to import all govsa-ds add the below to your Sass file:
 ```bash
@@ -176,6 +184,7 @@ if you want to import individual component (for example a button), add the below
 @import "node_modules/govsa-ds/packages/govsa-button.scss"
 ```
 **Note:** if you are going to use Arabic language, kindly change the language to “ar” and direction to “rtl” in the body.
+</br>
 **Import JavaScript:**
 
 JavaScript architecture:
@@ -195,7 +204,7 @@ JavaScript architecture:
 - govsa-ds.js: include the all JavaScript file.
 
 
-## Installation
+## Installation design system project
 1. Clone the project
 2. Go to the project root directory
 3. Run `yarn`
