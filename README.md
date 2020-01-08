@@ -64,7 +64,7 @@ First, the Gov.SA design system built on Bootstrap, so you need to install below
 
 You have two options to get the design system:
 -   **Download the design system**  if you are not familiar with npm and package management.
--   [Use the design system npm package](#npm) if you are familiar with using npm and package management.
+-   [Use the design system npm package](#install-using-npm) if you are familiar with using npm and package management.
 
 We recommend that you install GOV.SA design system using npm because it is easier way to be installed and updated and you will be able to select individual SCSS and JS of GOV.SA design system.
 
@@ -122,7 +122,7 @@ Gov.sa-design-system/
 ```
 And that’s it :)
 
-## Install using npm:{#npm}
+# Install using npm:{#install-using-npm}
 1.  Install Node and npm.
 2.  Create a package.json file if you don’t already have one. You can create a default package.json file by running npm init from the root of your project. 
 3.  Install Gov.sa design system in your project  Npm install govsa-ds.
