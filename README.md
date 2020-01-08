@@ -47,7 +47,7 @@ gov.sa-design-system/
 
 
 ## Installation:
-How you to use the Gov.sa design system depends on the needs of your project.
+How to you use the Gov.sa design system depends on the needs of your project.
 
 First, the Gov.sa design system built on Bootstrap, so you need to install below dependencies packages:
 1.  [Bootstrap](https://getbootstrap.com/).
