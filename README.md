@@ -8,7 +8,6 @@
 - CSS selectors are prefixed with govsa (For example: .govsa-button). This identifier helps the design system avoid conflicts with other styles on a site which are not part of gov.sa design system.
 - Uses a [BEM](http://getbem.com/introduction/) approach for naming CSS selectors. Blocks are separated from elements with two underscores (__) For example: .govsa-button__elem.  Modifier classes consist of the base class plus a modifier suffix, separated by two dashes (--) for example: govsa-button--disabled , govsa-button__secondary--disabled.
 
-
 **CSS and SCSS File Organization:**
 ```bash
 gov.sa-design-system/ 
@@ -43,7 +42,16 @@ gov.sa-design-system/
  │   │   ├── text-input/
 
 ```
-
+## JavaScript Organization:
+```bash
+├── js/
+│   ├── file-upload.js 
+│   ├── search.js 
+│   ├── side-navigation.js 
+│   ├── tag.js 
+│   ├── govsa-ds.js 
+│
+```
 
 
 ## Installation:
