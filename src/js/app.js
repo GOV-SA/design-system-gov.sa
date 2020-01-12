@@ -4,7 +4,6 @@ import 'bootstrap';
 import './search';
 import'./tag';
 import'./file-upload';
-import '../../src/lib/svgxuse';
 import'../scss/style.scss';
 import'./side-navigation';
 import'./header-search';
