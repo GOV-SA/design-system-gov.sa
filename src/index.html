@@ -49,7 +49,7 @@
             </div>
             <div class="collapse navbar-collapse order-md-1 order-2" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <ul class="nav nav-tabs govsa-tabs">
+                    <ul class="nav nav-tabs govsa-tabs p-0">
                         <li class="nav-item dropdown govsa-tabs__dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                                 aria-haspopup="true" aria-expanded="false">About Kingdom <i
@@ -1494,7 +1494,7 @@
                             <th>عنوان المحتوى</th>
                             <th>عنوان المحتوى</th>
                             <th>
-                                <label class="govsa-checkbox">عنوان المحتوى
+                                <label class="govsa-checkbox">عنوان 
                                     <input type="checkbox">
                                     <span class="govsa-checkbox__checkmark"></span>
                                 </label>
@@ -2127,6 +2127,68 @@
                 </div>
             </div>
         </div>
+        <div class="row my-3" dir="rtl">
+            <div class="col-md-3">
+                <div class="accordion govsa-accordion" id="accordionExample">
+                    <div class="card">
+                        <button class="collapsed card-header" id="headingOne" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Lable #1 <i class=" govsa-icon govsa--arrowdown"></i>
+                        </button>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <button class="card-header collapsed" id="headingTwo" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Lable #2 <i class=" govsa-icon govsa--arrowdown"></i>
+                        </button>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <button class="collapsed card-header" id="headingThree" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Lable #3 <i class=" govsa-icon govsa--arrowdown"></i>
+                        </button>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="accordion govsa-accordion" id="accordionExample">
+                    <div class="card">
+                        <button class="collapsed card-header" id="headingOne" data-toggle="collapse"
+                            data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                            Lable #1 <i class=" govsa-icon govsa--arrowdown"></i>
+                        </button>
+                        <div id="collapseOne1" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <br>
         <h3>Tag</h3>
         <div class="row my-3">
@@ -2144,7 +2206,7 @@
             </div>
             <div class="col-md-2">
                 <span class="govsa-tag">نص <button class="govsa-clear__button colsed-tag"><img
-                            src="./govsa-icons/icon/closeTag.svg"></button> </span>
+                    src="./govsa-icons/icon/closeTag.svg"></button> </span>
             </div>
         </div>
         <h3>Tabs</h3>
@@ -2556,11 +2618,12 @@
                         <P>Only .jpg and .png files. 500kb max file size</p>
                         <label class="govsa-fileupload__name">No file choosen error</label>
                         <i class="govsa--closed clear d-none"></i>
-                        <span class="govsa-errorMessage">! Error message</span>
                         <div>
                             <button type="button" class="btn govsa-btn--darkBlue govsa-fileupload__bnt"
                                 disabled>Upload</button>
+                                <span class="govsa-errorMessage mt d-inline">! Error message</span>
                         </div>
+                      
 
                     </div>
                 </form>
@@ -2591,11 +2654,12 @@
                         <P>ملفات .jpg و .png فقط. حجم الملف الأقصى </p>
                         <label class="govsa-fileupload__name">لا يوجد مرفق</label>
                         <i class="govsa--closed clear d-none"></i>
-                        <span class="govsa-errorMessage"> رسالة خطأ ! </span>
                         <div>
                             <button type="button" class="btn govsa-btn--darkBlue govsa-fileupload__bnt"
                                 disabled>رفع</button>
+                                <span class="govsa-errorMessage m-1 d-inline"> رسالة خطأ ! </span>
                         </div>
+                        
 
                     </div>
                 </form>
@@ -2737,12 +2801,12 @@
         <div class="feedback-container">
             <div class="container">
                 <div class="d-md-flex justify-content-center align-items-center p-4 feedback-container-div">
-                    <div class="mr-4">
+                    <div class="mx-3">
                         <span> Is this page helpful to you?
                             <a href="" class="govsa-footer-link">Yes </a> | <a href=""
                                 class="govsa-footer-link">No</a></span>
                     </div>
-                    <div class="ml-4">
+                    <div class="mx-3">
                         <span>60% of vistors said yes from 2843 Feedback</span>
                     </div>
                 </div>
@@ -2881,13 +2945,13 @@
         <div class="feedback-container">
             <div class="container">
                 <div class="d-md-flex justify-content-center align-items-center p-4 feedback-container-div">
-                    <div class="mr-4">
+                    <div class="mx-3">
                         <span>
                             هل هذه الصفحة مفيدة لك؟
                             <a href="" class="govsa-footer-link">نعم </a> | <a href="" class="govsa-footer-link">لا</a>
                         </span>
                     </div>
-                    <div class="ml-4">
+                    <div class="mx-3">
                         <span>قال 60 ٪ من الزائرين نعم من 2843 تقييم</span>
                     </div>
                 </div>
@@ -3019,5 +3083,291 @@
             </div>
         </div>
     </footer>
+   
+    <div dir="rtl" class="mt-5">
+        <div class="d-flex justify-content-between px-3">
+            <div>
+                <a href="#" class="govsa-link">English site</a> | <a href="#" class="govsa-link"> تواصل معنا</a>
+            </div>
+            <div>
+                <a href="#" class="govsa-link">حسابي</a> | <a href="#" class="govsa-link">تسجيل الدخول</a>
+            </div>
+        </div>
+        <header class="govsa-header">
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler p-0" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="govsa--menu text-white"></i>
+                </button>
+                <a class="govsa-logo" href="#">
+                    <img src="images/logo-govsa.svg" width="136" alt="">
+                </a>
+    
+                <!-- here -->
+                <div class="gosa-header__search-box order-md-2 order-1">
+                    <div class="input-group">
+                        <input type="text" class="govsa-input govsa-header__srarch__input d-none" placeholder="بحث">
+                        <div class="input-group-append">
+                            <button class="govsa-header__clear-bnt d-none" type="button"><i
+                                    class="govsa--closed"></i></button>
+                        </div>
+                        <div class="input-group-append">
+                            <button class="govsa-search__button govsa-header__search-btn" type="button"><i
+                                    class="govsa--zoom"></i></button>
+                        </div>
+                    </div>
+                    <div class="govsa-header__advanced-search position-relative d-none">
+                        <div class="govsa-advanced-search">
+                            <button class="govsa-advanced-search__btn"> بحث متقدم</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse order-md-1 order-2" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <ul class="nav nav-tabs govsa-tabs p-0">
+                            <li class="nav-item dropdown govsa-tabs__dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">عن المملكة <i
+                                        class="govsa-icon govsa--arrowdown"></i></a>
+                                <div class="govsa-tabs--border"></div>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <ul class="govsa-container--flex-wrap">
+                                        <li class="govsa-header__list--width">
+                                            <a class="dropdown-item" href="">
+                                                <span>تعرف على المملكة </span>
+                                            </a>
+                                        </li>
+                                        <li class="govsa-header__list--width">
+                                            <a class="dropdown-item" href="">
+                                                <span>التحول الرقمي</span>
+                                            </a>
+                                        </li>
+                                        <li class="govsa-header__list--width">
+                                            <a class="dropdown-item" href="">
+                                                <span>العمل والتوظيف في المملكة</span>
+                                            </a>
+                                        </li>
+                                        <li class="govsa-header__list--width">
+                                            <a class="dropdown-item" href="">
+                                                <span>الأنظمة واللوائح والسياسات</span>
+                                            </a>
+                                        </li>
+    
+                                        <li class="govsa-header__list--width">
+                                            <a class="dropdown-item" href="">
+                                                <span>الخطط والمبادرات الوطنية</span>
+                                            </a>
+                                        </li>
+                                        <li class="govsa-header__list--width"><a class="dropdown-item" href="">
+                                                <span>ميزانية المملكة</span>
+                                            </a>
+                                        </li>
+                                        <li class="govsa-header__list--width"><a class="dropdown-item" href="">
+                                                <span>تقارير وإحصاءات سعودية</span>
+                                            </a>
+                                        </li>
+                                        <li class="govsa-header__list--width"><a class="dropdown-item" href="">
+                                                <span>عن التعاملات الإلكترونية الحكومية</span>
+    
+                                            </a>
+                                        </li>
+                                        <li class="govsa-header__list--width">
+                                            <a class="dropdown-item" href="">
+                                                <span>المشاركة المجتمعية</span>
+                                            </a>
+                                        </li>
+                                        <li class="govsa-header__list--width">
+                                            <a class="dropdown-item" href="">
+                                                <span>قنوات الدفع الإلكتروني</span>
+                                            </a>
+                                        </li>
+                                        <li class="govsa-header__list--width">
+                                            <a class="dropdown-item" href="">
+                                                <span>الحج والعمرة</span>
+                                            </a>
+                                        </li>
+                                        <li class="govsa-header__list--width">
+                                            <a class="dropdown-item" href="">
+                                                <span>الرعاية الصحية في المملكة</span>
+                                            </a>
+                                        </li>
+                                        <li class="govsa-header__list--width">
+                                            <a class="dropdown-item" href="">
+                                                <span>التعليم في المملكة</span>
+                                            </a>
+                                        </li>
+                                        <li class="govsa-header__list--width">
+                                            <a class="dropdown-item" href="">
+                                                <span>القضاء في المملكة</span>
+                                            </a>
+                                        </li>
+                                        <li class="govsa-header__list--width">
+                                            <a class="dropdown-item" href="">
+                                                <span> المنافسات والمشتريات الحكومية
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="govsa-header__list--width">
+                                            <a class="dropdown-item" href="">
+                                                <span>حماية البيئة في المملكة</span>
+                                            </a>
+                                        </li>
+                                        <li class="govsa-header__list--width">
+                                            <a class="dropdown-item" href="">
+                                                <span>الانتخابات في المملكة العربية السعودية</span>
+                                            </a>
+                                        </li>
+                                        <li class="govsa-header__list--width">
+                                            <a class="dropdown-item" href="">
+                                                <span>البيانات المفتوحة</span>
+                                            </a>
+                                        </li>
+                                        <li class="govsa-header__list--width">
+                                            <a class="dropdown-item" href="">
+                                                <span>الحماية الاجتماعية </span>
+                                            </a>
+                                        </li>
+                                        <li class="govsa-header__list--width">
+                                            <a class="dropdown-item" href="">
+                                                <span>حقوق الأشخاص ذوي الإعاقة</span>
+                                            </a>
+                                        </li>
+                                        <li class="govsa-header__list--width">
+                                            <a class="dropdown-item" href="">
+                                                <span>الشراكة مع المجتمع المدني بالمملكة
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="govsa-header__list--width">
+                                            <a class="dropdown-item" href="">
+                                                <span>مملكة الإنسانية</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="nav nav-tabs govsa-tabs">
+                            <li class="nav-item dropdown govsa-tabs__dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">الجهات الحكومية <i
+                                        class="govsa-icon govsa--arrowdown"></i></a>
+                                <div class="govsa-tabs--border"></div>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <ul class="govsa-container--flex-wrap">
+                                        <li class="govsa-header__list--width">
+                                            <a class="dropdown-item" href="">
+                                                <span>تعرف على المملكة </span>
+                                            </a>
+                                        </li>
+                                        <li class="govsa-header__list--width">
+                                            <a class="dropdown-item" href="">
+                                                <span>التحول الرقمي</span>
+                                            </a>
+                                        </li>
+                                        <li class="govsa-header__list--width">
+                                            <a class="dropdown-item" href="">
+                                                <span>العمل والتوظيف في المملكة</span>
+                                            </a>
+                                        </li>
+                                        <li class="govsa-header__list--width">
+                                            <a class="dropdown-item" href="">
+                                                <span>الأنظمة واللوائح والسياسات</span>
+                                            </a>
+                                        </li>
+    
+                                        <li class="govsa-header__list--width">
+                                            <a class="dropdown-item" href="">
+                                                <span>الخطط والمبادرات الوطنية</span>
+                                            </a>
+                                        </li>
+                                        <li class="govsa-header__list--width"><a class="dropdown-item" href="">
+                                                <span>ميزانية المملكة</span>
+                                            </a>
+                                        </li>
+                                        <li class="govsa-header__list--width"><a class="dropdown-item" href="">
+                                                <span>تقارير وإحصاءات سعودية</span>
+                                            </a>
+                                        </li>
+                                        <li class="govsa-header__list--width"><a class="dropdown-item" href="">
+                                                <span>عن التعاملات الإلكترونية الحكومية</span>
+    
+                                            </a>
+                                        </li>
+                                        <li class="govsa-header__list--width">
+                                            <a class="dropdown-item" href="">
+                                                <span>المشاركة المجتمعية</span>
+                                            </a>
+                                        </li>
+                                        <li class="govsa-header__list--width">
+                                            <a class="dropdown-item" href="">
+                                                <span>قنوات الدفع الإلكتروني</span>
+                                            </a>
+                                        </li>
+                                        <li class="govsa-header__list--width">
+                                            <a class="dropdown-item" href="">
+                                                <span>الحج والعمرة</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">دليل الخدمات</a>
+                            <div class="govsa-tabs--border"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">GOV.SA </a>
+                            <div class="govsa-tabs--border"></div>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="govsa-vison-2030 order-md-3 order-3">
+                    <img src="./images/vision-2030-white.svg" width="68" alt="">
+                </a>
+            </nav>
+        </header>
+        <header class="govsa-header mt-5">
+            <nav class="navbar navbar-expand-lg govsa-header__open-search">
+                <button class="navbar-toggler p-0" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="govsa--menu text-white"></i>
+                </button>
+                <a class="govsa-logo" href="#">
+                    <img src="./govsa-icons/icon/logo-govsa.svg" width="136" alt="">
+                </a>
+                <div class="col-md-4 col-4 order-md-2 order-1 p-0">
+                    <div class="input-group govsa-search--header">
+                        <input type="text" class="govsa-input govsa-header__search__input" placeholder="بحث">
+                        <div class="input-group-append">
+                            <button class="govsa-clear__button d-none" type="button"><i class="govsa--closed"></i></button>
+                        </div>
+                        <div class="input-group-append">
+                            <button class="govsa-header__search__button" type="button"><i class="govsa--zoom"></i></button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="collapse navbar-collapse order-md-1 order-2" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">دليل الخدمات</a>
+                            <div class="govsa-tabs--border"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">دليل الخدمات</a>
+                            <div class="govsa-tabs--border"></div>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="govsa-vison-2030 order-md-3 order-3">
+                    <img src="./images/vision-2030-white.svg" width="68" alt="">
+                </a>
+            </nav>
+        </header>
+    </div>
 </body>
 </html>

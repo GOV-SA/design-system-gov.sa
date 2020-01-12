@@ -35,3 +35,12 @@
         padding: 0px;
       }
 }
+
+[dir="rtl"]  {
+    .govsa-fileupload{
+        a{
+            right: 15px;
+        }
+    }
+
+}

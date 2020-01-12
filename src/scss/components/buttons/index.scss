@@ -5,6 +5,9 @@
   padding-bottom: 0px;
   i{
     margin: 0px 0px 0px 15px;
+    [dir="rtl"] & {
+      margin: 0px 15px 0px 0px;
+    }
   }
   &:focus {
     color: #fff;

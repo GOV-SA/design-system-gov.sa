@@ -27,8 +27,8 @@
         border-color: $green;
         color: $black;
         padding: 0.25rem;
-        @include font-size($font-size-sm * .875);
-        font-weight: $font-weight-bold;
+        // @include font-size($font-size-sm * .875);
+        // font-weight: $font-weight-bold;
     }
 
 }
@@ -50,4 +50,23 @@
     flex: 1 0 50%;
     margin: 0px 5px;
     padding: 0px 5px 0px 0px;
+}
+
+[dir="rtl"]  {
+    .govsa-card__tag {
+        float: left;
+        p {
+            border-radius: 0px 8px 8px 0px;
+        }
+    }
+    .govsa-card__footer {
+        padding: 15px 10px 0px 0px;
+        div>div>span {
+            padding-right: 15px;
+        }
+    }
+    .govsa-card__container {
+        padding: 0px 0px 0px 5px;
+    }
+   
 }
