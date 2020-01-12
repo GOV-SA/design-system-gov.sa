@@ -211,8 +211,8 @@ if you want to import all govsa-ds add the below to your Sass file:
 ```
 if you want to import individual component (for example a button), add the below to your Sass file:
 ```bash
-@import "node_modules/govsa-ds/theme/govsa-theme-required.scss"
-@import "node_modules/govsa-ds/packages/govsa-button.scss"
+@import "govsa-ds/theme/govsa-theme-required.scss"
+@import "govsa-ds/packages/govsa-button.scss"
 ```
 **Note:** if you are going to use Arabic language, kindly change the language to “ar” and direction to “rtl” in the body.
 
