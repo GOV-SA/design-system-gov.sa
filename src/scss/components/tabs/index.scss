@@ -53,6 +53,7 @@
     border: none;
     position: static;
 
+    // margin: 10px 10px 0px 0px;
     &:hover,
     &:active,
     &:focus {
@@ -74,7 +75,7 @@
 
     .nav-link {
         color: $white;
-  
+
         i {
             font-size: 7px;
             margin: 0px 0px 0px 10px;
@@ -89,22 +90,24 @@
 
     .govsa-tabs--border {
         background-color: $green !important;
-        margin: 0px 2px 3px 2px;
+        margin: 16px 2px 3px 2px;
     }
 
     .dropdown-menu {
-        margin-top: 6px;
+        //  margin-top: 6px;
         border-color: $green;
         width: 100%;
-        margin-left: 10px;
-        margin-right: 5px;
+        top: 73px;
+        // margin-left: 10px;
+        // margin-right: 5px;
 
         .govsa-container--flex-wrap {
             display: flex;
             flex-wrap: wrap;
             list-style-type: none;
+            padding: 0px;
         }
-        
+
         .govsa-header__list--width {
             width: 33%;
         }
@@ -117,3 +120,21 @@
     outline: none !important;
 }
 
+@media (max-width: 991px) {
+    .nav-item.govsa-tabs__dropdown {
+        .dropdown-menu {
+            border-color: $white;
+            .govsa-header__list--width {
+                width: 100%;
+                .dropdown-item {
+                    padding: 0.25rem 0.5rem;
+                }
+            }
+        }
+    }
+
+    .nav-item.dropdown {
+        width: 100%;
+    }
+
+}

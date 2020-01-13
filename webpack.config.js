@@ -6,7 +6,7 @@ module.exports = function() {
     return {
         mode: 'development',
         entry: [
-            './src/app.js'
+            './src/js/app.js'
         ],
         watch: true,
         watchOptions: {
@@ -47,7 +47,6 @@ module.exports = function() {
                             }
                         },
                         "sass-loader",
-
                     ]
                 },
                 {
@@ -75,7 +74,7 @@ module.exports = function() {
                     use: [{
                         loader: "file-loader",
                         options: {
-                            outputPath: './scss/fonts',
+                            outputPath: './fonts',
                             name: "[name].[ext]",
                         },
                     }, ]

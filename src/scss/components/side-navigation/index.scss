@@ -1,0 +1,116 @@
+.govsa-sideNavigation {
+    li {
+        border-bottom: 1px solid #D8D8D8;
+
+        &:first-of-type {
+            border-top: 1px solid #D8D8D8;
+        }
+
+        .nav-link {
+            margin: 2px 0px 2px 0px;
+            color: $darkBlue;
+        }
+
+        &:hover {
+            background-color: $darkBlue-tint;
+
+            .nav-link {
+                color: $white;
+            }
+        }
+
+        &:active {
+            box-shadow: 0px 0 0 1px $yellow;
+            border: 1px solid $yellow;
+        }
+    }
+
+    .govsa-sideNavigation__button {
+        border: none;
+        background-color: $white;
+        color: $darkBlue;
+        font-size: 1rem;
+        text-align: inherit;
+        width: 100%;
+        height: 44px;
+        padding: 0px 0px 0px 15px;
+        [dir="rtl"] & {
+            padding: 0px 15px 0px 0px;
+          }
+
+        i {
+            float: right;
+            padding: 5px 15px 5px 15px;
+        }
+        
+        &:focus {
+            outline: none;
+            box-shadow: 0px 0 0 2px $yellow;
+        }
+
+        &:hover {
+            color: $white;
+            background-color: $darkBlue-tint;
+        }
+    }
+
+    .govsa-active {
+
+        .nav-link {
+            font-weight: bold;
+            border-width: 0px 0px 0px 5px;
+            border-style: solid;
+            border-color: $darkBlue;
+            border-radius: 3px 0px 0px 3px;
+            padding-left: 11px;
+            [dir="rtl"] & {
+                padding-right: 11px;
+                border-width: 0px 5px 0px 0px;
+                border-radius: 0px 3px 3px 0px;
+              }
+
+        }
+
+        .govsa-sideNavigation__button>.govsa--right {
+            -ms-transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+
+    }
+}
+
+
+.govsa-dropdown-container {
+    display: none;
+
+    li {
+        a.nav-link {
+            margin: 0px 0px 0px 15px;
+            [dir="rtl"] & {
+                margin: 0px 15px 0px 0px;
+              }
+        }
+
+        &:first-of-type {
+            border-top: none;
+        }
+    }
+}
+
+[dir="rtl"] {
+    .govsa-sideNavigation {
+        i {
+            transform: scaleX(-1);
+            float: left;
+        }
+
+        .govsa-active .govsa-sideNavigation__button>.govsa--right {
+            -ms-transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+            margin-left: 11px;
+        }
+
+    }
+}

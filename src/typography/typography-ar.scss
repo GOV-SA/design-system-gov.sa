@@ -1,0 +1,47 @@
+[dir="rtl"] * {
+  text-align: right;
+}
+[dir="rtl"] * {
+  font-family: noto_naskh_arabicregular;
+}
+[lang="ar"] * {
+  font-family: noto_naskh_arabicregular;
+}
+
+[dir="rtl"] [class^="govsa-subtitle--"] {
+  font-family: noto_naskh_arabicregular;
+}
+
+[dir="rtl"] [class^="govsa-body--"] {
+  font-family: noto_naskh_arabicregular;
+}
+[dir="rtl"] [class^="govsa-body--bold"] {
+  font-family: noto_naskh_arabicbold;
+  font-weight: $font-weight-bold;
+}
+[dir="rtl"] .bnt,
+[dir="rtl"] button,
+[dir="rtl"] button[class^="govsa-btn--"],
+[dir="rtl"] a[class^="govsa-btn--"]{
+    font-family: noto_naskh_arabicregular !important;
+  }
+
+[dir="rtl"] [class^="govsa-footer--"] {
+  font-family: noto_naskh_arabicregular;
+}
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6,
+[dir="rtl"] .h1,
+[dir="rtl"] .h2,
+[dir="rtl"] .h3,
+[dir="rtl"] .h4,
+[dir="rtl"] .h5,
+[dir="rtl"] .h6 {
+    font-family: $headings-ar-font-family;
+    font-weight: 500;
+    line-height: 1.2;
+}

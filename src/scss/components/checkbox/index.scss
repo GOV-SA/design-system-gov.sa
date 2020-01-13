@@ -1,13 +1,10 @@
-/* Hide the browser's default checkbox */
-/* Create a custom checkbox */
-/* On mouse-over */
-/* Create the checkmark/indicator (hidden when not checked) */
-/* Show the checkmark when checked */
-
 .govsa-checkbox {
   display: block;
   position: relative;
   padding-left: $form-check-padding-left;
+  [dir="rtl"] & {
+    padding-right: $form-check-padding-left;
+  }
   padding-top: 3px;
   cursor: pointer;
   -moz-user-select: none;
@@ -21,7 +18,8 @@
       box-shadow: 0 0 0 3px $gray-pastel;
     }
 
-    &:active~.govsa-checkbox__checkmark {
+    &:active~.govsa-checkbox__checkmark,
+    &:focus~.govsa-checkbox__checkmark {
       box-shadow: 0 0 0 3px $yellow;
     }
 
@@ -38,6 +36,9 @@
     position: absolute;
     top: 5px;
     left: 0;
+    [dir="rtl"] & {
+      right: 0;
+    }
     height: 18px;
     width: 18px;
     background-color: $white;

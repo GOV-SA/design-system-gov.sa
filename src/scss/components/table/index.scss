@@ -1,13 +1,50 @@
-.govsa-table {
-  border-collapse: separate;
-  border-spacing: 0;
+/** Bootstrap override **/
+.table td {
+  border-top: none;
+}
+.govsa-table tbody {
   border: 1px solid $green;
-  border-radius: 10px;
+  margin-top: 2px;
+}
+
+.table-hover {
+  tbody tr {
+    &:hover {
+      color: $white;
+      background-color: $darkBlue-tint;
+    }
+  }
+}
+.table {
+  max-height: 160px;
+  border-spacing: 0;
 
   thead {
-    & th {
+    border: 1px solid $green;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    th {
       border-bottom: none;
     }
+  }
+  .govsa-checkbox{
+    margin-bottom: 0;
+  }
+}
+
+.govsa-table {
+  border-collapse: separate !important;
+  border-spacing: 0;
+  // border: 1px solid $green;
+  border-radius: 10px;
+
+  tr:last-child {
+    td {
+      border-bottom: none;
+    }
+  }
+  td {
+    border-bottom: 1px solid $gray-pastel;
   }
 
   th {
@@ -16,90 +53,30 @@
     border: none;
     &:first-child {
       border-top-left-radius: 8px;
-      padding-right: 0px;
     }
     &:last-child {
       border-top-right-radius: 8px;
     }
-  }
-  tbody {
-    & tr:first-child {
-      td {
-        border-top: none;
-      }
-      td:first-child {
-        border-top: none;
-      }
-      td:last-child {
-        border-top: none;
-      }
-      td:last-child div {
-        border-top: none;
-      }
+    // for arabic 
+    [dir="rtl"] &:first-child{
+      border-top-right-radius: 8px;
+      
     }
-    & td:first-child {
-      padding-left: 10px;
-      padding-top: 0;
-      padding-right: 0;
-      border-top: none;
-      & div {
-        border-top: 1px solid $gray-pastel;
-        padding-top: 10px;
-      }
+    [dir="rtl"] &:last-child{
+      border-top-left-radius: 8px;
     }
-    & td:last-child {
-      // border-right: 1px solid $green;
-      padding-top: 0;
-      padding-left: 0;
-      border-top: 0;
-      // padding-right: 10px;
-      div {
-        border-top: 1px solid $gray-pastel;
-        padding-top: 10px;
-        padding-left: 10px;
-        // text-align: right;
-      }
-    }
-    & tr td .govsa-checkbox{
-      // padding-top: 6px;
-      // align-self: baseline;
-      // border: 1px solid;
-      & .govsa-checkbox__checkmark{
-        // top: 10px;
-      }
-    }
-  }
-}
-
-//
-.scrollable-table {
-  width: 100%;
-  tbody {
-    width: 100%;
-    height: 100px;
-    overflow-y: auto;
-    display: block;
-  }
-  tbody tr {
-    // display: block;
-    width: 100%;
   }
 }
 
 .scrollable-table tbody {
   display: block;
-  height: 170px;
+  max-height: 160px;
   overflow: auto;
 }
+
 .scrollable-table thead,
 .scrollable-table tbody tr {
   display: table;
   width: 100%;
   table-layout: fixed;
-}
-.scrollable-table tbody tr td div {
-  padding-right: 10px;
-}
-.scrollable-table {
-  width: 100%;
 }

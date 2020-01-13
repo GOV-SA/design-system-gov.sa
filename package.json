@@ -1,14 +1,14 @@
 {
-    "name": "gov_se",
+    "name": "gov.sa",
     "version": "0.0.1",
-    "description": "ui kit based on gov.se design system guidlines",
+    "description": "ui kit based on gov.sa design system guidlines",
     "main": "index.js",
     "scripts": {
         "build": "npx webpack --config webpack.config.prod.js --mode=production",
         "watch": "npx webpack --watch",
         "start:dev": "webpack-dev-server"
     },
-    "author": "akram abdelrahman",
+    "author": "ds-gov.sa",
     "license": "gpl-3.0",
     "devDependencies": {
         "@babel/core": "^7.2.2",

@@ -1,82 +1,275 @@
-.govsa-header{
+.govsa-header {
     background-color: $green;
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: baseline; 
-    padding-right: 20px;   
-    padding-left: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-}
-.govsa-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    & .govsa--zoom{
-        padding-top:10px;
-    }
-}
-.govsa-navbar{
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    height: 100%;
-    // width: 45%;
-    & .govsa-nav-item{
-        color: white;
-        // padding-left: 10px;
-        width: 200px;
-        height: 90%;
-        & .dropdown{
-            height: 100%;
+    min-height: 75px;
+
+    .navbar {
+        padding: 0.25rem 1rem 0rem 1rem;
+
+        .navbar-toggler {
+            border-radius: 0px;
         }
     }
-    .gobsa-btn-nav-tab{
+
+    .govsa-logo {
+        img {
+            margin: -8px 80px 0px 0px;
+
+            [dir="rtl"] & {
+                margin: -8px 0px 0px 80px;
+            }
+        }
+
+    }
+
+    .gosa-header__search-box {
+        position: relative;
+        width: auto;
+
+        .govsa-header__srarch__input {
+            color: $darkBlue;
+            border-radius: 8px 0px 0px 0px;
+            position: relative;
+            flex: 1 1 auto;
+            width: 1%;
+            padding: 15px 10px 15px 10px;
+            height: auto;
+            border-color: $white !important;
+
+            &:focus {
+                box-shadow: 0px 0 0 2px $yellow;
+            }
+        }
+
+        .govsa-header__clear-bnt {
+            border: 0;
+            border-color: $darkBlue;
+            background-color: $white;
+            color: $darkBlue;
+            margin: 0px 0px 0px 1px;
+
+            [dir="rtl"] & {
+                margin: 0px 1px 0px 0px;
+            }
+
+            padding-top: 8px;
+            font-size: 12px;
+            border-color: $white !important;
+
+            &:focus {
+                outline: 1px auto $yellow;
+                box-shadow: 0 0 0 2px $yellow;
+            }
+        }
+
+        .govsa-header__search-btn {
+            border: 0;
+            padding: 7px 10px 0px 10px;
+            background-color: white;
+            border-radius: 50%;
+            width: 100%;
+
+            i {
+                color: $green;
+                font-size: 24px;
+            }
+
+        }
+
+        .govsa-advanced-search {
+            top: 3px;
+            background-color: $green;
+            width: 100%;
+            position: absolute;
+
+            .govsa-advanced-search__btn {
+                background-color: $green;
+                border: 0px;
+                color: $white;
+                width: 99%;
+                text-align: left;
+
+                [dir="rtl"] & {
+                    text-align: right;
+                }
+
+                &:focus {
+                    outline: $yellow auto 5px;
+                }
+            }
+        }
+
+
+    }
+
+    .navbar-collapse {
+        min-height: 75px;
         width: 100%;
-        height: 100%;
-        &:focus{
-            box-shadow: none;
-            outline: 1px solid $yellow;
-            
+    }
+
+    .nav-item {
+        margin: 0px 4px 4px 0px;
+
+        [dir="rtl"] & {
+            margin: 0px 0px 4px 4px;
+        }
+
+        .nav-link {
+            color: $white;
+            margin: 10px 10px 0px 0px;
+
+            [dir="rtl"] & {
+                margin: 10px 0px 0px 10px;
+            }
+
+            padding-bottom: 0px;
+        }
+
+        .govsa-tabs--border {
+            background-color: $green !important;
+            height: 3px;
+            border-radius: 8px;
+            margin: 16px 2px 3px 2px;
+        }
+
+        &:hover {
+            color: $green;
+            border-radius: 8px 8px 0px 0px;
+            background-color: $white;
+
+            .nav-link {
+                color: $green;
+            }
         }
     }
-    & .navbar-icon{
-        font-size: 8px;
+
+    .govsa-vison-2030 {
+        margin: 0px 0px 0px 30px;
+
+        [dir="rtl"] & {
+            margin: 0px 30px 0px 0px;
+        }
     }
-    & .govsa-nav-item:hover{
-        background-color: $white;
-        border-top-right-radius: 8px;
-        border-top-left-radius: 8px;
-        border-bottom: 5px solid $darkBlue;
-        & .btn{
-            color:$darkBlue;
+
+    @media (max-width: 991px) {
+        .navbar-collapse {
+            padding-top: 20px;
+        }
+
+        .nav-link {
+            padding: 0px 5px 0px 5px !important;
+        }
+
+        .govsa-tabs--border {
+            margin-top: 0px !important;
+        }
+
+        .govsa-vison-2030 {
+            display: none;
+        }
+
+        .govsa-logo {
+            text-align: center;
+            width: 67%;
+            padding: 10px 0px 0px 14px;
+
+            [dir="rtl"] & {
+                padding: 10px 14px 0px 0px;
+            }
+
+            img {
+                margin: -8px 0px 0px 0px;
+            }
+        }
+
+        .govsa-header__open-search {
+            padding: 0.25rem 0.25rem 0rem 0.25rem;
+
+            .govsa-logo {
+                text-align: center;
+                width: 35%;
+                padding: 10px 0px 0px 0px;
+
+                img {
+                    margin: -8px 0px 0px 0px;
+                }
+            }
+
+            .govsa-header__search__button {
+                padding: 0px;
+
+                i {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .govsa-search--header {
+        .govsa-search__button {
+            background-color: $darkBlue;
+            border: 0;
+            width: 100%;
+
+            i {
+                color: $white;
+                font-size: 24px;
+            }
+        }
+
+        .govsa-header__search__button {
+
+            background-color: $darkBlue;
+            border: 0;
+            width: 100%;
+            color: $white;
+            border-radius: 0px 8px 8px 0px;
+            margin: 0px 0px 0px 2px;
+            font-size: 25px;
+            padding: 8px 15px 0px 20px;
+
+            [dir="rtl"] & {
+                border-radius: 8px 0px 0px 8px;
+                margin: 0px 2px 0px 0px;
+                padding: 8px 20px 0px 15px;
+            }
+
+            &:active {
+                box-shadow: 0px 0 0 2px $yellow;
+                outline: none;
+                margin: 0px 0px 0px 5px;
+
+                [dir="rtl"] & {
+                    margin: 0px 5px 0px 0px;
+                }
+            }
+
+            &:focus {
+                outline: none;
+                box-shadow: 0 0 0 2px $yellow;
+            }
+        }
+
+        .govsa-input {
+            border-color: $white;
+        }
+
+        .govsa-header__search__input {
+            color: $darkBlue;
+            border-radius: 8px 0px 0px 8px;
+
+            [dir="rtl"] & {
+                border-radius: 0px 8px 8px 0px;
+            }
+
+            position: relative;
+            flex: 1 1 auto;
+            width: 1%;
+            padding: 5px 10px 5px 10px;
+            height: auto;
+
+            &:focus {
+                box-shadow: 0px 0 0 2px $yellow;
+            }
         }
     }
 }
-
-.header-search-icon{
-    color: $green;
-    background: $white;
-    padding: 5px;
-    border-radius: 20px;
-    &:hover{
-        cursor: pointer;
-    }
-    &:focus{
-        cursor: pointer;
-        #header-search-box{
-            display: block;
-        }
-    }
-}
-#header-search-box{
-    display: none;
-}
-
-
-

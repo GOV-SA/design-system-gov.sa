@@ -1,40 +1,26 @@
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-@import "../components/color/index.scss";
-@import "../components/buttons/index";
-=======
-=======
->>>>>>> Stashed changes
-@import "../content/govsa-font/style.scss";
-@import "../components/color/index.scss";
-@import "./icons";
-@import "../content/typography/index";
-@import "../content/typography/typography-ar.scss";
+@import "../../govsa-icons/style.scss";
+// @import "./icons";
+@import "../../typography/index";
+@import "../../typography/typography-ar.scss";
 @import "../components/buttons/index";
 @import"../components/card/index";
 @import"../components/alert/index";
 @import"../components/outline/index";
 @import"../components/link/index";
-@import"../components/checkbox/index.scss";
-@import"../components/radio/index.scss";
+@import"../components/checkbox/index";
+@import"../components/radio/index";
 @import"../components/accordion/index";
 @import"../components/text-input/index";
 @import"../components/dropdown/index";
-@import"../components/file-upload/index.scss";
+@import"../components/file-upload/index";
 @import"../components/pagination/index";
 @import"../components/breadcrumb/index";
 @import"../components/image/index";
 @import"../components/table/index";
 @import"../components/tag/index";
 @import"../components/tabs/index";
+@import"../components/search/index";
 @import"../components/header/index";
 @import"../components/footer/index";
-
-<<<<<<< Updated upstream
->>>>>>> Development
-=======
-=======
-@import "../components/color/index.scss";
-@import "../components/buttons/index";
->>>>>>> master
->>>>>>> Stashed changes
+@import"../components/side-navigation/index";
+@import"../components/switch/index"; 

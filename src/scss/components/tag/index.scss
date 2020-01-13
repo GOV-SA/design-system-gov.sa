@@ -1,14 +1,17 @@
 .govsa-tag{
     border: 1px solid $darkBlue;
     border-radius: 8px;
-    padding: 4px 10px 4px 10px;
+    padding: 5px 10px 5px 10px;
     color: $darkBlue;
     font-size: 0.88rem;
-    img{
-        margin: 0px 0px 0px 20px;
-        &:hover{
-            cursor: pointer;
-        }
+    
+    .govsa-clear__button{
+      border: none;
+      padding-top: 0px;
+      &:active{
+          outline: none;
+          box-shadow: none;
+      }
     }
 }
 

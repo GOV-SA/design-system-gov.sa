@@ -8,19 +8,20 @@
 
   &:focus {
     box-shadow: 0px 0 0 2px $yellow;
+    -webkit-appearance: none;
     outline: none;
   }
 
   // Placeholder
   &::placeholder {
     color: $darkBlue;
-    opacity: 1;
+    opacity: 0.5;
   }
 
   &:disabled,
   &[readonly] {
     background-color: $gray-pastel;
-    border-color: $gray-pastel;
+    border-color: $darkBlue;
   }
 
 }
@@ -41,4 +42,17 @@
 
 .govsa-border--red {
   border-color: $red;
+}
+
+[dir="rtl"]  {
+  .govsa-input{
+    padding-right: 7px;
+  }
+
+  .govsa-input__label {
+    padding-right: 8px;
+  }
+  .govsa-errorMessage {
+    padding: 0px 8px 0px 0px;
+  }
 }

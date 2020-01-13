@@ -9,7 +9,7 @@ module.exports = function(env, argv) {
     return {
         mode: 'production',
         entry: [
-            './src/app.js'
+            './src/js/app.js'
         ],
         optimization: {
             minimizer: [
@@ -19,11 +19,11 @@ module.exports = function(env, argv) {
         plugins: [
             new CleanWebpackPlugin(['dist']),
             new HtmlWebpackPlugin({
-                title: 'Gov.se Example Page',
+                title: 'Gov.sa Example Page',
                 template: path.resolve('./src/index.html')
             }),
             new MiniCssExtractPlugin({
-                filename: "[name].css",
+                filename: "govsa-ds.css",
                 chunkFilename: "[id].css"
             }),
             new MinifyPlugin(),
@@ -35,6 +35,14 @@ module.exports = function(env, argv) {
                     use: [
                         MiniCssExtractPlugin.loader,
                         "css-loader",
+                        {
+                            loader: 'postcss-loader',
+                            options: {
+                                plugins: function () {
+                                    return [require('postcss-rtl')()]
+                                }
+                            }
+                        },
                         "sass-loader"
                     ]
                 },
@@ -53,7 +61,7 @@ module.exports = function(env, argv) {
                     use: [{
                         loader: "file-loader",
                         options: {
-                            outputPath: './scss/fonts',
+                            outputPath: './fonts',
                             name: "[name].[ext]",
                         },
                     }, ]
