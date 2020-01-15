@@ -3,11 +3,10 @@
   color: #fff;
   padding-top:0px;
   padding-bottom: 0px;
+  text-align: center;
   i{
-    margin: 0px 0px 0px 15px;
-    [dir="rtl"] & {
-      margin: 0px 15px 0px 0px;
-    }
+    margin: 0px 10px 0px 10px;
+   font-size: 0.8rem;
   }
   &:focus {
     color: #fff;
@@ -53,6 +52,7 @@
   .govsa-btn--outline--#{$color} {
     @include button-outline-variant($value);
     min-width: 100px;
+    background-color:#fff;
     &:focus {
       color: $value;
       background-color:#fff;
