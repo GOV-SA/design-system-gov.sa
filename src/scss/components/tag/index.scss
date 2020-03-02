@@ -6,8 +6,9 @@
     font-size: 0.88rem;
     
     .govsa-clear__button{
+      vertical-align: top;
       border: none;
-      padding-top: 0px;
+      padding-top: 2%;
       &:active{
           outline: none;
           box-shadow: none;
@@ -17,6 +18,7 @@
 
 [dir="rtl"] {
     .govsa-tag {
+        vertical-align: middle;
         img {
            margin-top: 2px;
         }
