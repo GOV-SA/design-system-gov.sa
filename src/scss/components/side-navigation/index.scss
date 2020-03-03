@@ -1,9 +1,11 @@
 .govsa-sideNavigation {
+    background-color: $white;
+
     li {
         border-bottom: 1px solid #D8D8D8;
 
         &:first-of-type {
-            border-top: 1px solid #D8D8D8;
+            border-top: none;
         }
 
         .nav-link {
