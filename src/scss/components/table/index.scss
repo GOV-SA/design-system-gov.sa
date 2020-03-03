@@ -25,6 +25,7 @@
     border-top-left-radius: 10px;
     th {
       border-bottom: none;
+      vertical-align: baseline;
     }
   }
   .govsa-checkbox{
@@ -71,7 +72,7 @@
 }
 
 .scrollable-table tbody {
-  display: block;
+ display: block;
   max-height: 160px;
   overflow: auto;
 }
