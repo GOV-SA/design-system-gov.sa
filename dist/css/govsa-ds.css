@@ -119,6 +119,7 @@
   --gray-tint: #595959;
   --gray-pastel: #EAEAEA;
   --black: #000000;
+  --orange: #FD7E14;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -2215,6 +2216,23 @@ pre {
   .table-hover .table-black:hover > th {
     background-color: #ababab; }
 
+.table-orange,
+.table-orange > th,
+.table-orange > td {
+  background-color: #fedbbd; }
+
+.table-orange th,
+.table-orange td,
+.table-orange thead th,
+.table-orange tbody + tbody {
+  border-color: #febc85; }
+
+.table-hover .table-orange:hover {
+  background-color: #fecda4; }
+  .table-hover .table-orange:hover > td,
+  .table-hover .table-orange:hover > th {
+    background-color: #fecda4; }
+
 .table-active,
 .table-active > th,
 .table-active > td {
@@ -3701,6 +3719,34 @@ fieldset:disabled a.btn {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 38, 38, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(38, 38, 38, 0.5); }
 
+.btn-orange {
+  color: #212529;
+  background-color: #FD7E14;
+  border-color: #FD7E14; }
+  .btn-orange:hover {
+    color: #ffff;
+    background-color: #e96b02;
+    border-color: #dc6502; }
+  .btn-orange:focus, .btn-orange.focus {
+    color: #ffff;
+    background-color: #e96b02;
+    border-color: #dc6502;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 113, 23, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(220, 113, 23, 0.5); }
+  .btn-orange.disabled, .btn-orange:disabled {
+    color: #212529;
+    background-color: #FD7E14;
+    border-color: #FD7E14; }
+  .btn-orange:not(:disabled):not(.disabled):active, .btn-orange:not(:disabled):not(.disabled).active,
+  .show > .btn-orange.dropdown-toggle {
+    color: #ffff;
+    background-color: #dc6502;
+    border-color: #cf5f02; }
+    .btn-orange:not(:disabled):not(.disabled):active:focus, .btn-orange:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-orange.dropdown-toggle:focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 113, 23, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(220, 113, 23, 0.5); }
+
 .btn-outline-primary {
   color: #26634B;
   border-color: #26634B; }
@@ -4482,6 +4528,29 @@ fieldset:disabled a.btn {
     .show > .btn-outline-black.dropdown-toggle:focus {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5); }
+
+.btn-outline-orange {
+  color: #FD7E14;
+  border-color: #FD7E14; }
+  .btn-outline-orange:hover {
+    color: #212529;
+    background-color: #FD7E14;
+    border-color: #FD7E14; }
+  .btn-outline-orange:focus, .btn-outline-orange.focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(253, 126, 20, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(253, 126, 20, 0.5); }
+  .btn-outline-orange.disabled, .btn-outline-orange:disabled {
+    color: #FD7E14;
+    background-color: transparent; }
+  .btn-outline-orange:not(:disabled):not(.disabled):active, .btn-outline-orange:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-orange.dropdown-toggle {
+    color: #212529;
+    background-color: #FD7E14;
+    border-color: #FD7E14; }
+    .btn-outline-orange:not(:disabled):not(.disabled):active:focus, .btn-outline-orange:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-outline-orange.dropdown-toggle:focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(253, 126, 20, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(253, 126, 20, 0.5); }
 
 .btn-link {
   font-weight: 400;
@@ -6489,6 +6558,17 @@ input[type="button"].btn-block {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5); }
 
+.badge-orange {
+  color: #212529;
+  background-color: #FD7E14; }
+  a.badge-orange:hover, a.badge-orange:focus {
+    color: #212529;
+    background-color: #dc6502; }
+  a.badge-orange:focus, a.badge-orange.focus {
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(253, 126, 20, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(253, 126, 20, 0.5); }
+
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
@@ -6830,6 +6910,15 @@ input[type="button"].btn-block {
     border-top-color: #ababab; }
   .alert-black .alert-link {
     color: black; }
+
+.alert-orange {
+  color: #84420a;
+  background-color: #ffe5d0;
+  border-color: #fedbbd; }
+  .alert-orange hr {
+    border-top-color: #fecda4; }
+  .alert-orange .alert-link {
+    color: #552a06; }
 
 @-webkit-keyframes progress-bar-stripes {
   from {
@@ -7439,6 +7528,17 @@ input[type="button"].btn-block {
     color: #ffff;
     background-color: black;
     border-color: black; }
+
+.list-group-item-orange {
+  color: #84420a;
+  background-color: #fedbbd; }
+  .list-group-item-orange.list-group-item-action:hover, .list-group-item-orange.list-group-item-action:focus {
+    color: #84420a;
+    background-color: #fecda4; }
+  .list-group-item-orange.list-group-item-action.active {
+    color: #ffff;
+    background-color: #84420a;
+    border-color: #84420a; }
 
 .close {
   float: right;
@@ -8423,6 +8523,14 @@ button.bg-black:hover,
 button.bg-black:focus {
   background-color: black !important; }
 
+.bg-orange {
+  background-color: #FD7E14 !important; }
+
+a.bg-orange:hover, a.bg-orange:focus,
+button.bg-orange:hover,
+button.bg-orange:focus {
+  background-color: #dc6502 !important; }
+
 .bg-white {
   background-color: #ffff !important; }
 
@@ -8560,6 +8668,9 @@ button.bg-black:focus {
 
 .border-black {
   border-color: #000000 !important; }
+
+.border-orange {
+  border-color: #FD7E14 !important; }
 
 .border-white {
   border-color: #ffff !important; }
@@ -11268,6 +11379,12 @@ a.text-gray-pastel:hover, a.text-gray-pastel:focus {
 a.text-black:hover, a.text-black:focus {
   color: black !important; }
 
+.text-orange {
+  color: #FD7E14 !important; }
+
+a.text-orange:hover, a.text-orange:focus {
+  color: #c35a02 !important; }
+
 .text-body {
   color: #212529 !important; }
 
@@ -12720,11 +12837,11 @@ i {
   position: relative;
   color: #fff;
   padding-top: 0px;
-  padding-bottom: 0px; }
+  padding-bottom: 0px;
+  text-align: center; }
   .btn i {
-    margin: 0px 0px 0px 15px; }
-    [dir="rtl"] .btn i {
-      margin: 0px 15px 0px 0px; }
+    margin: 0px 10px 0px 10px;
+    font-size: 0.8rem; }
   .btn:focus {
     color: #fff;
     outline: 0;
@@ -12736,6 +12853,7 @@ i {
       content: "";
       height: 108%;
       left: -4%;
+      right: -4%;
       top: -4%;
       -webkit-box-shadow: 0 0 0px 3px #FFC107;
       box-shadow: 0 0 0px 3px #FFC107;
@@ -14005,10 +14123,48 @@ i {
   .govsa-btn--black:disabled {
     opacity: 0.4; }
 
+.govsa-btn--orange {
+  color: #212529;
+  background-color: #FD7E14;
+  border-color: #FD7E14;
+  min-width: 100px; }
+  .govsa-btn--orange:hover {
+    color: #ffff;
+    background-color: #e96b02;
+    border-color: #dc6502; }
+  .govsa-btn--orange:focus, .govsa-btn--orange.focus {
+    color: #ffff;
+    background-color: #e96b02;
+    border-color: #dc6502;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 113, 23, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(220, 113, 23, 0.5); }
+  .govsa-btn--orange.disabled, .govsa-btn--orange:disabled {
+    color: #212529;
+    background-color: #FD7E14;
+    border-color: #FD7E14; }
+  .govsa-btn--orange:not(:disabled):not(.disabled):active, .govsa-btn--orange:not(:disabled):not(.disabled).active,
+  .show > .govsa-btn--orange.dropdown-toggle {
+    color: #ffff;
+    background-color: #dc6502;
+    border-color: #cf5f02; }
+    .govsa-btn--orange:not(:disabled):not(.disabled):active:focus, .govsa-btn--orange:not(:disabled):not(.disabled).active:focus,
+    .show > .govsa-btn--orange.dropdown-toggle:focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 113, 23, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(220, 113, 23, 0.5); }
+  .govsa-btn--orange:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .govsa-btn--orange:active:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important; }
+  .govsa-btn--orange:disabled {
+    opacity: 0.4; }
+
 .govsa-btn--outline--primary {
   color: #26634B;
   border-color: #26634B;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--primary:hover {
     color: #ffff;
     background-color: #26634B;
@@ -14040,7 +14196,8 @@ i {
 .govsa-btn--outline--secondary {
   color: #005A96;
   border-color: #005A96;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--secondary:hover {
     color: #ffff;
     background-color: #005A96;
@@ -14072,7 +14229,8 @@ i {
 .govsa-btn--outline--success {
   color: #006604;
   border-color: #006604;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--success:hover {
     color: #ffff;
     background-color: #006604;
@@ -14104,7 +14262,8 @@ i {
 .govsa-btn--outline--info {
   color: #339EEC;
   border-color: #339EEC;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--info:hover {
     color: #ffff;
     background-color: #339EEC;
@@ -14136,7 +14295,8 @@ i {
 .govsa-btn--outline--warning {
   color: #FFC107;
   border-color: #FFC107;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--warning:hover {
     color: #212529;
     background-color: #FFC107;
@@ -14168,7 +14328,8 @@ i {
 .govsa-btn--outline--danger {
   color: #AF0818;
   border-color: #AF0818;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--danger:hover {
     color: #ffff;
     background-color: #AF0818;
@@ -14200,7 +14361,8 @@ i {
 .govsa-btn--outline--light {
   color: #EAEAEA;
   border-color: #EAEAEA;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--light:hover {
     color: #212529;
     background-color: #EAEAEA;
@@ -14232,7 +14394,8 @@ i {
 .govsa-btn--outline--dark {
   color: #343a40;
   border-color: #343a40;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--dark:hover {
     color: #ffff;
     background-color: #343a40;
@@ -14264,7 +14427,8 @@ i {
 .govsa-btn--outline--violet {
   color: #5505CD;
   border-color: #5505CD;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--violet:hover {
     color: #ffff;
     background-color: #5505CD;
@@ -14296,7 +14460,8 @@ i {
 .govsa-btn--outline--violet-shade {
   color: #3C2B7D;
   border-color: #3C2B7D;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--violet-shade:hover {
     color: #ffff;
     background-color: #3C2B7D;
@@ -14328,7 +14493,8 @@ i {
 .govsa-btn--outline--violet-tint {
   color: #5830B4;
   border-color: #5830B4;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--violet-tint:hover {
     color: #ffff;
     background-color: #5830B4;
@@ -14360,7 +14526,8 @@ i {
 .govsa-btn--outline--violet-pastel {
   color: #AC9FD5;
   border-color: #AC9FD5;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--violet-pastel:hover {
     color: #212529;
     background-color: #AC9FD5;
@@ -14392,7 +14559,8 @@ i {
 .govsa-btn--outline--blue {
   color: #005A96;
   border-color: #005A96;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--blue:hover {
     color: #ffff;
     background-color: #005A96;
@@ -14424,7 +14592,8 @@ i {
 .govsa-btn--outline--blue-shade {
   color: #0053BA;
   border-color: #0053BA;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--blue-shade:hover {
     color: #ffff;
     background-color: #0053BA;
@@ -14456,7 +14625,8 @@ i {
 .govsa-btn--outline--blue-tint {
   color: #0054AE;
   border-color: #0054AE;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--blue-tint:hover {
     color: #ffff;
     background-color: #0054AE;
@@ -14488,7 +14658,8 @@ i {
 .govsa-btn--outline--blue-pastel {
   color: #339EEC;
   border-color: #339EEC;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--blue-pastel:hover {
     color: #ffff;
     background-color: #339EEC;
@@ -14520,7 +14691,8 @@ i {
 .govsa-btn--outline--tiffany {
   color: #0AEBD7;
   border-color: #0AEBD7;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--tiffany:hover {
     color: #212529;
     background-color: #0AEBD7;
@@ -14552,7 +14724,8 @@ i {
 .govsa-btn--outline--tiffany-shade {
   color: #046459;
   border-color: #046459;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--tiffany-shade:hover {
     color: #ffff;
     background-color: #046459;
@@ -14584,7 +14757,8 @@ i {
 .govsa-btn--outline--tiffany-tint {
   color: #4ECEBB;
   border-color: #4ECEBB;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--tiffany-tint:hover {
     color: #212529;
     background-color: #4ECEBB;
@@ -14616,7 +14790,8 @@ i {
 .govsa-btn--outline--tiffany-pastel {
   color: #A9E2D7;
   border-color: #A9E2D7;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--tiffany-pastel:hover {
     color: #212529;
     background-color: #A9E2D7;
@@ -14648,7 +14823,8 @@ i {
 .govsa-btn--outline--darkBlue {
   color: #160F3E;
   border-color: #160F3E;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--darkBlue:hover {
     color: #ffff;
     background-color: #160F3E;
@@ -14680,7 +14856,8 @@ i {
 .govsa-btn--outline--darkBlue-shade {
   color: #1F255B;
   border-color: #1F255B;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--darkBlue-shade:hover {
     color: #ffff;
     background-color: #1F255B;
@@ -14712,7 +14889,8 @@ i {
 .govsa-btn--outline--darkBlue-tint {
   color: #444061;
   border-color: #444061;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--darkBlue-tint:hover {
     color: #ffff;
     background-color: #444061;
@@ -14744,7 +14922,8 @@ i {
 .govsa-btn--outline--darkBlue-pastel {
   color: #CDCCD5;
   border-color: #CDCCD5;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--darkBlue-pastel:hover {
     color: #212529;
     background-color: #CDCCD5;
@@ -14776,7 +14955,8 @@ i {
 .govsa-btn--outline--green {
   color: #26634B;
   border-color: #26634B;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--green:hover {
     color: #ffff;
     background-color: #26634B;
@@ -14808,7 +14988,8 @@ i {
 .govsa-btn--outline--green-shade {
   color: #066058;
   border-color: #066058;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--green-shade:hover {
     color: #ffff;
     background-color: #066058;
@@ -14840,7 +15021,8 @@ i {
 .govsa-btn--outline--green-tint {
   color: #27AA8C;
   border-color: #27AA8C;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--green-tint:hover {
     color: #ffff;
     background-color: #27AA8C;
@@ -14872,7 +15054,8 @@ i {
 .govsa-btn--outline--green-pastel {
   color: #ACDDC7;
   border-color: #ACDDC7;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--green-pastel:hover {
     color: #212529;
     background-color: #ACDDC7;
@@ -14904,7 +15087,8 @@ i {
 .govsa-btn--outline--green-dark {
   color: #144D3F;
   border-color: #144D3F;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--green-dark:hover {
     color: #ffff;
     background-color: #144D3F;
@@ -14936,7 +15120,8 @@ i {
 .govsa-btn--outline--gray {
   color: #323232;
   border-color: #323232;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--gray:hover {
     color: #ffff;
     background-color: #323232;
@@ -14968,7 +15153,8 @@ i {
 .govsa-btn--outline--gray-shade {
   color: #242424;
   border-color: #242424;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--gray-shade:hover {
     color: #ffff;
     background-color: #242424;
@@ -15000,7 +15186,8 @@ i {
 .govsa-btn--outline--gray-tint {
   color: #595959;
   border-color: #595959;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--gray-tint:hover {
     color: #ffff;
     background-color: #595959;
@@ -15032,7 +15219,8 @@ i {
 .govsa-btn--outline--gray-pastel {
   color: #EAEAEA;
   border-color: #EAEAEA;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--gray-pastel:hover {
     color: #212529;
     background-color: #EAEAEA;
@@ -15064,7 +15252,8 @@ i {
 .govsa-btn--outline--black {
   color: #000000;
   border-color: #000000;
-  min-width: 100px; }
+  min-width: 100px;
+  background-color: #fff; }
   .govsa-btn--outline--black:hover {
     color: #ffff;
     background-color: #000000;
@@ -15090,6 +15279,39 @@ i {
     -webkit-box-shadow: none;
     box-shadow: none; }
   .govsa-btn--outline--black:active:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important; }
+
+.govsa-btn--outline--orange {
+  color: #FD7E14;
+  border-color: #FD7E14;
+  min-width: 100px;
+  background-color: #fff; }
+  .govsa-btn--outline--orange:hover {
+    color: #212529;
+    background-color: #FD7E14;
+    border-color: #FD7E14; }
+  .govsa-btn--outline--orange:focus, .govsa-btn--outline--orange.focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(253, 126, 20, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(253, 126, 20, 0.5); }
+  .govsa-btn--outline--orange.disabled, .govsa-btn--outline--orange:disabled {
+    color: #FD7E14;
+    background-color: transparent; }
+  .govsa-btn--outline--orange:not(:disabled):not(.disabled):active, .govsa-btn--outline--orange:not(:disabled):not(.disabled).active,
+  .show > .govsa-btn--outline--orange.dropdown-toggle {
+    color: #212529;
+    background-color: #FD7E14;
+    border-color: #FD7E14; }
+    .govsa-btn--outline--orange:not(:disabled):not(.disabled):active:focus, .govsa-btn--outline--orange:not(:disabled):not(.disabled).active:focus,
+    .show > .govsa-btn--outline--orange.dropdown-toggle:focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(253, 126, 20, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(253, 126, 20, 0.5); }
+  .govsa-btn--outline--orange:focus {
+    color: #FD7E14;
+    background-color: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .govsa-btn--outline--orange:active:focus {
     -webkit-box-shadow: none !important;
     box-shadow: none !important; }
 
@@ -15228,6 +15450,14 @@ i {
       background-color: #160F3E; }
       .govsa-checkbox input:checked ~ .govsa-checkbox__checkmark:after {
         display: block; }
+    .govsa-checkbox input:disabled:hover ~ .govsa-checkbox__checkmark {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      cursor: auto; }
+    .govsa-checkbox input:disabled:active ~ .govsa-checkbox__checkmark,
+    .govsa-checkbox input:disabled:focus ~ .govsa-checkbox__checkmark {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
   .govsa-checkbox .govsa-checkbox__checkmark {
     position: absolute;
     top: 5px;
@@ -15338,8 +15568,6 @@ i {
       outline: none;
       text-decoration: underline; }
     .govsa-accordion .card .card-header[aria-expanded="true"] i {
-      margin-top: 10px;
-      padding: 0px;
       /* IE 9 */
       -webkit-transform: rotate(180deg);
       /* Safari 3-8 */
@@ -15491,13 +15719,13 @@ i {
 
 .govsa-fileupload .govsa-fileupload__input {
   opacity: 0;
-  height: 17px; }
+  height: 17px;
+  z-index: 1;
+  position: absolute; }
 
 .govsa-fileupload a {
   left: 15px;
   top: 0px;
-  position: absolute;
-  z-index: -1;
   font-size: 16px; }
 
 .govsa-fileupload P {
@@ -15595,7 +15823,8 @@ i {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px; }
     .table thead th {
-      border-bottom: none; }
+      border-bottom: none;
+      vertical-align: baseline; }
   .table .govsa-checkbox {
     margin-bottom: 0; }
 
@@ -15616,9 +15845,11 @@ i {
     .govsa-table th:last-child {
       border-top-right-radius: 8px; }
     [dir="rtl"] .govsa-table th:first-child {
-      border-top-right-radius: 8px; }
+      border-top-right-radius: 8px;
+      border-top-left-radius: 0px; }
     [dir="rtl"] .govsa-table th:last-child {
-      border-top-left-radius: 8px; }
+      border-top-left-radius: 8px;
+      border-top-right-radius: 0px; }
 
 .scrollable-table tbody {
   display: block;
@@ -15638,15 +15869,18 @@ i {
   color: #160F3E;
   font-size: 0.88rem; }
   .govsa-tag .govsa-clear__button {
+    vertical-align: top;
     border: none;
-    padding-top: 0px; }
+    padding-top: 2%; }
     .govsa-tag .govsa-clear__button:active {
       outline: none;
       -webkit-box-shadow: none;
       box-shadow: none; }
 
-[dir="rtl"] .govsa-tag img {
-  margin-top: 2px; }
+[dir="rtl"] .govsa-tag {
+  vertical-align: middle; }
+  [dir="rtl"] .govsa-tag img {
+    margin-top: 2px; }
 
 .govsa-tabs.nav-tabs {
   border-bottom: none; }
@@ -16153,59 +16387,58 @@ i {
       -ms-flex-direction: row;
       flex-direction: row; } }
 
-.govsa-sideNavigation li {
-  border-bottom: 1px solid #D8D8D8; }
-  .govsa-sideNavigation li:first-of-type {
-    border-top: 1px solid #D8D8D8; }
-  .govsa-sideNavigation li .nav-link {
-    margin: 2px 0px 2px 0px;
-    color: #160F3E; }
-  .govsa-sideNavigation li:hover {
-    background-color: #444061; }
-    .govsa-sideNavigation li:hover .nav-link {
-      color: #ffff; }
-  .govsa-sideNavigation li:active {
-    -webkit-box-shadow: 0px 0 0 1px #FFC107;
-    box-shadow: 0px 0 0 1px #FFC107;
-    border: 1px solid #FFC107; }
-
-.govsa-sideNavigation .govsa-sideNavigation__button {
-  border: none;
-  background-color: #ffff;
-  color: #160F3E;
-  font-size: 1rem;
-  text-align: inherit;
-  width: 100%;
-  height: 44px;
-  padding: 0px 0px 0px 15px; }
-  [dir="rtl"] .govsa-sideNavigation .govsa-sideNavigation__button {
-    padding: 0px 15px 0px 0px; }
-  .govsa-sideNavigation .govsa-sideNavigation__button i {
-    float: right;
-    padding: 5px 15px 5px 15px; }
-  .govsa-sideNavigation .govsa-sideNavigation__button:focus {
-    outline: none;
-    -webkit-box-shadow: 0px 0 0 2px #FFC107;
-    box-shadow: 0px 0 0 2px #FFC107; }
-  .govsa-sideNavigation .govsa-sideNavigation__button:hover {
-    color: #ffff;
-    background-color: #444061; }
-
-.govsa-sideNavigation .govsa-active .nav-link {
-  font-weight: bold;
-  border-width: 0px 0px 0px 5px;
-  border-style: solid;
-  border-color: #160F3E;
-  border-radius: 3px 0px 0px 3px;
-  padding-left: 11px; }
-  [dir="rtl"] .govsa-sideNavigation .govsa-active .nav-link {
-    padding-right: 11px;
-    border-width: 0px 5px 0px 0px;
-    border-radius: 0px 3px 3px 0px; }
-
-.govsa-sideNavigation .govsa-active .govsa-sideNavigation__button > .govsa--right {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg); }
+.govsa-sideNavigation {
+  background-color: #ffff; }
+  .govsa-sideNavigation li {
+    border-bottom: 1px solid #D8D8D8; }
+    .govsa-sideNavigation li:first-of-type {
+      border-top: none; }
+    .govsa-sideNavigation li .nav-link {
+      margin: 2px 0px 2px 0px;
+      color: #160F3E; }
+    .govsa-sideNavigation li:hover {
+      background-color: #444061; }
+      .govsa-sideNavigation li:hover .nav-link {
+        color: #ffff; }
+    .govsa-sideNavigation li:active {
+      -webkit-box-shadow: 0px 0 0 1px #FFC107;
+      box-shadow: 0px 0 0 1px #FFC107;
+      border: 1px solid #FFC107; }
+  .govsa-sideNavigation .govsa-sideNavigation__button {
+    border: none;
+    background-color: #ffff;
+    color: #160F3E;
+    font-size: 1rem;
+    text-align: inherit;
+    width: 100%;
+    height: 44px;
+    padding: 0px 0px 0px 15px; }
+    [dir="rtl"] .govsa-sideNavigation .govsa-sideNavigation__button {
+      padding: 0px 15px 0px 0px; }
+    .govsa-sideNavigation .govsa-sideNavigation__button i {
+      float: right;
+      padding: 5px 15px 5px 15px; }
+    .govsa-sideNavigation .govsa-sideNavigation__button:focus {
+      outline: none;
+      -webkit-box-shadow: 0px 0 0 2px #FFC107;
+      box-shadow: 0px 0 0 2px #FFC107; }
+    .govsa-sideNavigation .govsa-sideNavigation__button:hover {
+      color: #ffff;
+      background-color: #444061; }
+  .govsa-sideNavigation .govsa-active .nav-link {
+    font-weight: bold;
+    border-width: 0px 0px 0px 5px;
+    border-style: solid;
+    border-color: #160F3E;
+    border-radius: 3px 0px 0px 3px;
+    padding-left: 11px; }
+    [dir="rtl"] .govsa-sideNavigation .govsa-active .nav-link {
+      padding-right: 11px;
+      border-width: 0px 5px 0px 0px;
+      border-radius: 0px 3px 3px 0px; }
+  .govsa-sideNavigation .govsa-active .govsa-sideNavigation__button > .govsa--right {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); }
 
 .govsa-dropdown-container {
   display: none; }

@@ -60,10 +60,12 @@
     // for arabic 
     [dir="rtl"] &:first-child{
       border-top-right-radius: 8px;
+      border-top-left-radius: 0px;
       
     }
     [dir="rtl"] &:last-child{
       border-top-left-radius: 8px;
+      border-top-right-radius: 0px;
     }
   }
 }
