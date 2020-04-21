@@ -12847,20 +12847,6 @@ i {
     outline: 0;
     -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 99, 75, 0.25);
     box-shadow: 0 0 0 0.2rem rgba(38, 99, 75, 0.25); }
-    .btn:focus::after {
-      background: #FFC107;
-      width: 108%;
-      content: "";
-      height: 108%;
-      left: -4%;
-      right: -4%;
-      top: -4%;
-      -webkit-box-shadow: 0 0 0px 3px #FFC107;
-      box-shadow: 0 0 0px 3px #FFC107;
-      /* create a new stacking context */
-      position: absolute;
-      z-index: -1;
-      /* to be below the parent element */ }
   .btn.disabled {
     opacity: 0.4;
     pointer-events: none; }
@@ -12894,11 +12880,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(71, 122, 102, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(71, 122, 102, 0.5); }
   .govsa-btn--primary:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--primary:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--primary:disabled {
     opacity: 0.4; }
 
@@ -12931,11 +12917,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 115, 166, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(38, 115, 166, 0.5); }
   .govsa-btn--secondary:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--secondary:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--secondary:disabled {
     opacity: 0.4; }
 
@@ -12968,11 +12954,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 125, 42, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(38, 125, 42, 0.5); }
   .govsa-btn--success:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--success:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--success:disabled {
     opacity: 0.4; }
 
@@ -13005,11 +12991,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(82, 173, 239, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(82, 173, 239, 0.5); }
   .govsa-btn--info:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--info:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--info:disabled {
     opacity: 0.4; }
 
@@ -13042,11 +13028,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(222, 170, 12, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(222, 170, 12, 0.5); }
   .govsa-btn--warning:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--warning:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--warning:disabled {
     opacity: 0.4; }
 
@@ -13079,11 +13065,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(187, 45, 59, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(187, 45, 59, 0.5); }
   .govsa-btn--danger:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--danger:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--danger:disabled {
     opacity: 0.4; }
 
@@ -13116,11 +13102,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(204, 204, 205, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(204, 204, 205, 0.5); }
   .govsa-btn--light:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--light:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--light:disabled {
     opacity: 0.4; }
 
@@ -13153,11 +13139,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5); }
   .govsa-btn--dark:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--dark:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--dark:disabled {
     opacity: 0.4; }
 
@@ -13190,11 +13176,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(111, 43, 213, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(111, 43, 213, 0.5); }
   .govsa-btn--violet:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--violet:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--violet:disabled {
     opacity: 0.4; }
 
@@ -13227,11 +13213,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(89, 75, 145, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(89, 75, 145, 0.5); }
   .govsa-btn--violet-shade:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--violet-shade:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--violet-shade:disabled {
     opacity: 0.4; }
 
@@ -13264,11 +13250,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(113, 79, 191, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(113, 79, 191, 0.5); }
   .govsa-btn--violet-tint:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--violet-tint:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--violet-tint:disabled {
     opacity: 0.4; }
 
@@ -13301,11 +13287,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(151, 141, 187, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(151, 141, 187, 0.5); }
   .govsa-btn--violet-pastel:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--violet-pastel:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--violet-pastel:disabled {
     opacity: 0.4; }
 
@@ -13338,11 +13324,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 115, 166, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(38, 115, 166, 0.5); }
   .govsa-btn--blue:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--blue:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--blue:disabled {
     opacity: 0.4; }
 
@@ -13375,11 +13361,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 109, 196, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(38, 109, 196, 0.5); }
   .govsa-btn--blue-shade:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--blue-shade:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--blue-shade:disabled {
     opacity: 0.4; }
 
@@ -13412,11 +13398,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 110, 186, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(38, 110, 186, 0.5); }
   .govsa-btn--blue-tint:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--blue-tint:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--blue-tint:disabled {
     opacity: 0.4; }
 
@@ -13449,11 +13435,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(82, 173, 239, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(82, 173, 239, 0.5); }
   .govsa-btn--blue-pastel:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--blue-pastel:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--blue-pastel:disabled {
     opacity: 0.4; }
 
@@ -13486,11 +13472,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(13, 205, 189, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(13, 205, 189, 0.5); }
   .govsa-btn--tiffany:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--tiffany:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--tiffany:disabled {
     opacity: 0.4; }
 
@@ -13523,11 +13509,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(42, 123, 114, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(42, 123, 114, 0.5); }
   .govsa-btn--tiffany-shade:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--tiffany-shade:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--tiffany-shade:disabled {
     opacity: 0.4; }
 
@@ -13560,11 +13546,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(71, 181, 165, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(71, 181, 165, 0.5); }
   .govsa-btn--tiffany-tint:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--tiffany-tint:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--tiffany-tint:disabled {
     opacity: 0.4; }
 
@@ -13597,11 +13583,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(149, 198, 189, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(149, 198, 189, 0.5); }
   .govsa-btn--tiffany-pastel:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--tiffany-pastel:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--tiffany-pastel:disabled {
     opacity: 0.4; }
 
@@ -13634,11 +13620,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(57, 51, 91, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(57, 51, 91, 0.5); }
   .govsa-btn--darkBlue:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--darkBlue:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--darkBlue:disabled {
     opacity: 0.4; }
 
@@ -13671,11 +13657,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(65, 70, 116, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(65, 70, 116, 0.5); }
   .govsa-btn--darkBlue-shade:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--darkBlue-shade:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--darkBlue-shade:disabled {
     opacity: 0.4; }
 
@@ -13708,11 +13694,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(96, 93, 121, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(96, 93, 121, 0.5); }
   .govsa-btn--darkBlue-tint:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--darkBlue-tint:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--darkBlue-tint:disabled {
     opacity: 0.4; }
 
@@ -13745,11 +13731,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(179, 179, 187, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(179, 179, 187, 0.5); }
   .govsa-btn--darkBlue-pastel:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--darkBlue-pastel:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--darkBlue-pastel:disabled {
     opacity: 0.4; }
 
@@ -13782,11 +13768,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(71, 122, 102, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(71, 122, 102, 0.5); }
   .govsa-btn--green:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--green:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--green:disabled {
     opacity: 0.4; }
 
@@ -13819,11 +13805,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(43, 120, 113, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(43, 120, 113, 0.5); }
   .govsa-btn--green-shade:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--green-shade:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--green-shade:disabled {
     opacity: 0.4; }
 
@@ -13856,11 +13842,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(71, 183, 157, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(71, 183, 157, 0.5); }
   .govsa-btn--green-tint:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--green-tint:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--green-tint:disabled {
     opacity: 0.4; }
 
@@ -13893,11 +13879,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(151, 193, 175, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(151, 193, 175, 0.5); }
   .govsa-btn--green-pastel:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--green-pastel:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--green-pastel:disabled {
     opacity: 0.4; }
 
@@ -13930,11 +13916,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(55, 104, 92, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(55, 104, 92, 0.5); }
   .govsa-btn--green-dark:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--green-dark:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--green-dark:disabled {
     opacity: 0.4; }
 
@@ -13967,11 +13953,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(81, 81, 81, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(81, 81, 81, 0.5); }
   .govsa-btn--gray:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--gray:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--gray:disabled {
     opacity: 0.4; }
 
@@ -14004,11 +13990,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(69, 69, 69, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(69, 69, 69, 0.5); }
   .govsa-btn--gray-shade:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--gray-shade:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--gray-shade:disabled {
     opacity: 0.4; }
 
@@ -14041,11 +14027,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(114, 114, 114, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(114, 114, 114, 0.5); }
   .govsa-btn--gray-tint:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--gray-tint:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--gray-tint:disabled {
     opacity: 0.4; }
 
@@ -14078,11 +14064,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(204, 204, 205, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(204, 204, 205, 0.5); }
   .govsa-btn--gray-pastel:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--gray-pastel:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--gray-pastel:disabled {
     opacity: 0.4; }
 
@@ -14115,11 +14101,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 38, 38, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(38, 38, 38, 0.5); }
   .govsa-btn--black:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--black:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--black:disabled {
     opacity: 0.4; }
 
@@ -14152,11 +14138,11 @@ i {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 113, 23, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(220, 113, 23, 0.5); }
   .govsa-btn--orange:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--orange:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
   .govsa-btn--orange:disabled {
     opacity: 0.4; }
 
@@ -14187,11 +14173,11 @@ i {
   .govsa-btn--outline--primary:focus {
     color: #26634B;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--primary:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--secondary {
   color: #005A96;
@@ -14220,11 +14206,11 @@ i {
   .govsa-btn--outline--secondary:focus {
     color: #005A96;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--secondary:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--success {
   color: #006604;
@@ -14253,11 +14239,11 @@ i {
   .govsa-btn--outline--success:focus {
     color: #006604;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--success:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--info {
   color: #339EEC;
@@ -14286,11 +14272,11 @@ i {
   .govsa-btn--outline--info:focus {
     color: #339EEC;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--info:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--warning {
   color: #FFC107;
@@ -14319,11 +14305,11 @@ i {
   .govsa-btn--outline--warning:focus {
     color: #FFC107;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--warning:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--danger {
   color: #AF0818;
@@ -14352,11 +14338,11 @@ i {
   .govsa-btn--outline--danger:focus {
     color: #AF0818;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--danger:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--light {
   color: #EAEAEA;
@@ -14385,11 +14371,11 @@ i {
   .govsa-btn--outline--light:focus {
     color: #EAEAEA;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--light:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--dark {
   color: #343a40;
@@ -14418,11 +14404,11 @@ i {
   .govsa-btn--outline--dark:focus {
     color: #343a40;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--dark:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--violet {
   color: #5505CD;
@@ -14451,11 +14437,11 @@ i {
   .govsa-btn--outline--violet:focus {
     color: #5505CD;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--violet:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--violet-shade {
   color: #3C2B7D;
@@ -14484,11 +14470,11 @@ i {
   .govsa-btn--outline--violet-shade:focus {
     color: #3C2B7D;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--violet-shade:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--violet-tint {
   color: #5830B4;
@@ -14517,11 +14503,11 @@ i {
   .govsa-btn--outline--violet-tint:focus {
     color: #5830B4;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--violet-tint:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--violet-pastel {
   color: #AC9FD5;
@@ -14550,11 +14536,11 @@ i {
   .govsa-btn--outline--violet-pastel:focus {
     color: #AC9FD5;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--violet-pastel:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--blue {
   color: #005A96;
@@ -14583,11 +14569,11 @@ i {
   .govsa-btn--outline--blue:focus {
     color: #005A96;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--blue:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--blue-shade {
   color: #0053BA;
@@ -14616,11 +14602,11 @@ i {
   .govsa-btn--outline--blue-shade:focus {
     color: #0053BA;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--blue-shade:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--blue-tint {
   color: #0054AE;
@@ -14649,11 +14635,11 @@ i {
   .govsa-btn--outline--blue-tint:focus {
     color: #0054AE;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--blue-tint:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--blue-pastel {
   color: #339EEC;
@@ -14682,11 +14668,11 @@ i {
   .govsa-btn--outline--blue-pastel:focus {
     color: #339EEC;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--blue-pastel:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--tiffany {
   color: #0AEBD7;
@@ -14715,11 +14701,11 @@ i {
   .govsa-btn--outline--tiffany:focus {
     color: #0AEBD7;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--tiffany:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--tiffany-shade {
   color: #046459;
@@ -14748,11 +14734,11 @@ i {
   .govsa-btn--outline--tiffany-shade:focus {
     color: #046459;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--tiffany-shade:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--tiffany-tint {
   color: #4ECEBB;
@@ -14781,11 +14767,11 @@ i {
   .govsa-btn--outline--tiffany-tint:focus {
     color: #4ECEBB;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--tiffany-tint:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--tiffany-pastel {
   color: #A9E2D7;
@@ -14814,11 +14800,11 @@ i {
   .govsa-btn--outline--tiffany-pastel:focus {
     color: #A9E2D7;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--tiffany-pastel:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--darkBlue {
   color: #160F3E;
@@ -14847,11 +14833,11 @@ i {
   .govsa-btn--outline--darkBlue:focus {
     color: #160F3E;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--darkBlue:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--darkBlue-shade {
   color: #1F255B;
@@ -14880,11 +14866,11 @@ i {
   .govsa-btn--outline--darkBlue-shade:focus {
     color: #1F255B;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--darkBlue-shade:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--darkBlue-tint {
   color: #444061;
@@ -14913,11 +14899,11 @@ i {
   .govsa-btn--outline--darkBlue-tint:focus {
     color: #444061;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--darkBlue-tint:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--darkBlue-pastel {
   color: #CDCCD5;
@@ -14946,11 +14932,11 @@ i {
   .govsa-btn--outline--darkBlue-pastel:focus {
     color: #CDCCD5;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--darkBlue-pastel:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--green {
   color: #26634B;
@@ -14979,11 +14965,11 @@ i {
   .govsa-btn--outline--green:focus {
     color: #26634B;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--green:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--green-shade {
   color: #066058;
@@ -15012,11 +14998,11 @@ i {
   .govsa-btn--outline--green-shade:focus {
     color: #066058;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--green-shade:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--green-tint {
   color: #27AA8C;
@@ -15045,11 +15031,11 @@ i {
   .govsa-btn--outline--green-tint:focus {
     color: #27AA8C;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--green-tint:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--green-pastel {
   color: #ACDDC7;
@@ -15078,11 +15064,11 @@ i {
   .govsa-btn--outline--green-pastel:focus {
     color: #ACDDC7;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--green-pastel:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--green-dark {
   color: #144D3F;
@@ -15111,11 +15097,11 @@ i {
   .govsa-btn--outline--green-dark:focus {
     color: #144D3F;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--green-dark:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--gray {
   color: #323232;
@@ -15144,11 +15130,11 @@ i {
   .govsa-btn--outline--gray:focus {
     color: #323232;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--gray:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--gray-shade {
   color: #242424;
@@ -15177,11 +15163,11 @@ i {
   .govsa-btn--outline--gray-shade:focus {
     color: #242424;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--gray-shade:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--gray-tint {
   color: #595959;
@@ -15210,11 +15196,11 @@ i {
   .govsa-btn--outline--gray-tint:focus {
     color: #595959;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--gray-tint:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--gray-pastel {
   color: #EAEAEA;
@@ -15243,11 +15229,11 @@ i {
   .govsa-btn--outline--gray-pastel:focus {
     color: #EAEAEA;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--gray-pastel:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--black {
   color: #000000;
@@ -15276,11 +15262,11 @@ i {
   .govsa-btn--outline--black:focus {
     color: #000000;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--black:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-btn--outline--orange {
   color: #FD7E14;
@@ -15309,11 +15295,11 @@ i {
   .govsa-btn--outline--orange:focus {
     color: #FD7E14;
     background-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107;
+    box-shadow: 0 0 0px 3px #FFC107; }
   .govsa-btn--outline--orange:active:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    -webkit-box-shadow: 0 0 0px 3px #FFC107 !important;
+    box-shadow: 0 0 0px 3px #FFC107 !important; }
 
 .govsa-card {
   height: 225px; }
@@ -15542,7 +15528,7 @@ i {
   .govsa-accordion .card .card-header {
     background-color: #ffff;
     border: 1px solid #160F3E;
-    padding: 0.75rem .5rem;
+    padding: 0.5rem 0.75rem;
     margin-bottom: 0px;
     color: #160F3E;
     text-align: inherit; }
