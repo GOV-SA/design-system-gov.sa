@@ -29,6 +29,7 @@
   &.disabled {
     opacity: 0.4; //TODO there should be some css rules FOR .disabled where colors take the rgba of .4 for any color class mixed with a .disabled
     pointer-events: none;
+    cursor: default;
   }
 }
 

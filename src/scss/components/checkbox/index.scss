@@ -6,7 +6,6 @@
     padding-right: $form-check-padding-left;
   }
   padding-top: 3px;
-  cursor: pointer;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -16,6 +15,7 @@
 
     &:hover~.govsa-checkbox__checkmark {
       box-shadow: 0 0 0 3px $gray-pastel;
+      cursor: pointer;
     }
 
     &:active~.govsa-checkbox__checkmark,
