@@ -1,16 +1,27 @@
 .govsa-fileupload {
-    
+
     .govsa-fileupload__input {
         opacity: 0;
-        height: 17px;
-        z-index: 1;
         position: absolute;
+        cursor: pointer;
+        right: -90px;
+        top: 0px;
+        left: -90px;
+
+        &:hover~.govsa-link{
+            color: $blue;
+            cursor: pointer;
+          }
+          &:active~.govsa-link{
+            background-color: $yellow;
+            color: $darkBlue;
+        }
     } 
 
-    a {
-        left: 15px;
-        top: 0px;
+    .govsa-link{
         font-size: 16px;
+        color: $darkBlue;
+        cursor: pointer;
     }
 
     P {
@@ -21,6 +32,7 @@
     .govsa-fileupload__name {
         color: $darkBlue;
         margin-top: 1.25rem;
+        margin-bottom: 0px;
     }
     .govsa-fileupload__bnt{
         margin-top: 0.5rem;
@@ -34,17 +46,7 @@
     }
 
     .govsa-errorMessage {
-        margin-top: -8px;
         margin-bottom: 9px;
         padding: 0px;
       }
-}
-
-[dir="rtl"]  {
-    .govsa-fileupload{
-        a{
-            right: 15px;
-        }
-    }
-
 }
