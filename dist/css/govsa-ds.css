@@ -15706,14 +15706,22 @@ i {
 
 .govsa-fileupload .govsa-fileupload__input {
   opacity: 0;
-  height: 17px;
-  z-index: 1;
-  position: absolute; }
-
-.govsa-fileupload a {
-  left: 15px;
+  position: absolute;
+  cursor: pointer;
+  right: -90px;
   top: 0px;
-  font-size: 16px; }
+  left: -90px; }
+  .govsa-fileupload .govsa-fileupload__input:hover ~ .govsa-link {
+    color: #005A96;
+    cursor: pointer; }
+  .govsa-fileupload .govsa-fileupload__input:active ~ .govsa-link {
+    background-color: #FFC107;
+    color: #160F3E; }
+
+.govsa-fileupload .govsa-link {
+  font-size: 16px;
+  color: #160F3E;
+  cursor: pointer; }
 
 .govsa-fileupload P {
   color: #160F3E;
@@ -15721,7 +15729,8 @@ i {
 
 .govsa-fileupload .govsa-fileupload__name {
   color: #160F3E;
-  margin-top: 1.25rem; }
+  margin-top: 1.25rem;
+  margin-bottom: 0px; }
 
 .govsa-fileupload .govsa-fileupload__bnt {
   margin-top: 0.5rem; }
@@ -15733,12 +15742,8 @@ i {
   color: #160F3E; }
 
 .govsa-fileupload .govsa-errorMessage {
-  margin-top: -8px;
   margin-bottom: 9px;
   padding: 0px; }
-
-[dir="rtl"] .govsa-fileupload a {
-  right: 15px; }
 
 .govsa-pagination .page-link {
   border: none;
