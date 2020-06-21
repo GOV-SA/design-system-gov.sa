@@ -13,7 +13,6 @@
     padding-right: $form-check-padding-left;
   }
   padding-top: 3px;
-  cursor: pointer;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -23,6 +22,7 @@
 
     &:hover~.govsa-radio__checkmark {
       box-shadow: 0 0 0 3px $gray-pastel;
+      cursor: pointer;
     }
 
     &:active~.govsa-radio__checkmark,
@@ -35,6 +35,26 @@
 
       &:after {
         display: block;
+      }
+    }
+
+    &:disabled{
+      ~.govsa-radio__checkmark {
+        border: 1px solid $gray-tint;
+        &:after {
+          border: 1px solid $gray-tint;
+          border-width: 4px;
+          border-radius: 50%;
+        }
+      }
+      &:hover~.govsa-radio__checkmark {
+        box-shadow: none;
+        cursor: auto;
+      }
+  
+      &:active~.govsa-radio__checkmark,
+      &:focus~.govsa-radio__checkmark {
+        box-shadow: none;
       }
     }
 

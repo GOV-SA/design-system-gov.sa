@@ -7,6 +7,10 @@
   i{
     margin: 0px 10px 0px 10px;
     font-size: 0.8rem;
+    [dir="rtl"] &{
+    position: relative;
+    top: 2px;
+  }
   }
   &:focus {
     color: #fff;

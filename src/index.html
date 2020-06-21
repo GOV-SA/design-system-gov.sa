@@ -866,7 +866,15 @@
             <div class="col-md-2">
                 <div class="col">
                     <label class="govsa-checkbox">Label disabled
-                        <input type="checkbox" disabled>
+                        <input type="checkbox" checked="checked"  disabled>
+                        <span class="govsa-checkbox__checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="col">
+                    <label class="govsa-checkbox">Label 
+                        <input type="checkbox" >
                         <span class="govsa-checkbox__checkmark"></span>
                     </label>
                 </div>
@@ -895,25 +903,17 @@
         </div>
         <hr>
         <div class="row">
-            <div class="col-md-2">
-                <form action="">
-                    <div class="form-group col-md-3">
-                        <label class="govsa-radio">Label
-                            <input type="radio" class="govsa-input-checkbox">
-                            <span class="govsa-radio__checkmark"></span>
-                        </label>
-                    </div>
-                </form>
+            <div class="col-md-4">
+                <label class="govsa-radio">Label disabled
+                    <input type="radio" class="govsa-input-checkbox" checked="checked" disabled>
+                    <span class="govsa-radio__checkmark"></span>
+                </label>
             </div>
             <div class="col-md-2" dir="rtl">
-                <form action="">
-                    <div class="form-group col-md-3">
-                        <label class="govsa-radio">عنوان
-                            <input type="radio" class="govsa-input-checkbox">
-                            <span class="govsa-radio__checkmark"></span>
-                        </label>
-                    </div>
-                </form>
+                <label class="govsa-radio">عنوان
+                    <input type="radio" class="govsa-input-checkbox">
+                    <span class="govsa-radio__checkmark"></span>
+                </label>
             </div>
         </div>
         <h3>Switch</h3>
@@ -1672,28 +1672,28 @@
         <div class="row my-3">
             <div class="col-md-6">
                 <div class="alert govsa-alert--warning" role="alert">
-                    <h6><img src="./images/warning.svg"> Warning alert</h6>
+                    <h6><img src="./images/warning.svg">Warning alert</h6>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor </p>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="alert govsa-alert--success" role="alert">
-                    <h6><img src="./images/success.svg"> success alert</h6>
+                    <h6><img src="./images/success.svg">success alert</h6>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor </p>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="alert govsa-alert--danger" role="alert">
-                    <h6><img src="./images/error.svg"> danger alert</h6>
+                    <h6><img src="./images/error.svg">danger alert</h6>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor </p>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="alert govsa-alert--info" role="alert">
-                    <h6><img src="./images/info-blue.svg"> info alert</h6>
+                    <h6><img src="./images/info-blue.svg">info alert</h6>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor </p>
                 </div>
@@ -1702,19 +1702,19 @@
         <div class="row my-3" dir="rtl">
             <div class="col-md-6">
                 <div class="alert govsa-alert--warning" role="alert">
-                    <h6><img src="./images/warning.svg"> إنذار</h6>
+                    <h6><img src="./images/warning.svg">إنذار</h6>
                     <p>نص يوضح رسالة الإنذار في جملة واحدة. </p>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="alert govsa-alert--success" role="alert">
-                    <h6><img src="./images/success.svg"> إكتمال</h6>
+                    <h6><img src="./images/success.svg">إكتمال</h6>
                     <p>نص يوضح رسالة الإنذار في جملة واحدة. </p>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="alert govsa-alert--danger" role="alert">
-                    <h6><img src="./images/error.svg"> خطأ</h6>
+                    <h6><img src="./images/error.svg">خطأ</h6>
                     <p>نص يوضح رسالة الإنذار في جملة واحدة. </p>
                 </div>
             </div>
@@ -2141,39 +2141,36 @@
                     <div class="card">
                         <button class="collapsed card-header" id="headingOne" data-toggle="collapse"
                             data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Lable #1 <i class=" govsa-icon govsa--arrowdown"></i>
+                             عنوان #1 <i class=" govsa-icon govsa--arrowdown"></i>
                         </button>
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                             data-parent="#accordionExample">
                             <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                squid.
+                                لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا.
                             </div>
                         </div>
                     </div>
                     <div class="card">
                         <button class="card-header collapsed" id="headingTwo" data-toggle="collapse"
                             data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Lable #2 <i class=" govsa-icon govsa--arrowdown"></i>
+                           عنوان #2 <i class=" govsa-icon govsa--arrowdown"></i>
                         </button>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                             data-parent="#accordionExample">
                             <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                squid.
+                                لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا.
                             </div>
                         </div>
                     </div>
                     <div class="card">
                         <button class="collapsed card-header" id="headingThree" data-toggle="collapse"
                             data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Lable #3 <i class=" govsa-icon govsa--arrowdown"></i>
+                            عنوان #3 <i class=" govsa-icon govsa--arrowdown"></i>
                         </button>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                             data-parent="#accordionExample">
                             <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                squid.
+                                لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا.
                             </div>
                         </div>
                     </div>
@@ -2184,13 +2181,12 @@
                     <div class="card">
                         <button class="collapsed card-header" id="headingOne" data-toggle="collapse"
                             data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
-                            Lable #1 <i class=" govsa-icon govsa--arrowdown"></i>
+                            عنوان #1 <i class=" govsa-icon govsa--arrowdown"></i>
                         </button>
                         <div id="collapseOne1" class="collapse show" aria-labelledby="headingOne"
                             data-parent="#accordionExample">
                             <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                squid.
+                                لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا.
                             </div>
                         </div>
                     </div>
