@@ -12842,11 +12842,16 @@ i {
   .btn i {
     margin: 0px 10px 0px 10px;
     font-size: 0.8rem; }
+    [dir="rtl"] .btn i {
+      position: relative;
+      top: 2px; }
   .btn:focus {
     color: #fff;
     outline: 0;
     -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 99, 75, 0.25);
     box-shadow: 0 0 0 0.2rem rgba(38, 99, 75, 0.25); }
+    .btn:focus::after {
+      /* create a new stacking context */ }
   .btn.disabled {
     opacity: 0.4;
     pointer-events: none;
@@ -15362,24 +15367,40 @@ i {
 .govsa-alert--warning {
   border-color: #FFC107;
   border-width: 2px 2px 2px 8px; }
+  .govsa-alert--warning [dir="rtl"] {
+    border-width: 2px 8px 2px 2px; }
 
 .govsa-alert--danger {
   border-color: #AF0818;
   border-width: 2px 2px 2px 8px; }
+  .govsa-alert--danger [dir="rtl"] {
+    border-width: 2px 8px 2px 2px; }
 
 .govsa-alert--info {
   border-color: #339EEC;
   border-width: 2px 2px 2px 8px; }
+  .govsa-alert--info [dir="rtl"] {
+    border-width: 2px 8px 2px 2px; }
 
 .govsa-alert--success {
   border-color: #006604;
   border-width: 2px 2px 2px 8px; }
+  .govsa-alert--success [dir="rtl"] {
+    border-width: 2px 8px 2px 2px; }
 
 .alert {
-  padding: 0.5rem; }
+  color: #160F3E;
+  padding: 0.5rem 0.75rem; }
   .alert p {
     margin-bottom: 0px;
-    padding-left: 20px; }
+    padding-left: 26px; }
+    .alert p [dir="rtl"] {
+      padding-left: 0px;
+      padding-right: 26px; }
+  .alert img {
+    margin: 0px 10px 0px 0px; }
+    .alert img [dir="rtl"] {
+      margin: 0px 0px 0px 10px; }
 
 .govsa-border--width-2 {
   border-width: 2px !important; }
@@ -15415,6 +15436,7 @@ i {
 .govsa-checkbox {
   display: block;
   position: relative;
+  color: #160F3E;
   padding-left: 1.75em;
   padding-top: 3px;
   -moz-user-select: none;
@@ -15437,6 +15459,9 @@ i {
       background-color: #160F3E; }
       .govsa-checkbox input:checked ~ .govsa-checkbox__checkmark:after {
         display: block; }
+    .govsa-checkbox input:disabled ~ .govsa-checkbox__checkmark {
+      background-color: #595959;
+      border: 1px solid #595959; }
     .govsa-checkbox input:disabled:hover ~ .govsa-checkbox__checkmark {
       -webkit-box-shadow: none;
       box-shadow: none;
@@ -15452,7 +15477,7 @@ i {
     height: 18px;
     width: 18px;
     background-color: #ffff;
-    border: 1px solid #000000;
+    border: 1px solid #160F3E;
     border-radius: 2px; }
     [dir="rtl"] .govsa-checkbox .govsa-checkbox__checkmark {
       right: 0; }
@@ -15483,7 +15508,6 @@ i {
   position: relative;
   padding-left: 1.75em;
   padding-top: 3px;
-  cursor: pointer;
   -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
@@ -15494,7 +15518,8 @@ i {
     opacity: 0; }
     .govsa-radio input:hover ~ .govsa-radio__checkmark {
       -webkit-box-shadow: 0 0 0 3px #EAEAEA;
-      box-shadow: 0 0 0 3px #EAEAEA; }
+      box-shadow: 0 0 0 3px #EAEAEA;
+      cursor: pointer; }
     .govsa-radio input:active ~ .govsa-radio__checkmark,
     .govsa-radio input:focus ~ .govsa-radio__checkmark {
       -webkit-box-shadow: 0 0 0 3px #FFC107;
@@ -15503,6 +15528,21 @@ i {
       background-color: #ffff; }
       .govsa-radio input:checked ~ .govsa-radio__checkmark:after {
         display: block; }
+    .govsa-radio input:disabled ~ .govsa-radio__checkmark {
+      border: 1px solid #595959; }
+      .govsa-radio input:disabled ~ .govsa-radio__checkmark:after {
+        border: 1px solid #595959;
+        background-color: #595959;
+        border-width: 4px;
+        border-radius: 50%; }
+    .govsa-radio input:disabled:hover ~ .govsa-radio__checkmark {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      cursor: auto; }
+    .govsa-radio input:disabled:active ~ .govsa-radio__checkmark,
+    .govsa-radio input:disabled:focus ~ .govsa-radio__checkmark {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
   .govsa-radio .govsa-radio__checkmark {
     position: absolute;
     top: 5px;
@@ -15521,6 +15561,7 @@ i {
       left: 4px;
       top: 4px;
       border: 1px solid #160F3E;
+      background-color: #160F3E;
       border-width: 4px;
       border-radius: 50%; }
 
@@ -15530,18 +15571,16 @@ i {
     background-color: #ffff;
     border: 1px solid #160F3E;
     padding: 0.5rem 0.75rem;
-    margin-bottom: 0px;
     color: #160F3E;
     text-align: inherit; }
     .govsa-accordion .card .card-header i {
       float: right;
-      color: #000000;
-      font-size: 9px;
-      padding: 10px;
-      margin: 0px 5px 0px 0px; }
+      color: #160F3E;
+      font-size: 8px;
+      margin: 8px 0px 0px 0px; }
       [dir="rtl"] .govsa-accordion .card .card-header i {
         float: left;
-        margin: 0px 0px 0px 5px; }
+        margin: 6px 0px 0px 0px; }
     .govsa-accordion .card .card-header:hover {
       background-color: #444061;
       color: #ffff;
@@ -15562,9 +15601,10 @@ i {
   .govsa-accordion .card .card-body {
     border: 1px solid #160F3E;
     margin-top: 4px;
-    padding-top: 0.5rem; }
-  .govsa-accordion .card:not(:first-of-type) .card-header {
-    border-top: 0px; }
+    margin-bottom: 4px;
+    padding-top: 0.5rem;
+    font-size: 14px;
+    color: #160F3E; }
   .govsa-accordion .card:first-of-type .card-header:first-child {
     border-top-left-radius: 8px !important;
     border-top-right-radius: 8px !important; }
@@ -15574,7 +15614,8 @@ i {
   .govsa-accordion .card:last-of-type .card-body {
     border-radius: 0px 0px 8px 8px; }
   .govsa-accordion .card:last-of-type .card-header {
-    border-radius: 0px 0px 8px 8px !important; }
+    border-radius: 0px 0px 8px 8px !important;
+    margin-bottom: 0px; }
     .govsa-accordion .card:last-of-type .card-header[aria-expanded="true"] {
       border-radius: 0px !important; }
 
@@ -15867,16 +15908,22 @@ i {
   .govsa-tag .govsa-clear__button {
     vertical-align: top;
     border: none;
-    padding-top: 2%; }
+    padding: 0px; }
     .govsa-tag .govsa-clear__button:active {
       outline: none;
       -webkit-box-shadow: none;
       box-shadow: none; }
+    .govsa-tag .govsa-clear__button img {
+      position: relative;
+      top: 4px;
+      margin: 0px 0px 0px 10px; }
 
 [dir="rtl"] .govsa-tag {
-  vertical-align: middle; }
+  vertical-align: middle;
+  padding: 2px 10px 2px 10px; }
   [dir="rtl"] .govsa-tag img {
-    margin-top: 2px; }
+    top: 5px;
+    margin: 0px 10px 0px 0px; }
 
 .govsa-tabs.nav-tabs {
   border-bottom: none; }

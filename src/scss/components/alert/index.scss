@@ -1,26 +1,48 @@
-$border-width: 2px 2px 2px 8px;
-
 .govsa-alert--warning{
     border-color: $warning;
-    border-width: $border-width;
+    border-width: 2px 2px 2px 8px;;
+    [dir="rtl"] {
+        border-width: 2px 8px 2px 2px;
+    }
 }
 
 .govsa-alert--danger{
     border-color: $danger;
-    border-width: $border-width;
+    border-width: 2px 2px 2px 8px;;
+    [dir="rtl"] {
+        border-width: 2px 8px 2px 2px;
+    }
+    
 }
 .govsa-alert--info{
     border-color: $info;
-    border-width: $border-width;
+    border-width: 2px 2px 2px 8px;;
+    [dir="rtl"] {
+        border-width: 2px 8px 2px 2px;
+    }
 }
 .govsa-alert--success{
     border-color: $success;
-    border-width: $border-width;
+    border-width: 2px 2px 2px 8px;;
+    [dir="rtl"] {
+        border-width: 2px 8px 2px 2px;
+    }
 }
 .alert{
-    padding: 0.5rem;
+    color: $darkBlue;
+    padding: 0.5rem 0.75rem;
     p{
         margin-bottom: 0px;
-        padding-left: 20px
+        padding-left: 26px;
+        [dir="rtl"] {
+            padding-left: 0px;
+            padding-right: 26px
+        }
+    }
+    img{
+        margin: 0px 10px 0px 0px;
+        [dir="rtl"] {
+            margin: 0px 0px 0px 10px;
+        }
     }
 }

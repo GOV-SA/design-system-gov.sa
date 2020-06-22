@@ -6,19 +6,17 @@
       background-color: $white;
       border: 1px solid $darkBlue;
       padding: 0.5rem 0.75rem;
-      margin-bottom: 0px;
       color: $darkBlue;
       text-align: inherit;
 
       i {
         float: right;
-        color: $black;
-        font-size: 9px;
-        padding: 10px;
-        margin: 0px 5px 0px 0px;
+        color: $darkBlue;
+        font-size: 8px;
+        margin: 8px 0px 0px 0px;
         [dir="rtl"] & {
           float: left;
-          margin: 0px 0px 0px 5px;
+          margin: 6px 0px 0px 0px;
         }
       }
 
@@ -57,13 +55,10 @@
     .card-body {
       border: 1px solid $darkBlue;
       margin-top: 4px;
+      margin-bottom: 4px;
       padding-top: 0.5rem;
-    }
-
-    &:not(:first-of-type) {
-      .card-header {
-        border-top: 0px;
-      }
+      font-size: 14px;
+      color: $darkBlue;
     }
 
     &:first-of-type {
@@ -85,12 +80,13 @@
 
       .card-header {
         border-radius: 0px 0px 8px 8px !important;
+        margin-bottom: 0px;
 
         &[aria-expanded="true"] {
           border-radius: 0px !important;
         }
       }
     }
-  }
 
+  }
 }

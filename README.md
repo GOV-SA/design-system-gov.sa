@@ -58,11 +58,6 @@ GOV.SA-design-system/
 ## Installation:
 How to you use the GOV.SA design system depends on the needs of your project.
 
-First, the GOV.SA design system built on Bootstrap, so you need to install below dependencies packages:
-1.  [Bootstrap](https://getbootstrap.com/).
-2.  [Jquery](https://jquery.com/).
-3.  [Popper.js](https://popper.js.org/).
-
 You have two options to get the design system:
 -   [Download the design system](#download-the-design-system)  if you are not familiar with npm and package management.
 -   [Use the design system npm package](#install-using-npm) if you are familiar with using npm and package management.

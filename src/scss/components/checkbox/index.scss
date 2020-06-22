@@ -1,11 +1,14 @@
 .govsa-checkbox {
   display: block;
   position: relative;
+  color: $darkBlue;
   padding-left: $form-check-padding-left;
   [dir="rtl"] & {
     padding-right: $form-check-padding-left;
   }
+  
   padding-top: 3px;
+
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -32,6 +35,10 @@
     }
 
     &:disabled{
+      ~.govsa-checkbox__checkmark {
+        background-color: $gray-tint;
+        border: 1px solid $gray-tint;
+      }
       &:hover~.govsa-checkbox__checkmark {
         box-shadow: none;
         cursor: auto;
@@ -55,7 +62,7 @@
     height: 18px;
     width: 18px;
     background-color: $white;
-    border: 1px solid $black;
+    border: 1px solid $darkBlue;
     border-radius: 2px;
 
     &:after {
