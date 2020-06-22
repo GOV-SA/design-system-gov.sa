@@ -15367,25 +15367,25 @@ i {
 .govsa-alert--warning {
   border-color: #FFC107;
   border-width: 2px 2px 2px 8px; }
-  .govsa-alert--warning [dir="rtl"] {
+  [dir="rtl"] .govsa-alert--warning {
     border-width: 2px 8px 2px 2px; }
 
 .govsa-alert--danger {
   border-color: #AF0818;
   border-width: 2px 2px 2px 8px; }
-  .govsa-alert--danger [dir="rtl"] {
+  [dir="rtl"] .govsa-alert--danger {
     border-width: 2px 8px 2px 2px; }
 
 .govsa-alert--info {
   border-color: #339EEC;
   border-width: 2px 2px 2px 8px; }
-  .govsa-alert--info [dir="rtl"] {
+  [dir="rtl"] .govsa-alert--info {
     border-width: 2px 8px 2px 2px; }
 
 .govsa-alert--success {
   border-color: #006604;
   border-width: 2px 2px 2px 8px; }
-  .govsa-alert--success [dir="rtl"] {
+  [dir="rtl"] .govsa-alert--success {
     border-width: 2px 8px 2px 2px; }
 
 .alert {
@@ -15394,12 +15394,12 @@ i {
   .alert p {
     margin-bottom: 0px;
     padding-left: 26px; }
-    .alert p [dir="rtl"] {
+    [dir="rtl"] .alert p {
       padding-left: 0px;
       padding-right: 26px; }
   .alert img {
     margin: 0px 10px 0px 0px; }
-    .alert img [dir="rtl"] {
+    [dir="rtl"] .alert img {
       margin: 0px 0px 0px 10px; }
 
 .govsa-border--width-2 {
