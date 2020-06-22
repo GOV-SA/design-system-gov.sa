@@ -1,7 +1,7 @@
 .govsa-alert--warning{
     border-color: $warning;
     border-width: 2px 2px 2px 8px;;
-    [dir="rtl"] {
+    [dir="rtl"] & {
         border-width: 2px 8px 2px 2px;
     }
 }
@@ -9,7 +9,7 @@
 .govsa-alert--danger{
     border-color: $danger;
     border-width: 2px 2px 2px 8px;;
-    [dir="rtl"] {
+    [dir="rtl"] & {
         border-width: 2px 8px 2px 2px;
     }
     
@@ -17,14 +17,14 @@
 .govsa-alert--info{
     border-color: $info;
     border-width: 2px 2px 2px 8px;;
-    [dir="rtl"] {
+    [dir="rtl"] & {
         border-width: 2px 8px 2px 2px;
     }
 }
 .govsa-alert--success{
     border-color: $success;
     border-width: 2px 2px 2px 8px;;
-    [dir="rtl"] {
+    [dir="rtl"] & {
         border-width: 2px 8px 2px 2px;
     }
 }
@@ -34,14 +34,14 @@
     p{
         margin-bottom: 0px;
         padding-left: 26px;
-        [dir="rtl"] {
+        [dir="rtl"] & {
             padding-left: 0px;
             padding-right: 26px
         }
     }
     img{
         margin: 0px 10px 0px 0px;
-        [dir="rtl"] {
+        [dir="rtl"] & {
             margin: 0px 0px 0px 10px;
         }
     }
