@@ -7,21 +7,25 @@
   i{
     margin: 0px 10px 0px 10px;
     font-size: 0.8rem;
+    [dir="rtl"] &{
+    position: relative;
+    top: 2px;
+  }
   }
   &:focus {
     color: #fff;
     outline: 0;
     box-shadow:  $btn-focus-box-shadow;
     &::after {
-      // background: $yellow;
+     //background: $yellow;
       // width: 108%;
       // content: "";
       // height: 108%;
       // left: -4%;
       // right: -4%;
       // top: -4%;
-      // box-shadow: 0 0 0px 3px $yellow;
-      // /* create a new stacking context */
+     // box-shadow: 0 0 0px 3px $yellow;
+      /* create a new stacking context */
       // position: absolute;
       // z-index: -1; /* to be below the parent element */
     }
