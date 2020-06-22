@@ -15532,7 +15532,7 @@ i {
       border: 1px solid #595959; }
       .govsa-radio input:disabled ~ .govsa-radio__checkmark:after {
         border: 1px solid #595959;
-        background-color: #160F3E;
+        background-color: #595959;
         border-width: 4px;
         border-radius: 50%; }
     .govsa-radio input:disabled:hover ~ .govsa-radio__checkmark {
@@ -15561,6 +15561,7 @@ i {
       left: 4px;
       top: 4px;
       border: 1px solid #160F3E;
+      background-color: #160F3E;
       border-width: 4px;
       border-radius: 50%; }
 
