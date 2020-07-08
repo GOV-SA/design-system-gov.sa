@@ -1,57 +1,64 @@
 .govsa-pagination {
-  .page-link {
-    border: none;
-    border-radius: 50px;
-
-    &:hover {
-      background-color: $gray-pastel;
-      color: $darkBlue;
-    }
-
-    &:active {
-      background-color: $darkBlue;
-      color: $white;
-
-      i {
-        color: $darkBlue;
-      }
-    }
-
-    &:focus {
-      z-index: 3;
-      outline: none;
-      box-shadow: 0px 0 0 1px $yellow;
-    }
-  }
-
+  
   .page-item {
-    border: none;
 
-    a {
-      text-decoration: none;
+    .page-link {
+      border: none;
+      border-radius: 100px;
+      font-size:  0.876rem;
+  
+      &:hover {
+        background-color: $gray-pastel;
+        color: $darkBlue;
+  
+      }
+  
+      &:active {
+        background-color: $darkBlue;
+        color: $white;
+  
+        i {
+          color: $darkBlue;
+        }
+      }
+  
+      &:focus {
+        z-index: 3;
+        outline: none;
+        box-shadow: 0px 0 0 1px $yellow;
+      }
     }
 
     &:not(:first-child) .page-link {
       margin-left: 5px;
-    }
-
-    &:last-child .page-link,
-    &:first-child .page-link {
-      &:hover {
-        background-color: white;
-      }
-
-      &:focus {
-        border-radius: 0;
-        outline: 2px solid $yellow;
+      [dir="rtl"] & {
+        margin-left: 0px;
+        margin-right: 5px;
       }
     }
 
-    &.active-page .page-link {
+    &:last-child,
+    &:first-child{
+      .page-link{
+        &:hover {
+          background-color: white;
+        }
+  
+        &:focus {
+          border-radius: 0;
+          outline: 2px solid $yellow;
+        }
+      }
+    }
+
+    &.active-page{
+      border-radius: 100px;
+    
+    .page-link {
       color: $white;
       background-color: $darkBlue;
-      border-radius: 50%;
     }
+  }
 
     &.disabled .page-link {
       pointer-events: none;
