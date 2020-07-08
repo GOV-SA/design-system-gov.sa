@@ -1,19 +1,21 @@
-.govsa-link {
+
+@mixin govsa-links($col) {
     font-size: 0.875rem;
     text-decoration: underline;
+    color: $col;
 
     i {
         text-decoration: none !important;
-        color: $darkBlue;
+        color: $col;
         margin: 0px 10px 0px 10px;
     }
 
     &:active {
         background-color: $yellow;
-        color: $darkBlue;
+        color: $col;
 
         i {
-            color: $darkBlue;
+            color: $col;
         }
     }
 
@@ -22,10 +24,20 @@
             color: $blue;
         }
     }
+    
+}
+
+.govsa-link {
+    @include govsa-links($darkBlue);
 
 }
 
-.govsa-link.disabled {
+.govsa-link--secondary {
+    @include govsa-links($blue);
+}
+
+.govsa-link.disabled,
+.govsa-link--secondary.disabled {
     color: $gray;
     pointer-events: none;
 
@@ -33,6 +45,8 @@
         color: $gray;
     }
 }
+
+
 
 [dir="rtl"] {
     .govsa-link {
