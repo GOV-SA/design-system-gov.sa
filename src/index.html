@@ -1599,7 +1599,7 @@
         </div>
         <hr>
         <div class="row">
-            <div class="col-2">
+            <div class="col-md-2">
                 <div>
                     <div class="dropdown govsa-dropdown">
                         <button class="dropdown-toggle" type="button" id="" data-toggle="dropdown" aria-haspopup="true"
@@ -1633,7 +1633,7 @@
                 </div>
 
             </div>
-            <div class="col-2" dir="rtl">
+            <div class="col-md-2 mt-4" dir="rtl">
                 <div>
                     <div class="dropdown govsa-dropdown">
                         <button class="dropdown-toggle" type="button" id="" data-toggle="dropdown" aria-haspopup="true"
@@ -1737,8 +1737,8 @@
                                     <i class="govsa--icon govsa--arrowleft"></i></a>
                             </li>
                             <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item active-page"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item active-page"><a class="page-link" href="#">3</a></li>
                             <li class="page-item"><a class="page-link" href="#">4</a></li>
                             <li class="page-item"><a class="page-link" href="#">
                                     <i class="govsa--icon govsa--arrowright"></i></a>
@@ -1954,6 +1954,28 @@
             <div class="col-md-3">
                 <p>Link/standard/disabled</p>
                 <a class="govsa-link disabled" href="" title="title link"> <i class="govsa-icon govsa--arrowleft"></i>
+                    Link
+                    text</a>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-md-3">
+                <p>Link/Secondary/default</p>
+                <a class="govsa-link--secondary" href="" title="title link">Link text</a>
+            </div>
+            <div class="col-md-3">
+                <p>Link/Secondary/disabled</p>
+                <a class="govsa-link--secondary disabled" href="" title="title link">Link text</a>
+            </div>
+
+            <div class="col-md-3">
+                <p>Link/Secondary/default</p>
+                <a class="govsa-link--secondary" href="" title="title link"> <i class="govsa-icon govsa--arrowleft"></i> Link
+                    text</a>
+            </div>
+            <div class="col-md-3">
+                <p>Link/Secondary/disabled</p>
+                <a class="govsa-link--secondary disabled" href="" title="title link"> <i class="govsa-icon govsa--arrowleft"></i>
                     Link
                     text</a>
             </div>
@@ -2805,13 +2827,13 @@
     <footer class="govsa-footer">
         <div class="feedback-container">
             <div class="container">
-                <div class="d-md-flex justify-content-center align-items-center p-4 feedback-container-div">
+                <div class="d-md-flex justify-content-center align-items-center p-md-4 p-3 feedback-container-div">
                     <div class="mx-3">
-                        <span> Is this page helpful to you?
+                        <span>Is this page helpful to you?
                             <a href="" class="govsa-footer-link">Yes </a> | <a href=""
                                 class="govsa-footer-link">No</a></span>
                     </div>
-                    <div class="mx-3">
+                    <div class="mx-4 pt-2 pt-md-0">
                         <span>60% of vistors said yes from 2843 Feedback</span>
                     </div>
                 </div>
@@ -2819,16 +2841,16 @@
         </div>
 
         <!--  -->
-        <div class="d-md-flex justify-content-around pt-5   ">
+        <div class="d-md-flex justify-content-around pt-5 px-2">
             <div>
-                <div class="d-md-flex justify-content-between contact-us-div">
-                    <div class="p-2">
+                <div class="contact-us-div d-md-flex justify-content-between p-md-0">
+                    <div class="">
                         <img src="./images/contact.svg" alt="" width="51.48" height="46.85">
                     </div>
                     <div class="p-2">
                         <p>CONTACT US <br> 199099</p>
                     </div>
-                    <div class='p-2' style="line-height: 4.4;vertical-align: bottom;">
+                    <div class='p-2' style="line-height: 4.4;vertical-align: bottom;font-size: 14px;">
                         <ins> <a href="#" class="footer-link">View more</a> </ins>
                     </div>
                 </div>
@@ -2925,38 +2947,40 @@
             </div>
         </div>
         <hr class="footer-divider">
-        <div class="d-md-flex justify-content-between p-3">
-            <div>
-                <span>
-                    Privacy Policy Terms of Use Sitemap RSS
-                </span>
+        <div class="d-md-flex justify-content-between p-3 footer--terms-div">
+            <div class="text-center">
+                <a href="#" class="footer-link px-1">Privacy Policy</a>
+                <a href="#" class="footer-link px-1">Terms of Use</a>
+                <a href="#" class="footer-link px-1">Sitemap</a>
+                <a href="#" class="footer-link px-1">RSS</a>
             </div>
-            <div>
+            <div class="text-center">
                 <span>
                     Developed and Maintained by YESSER E-Government Program
                 </span>
             </div>
-            <div>
+            <div class="text-center">
                 <span>
                     © GOV.SA All Rights Reserved 2019
                 </span>
             </div>
         </div>
     </footer>
+
     <hr>
     <h3>Footer - Arabic</h3>
     <hr>
     <footer class="govsa-footer" dir="rtl">
         <div class="feedback-container">
             <div class="container">
-                <div class="d-md-flex justify-content-center align-items-center p-4 feedback-container-div">
+                <div class="d-md-flex justify-content-center align-items-center p-md-4 p-3 feedback-container-div">
                     <div class="mx-3">
                         <span>
                             هل هذه الصفحة مفيدة لك؟
                             <a href="" class="govsa-footer-link">نعم </a> | <a href="" class="govsa-footer-link">لا</a>
                         </span>
                     </div>
-                    <div class="mx-3">
+                    <div class="mx-4 pt-2 pt-md-0">
                         <span>قال 60 ٪ من الزائرين نعم من 2843 تقييم</span>
                     </div>
                 </div>
@@ -2964,16 +2988,16 @@
         </div>
 
         <!--  -->
-        <div class="d-md-flex justify-content-around pt-5">
+        <div class="d-md-flex justify-content-around pt-5 px-2">
             <div>
-                <div class="d-md-flex justify-content-between contact-us-div">
-                    <div class="p-2">
+                <div class="contact-us-div d-md-flex justify-content-between p-md-0">
+                    <div class="">
                         <img src="./images/contact.svg" alt="" width="51.48" height="46.85">
                     </div>
                     <div class="p-2">
                         <p> اتصل بنا<br> 199099</p>
                     </div>
-                    <div class='p-2' style="line-height: 4.4;vertical-align: bottom;">
+                    <div class='p-2' style="line-height: 4.4;vertical-align: bottom;font-size: 14px;">
                         <a href="#" class="footer-link">عرض المزيد</a>
                     </div>
                 </div>
@@ -3070,18 +3094,18 @@
             </div>
         </div>
         <hr class="footer-divider">
-        <div class="d-md-flex justify-content-between p-3">
-            <div>
+        <div class="d-md-flex justify-content-between p-3 footer--terms-div">
+            <div class="text-center">
                 <span>
                     سياسة الخصوصية شروط الاستخدام خريطة الموقع RSS
                 </span>
             </div>
-            <div>
+            <div class="text-center">
                 <span>
                     تطوير وتشغيل برنامج التعاملات الإلكترونية الحكومية - يسّر
                 </span>
             </div>
-            <div>
+            <div class="text-center">
                 <span>
                     © 2019 جميع الحقوق محفوظة لـ بوابة GOV.SA
                 </span>
