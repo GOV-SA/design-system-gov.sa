@@ -1202,9 +1202,13 @@
                     <input class="govsa-input" type="text" placeholder="Input text |">
                 </div>
                 <div class="col-12">
-                    <label class="govsa-input__label" for="">Lable</label>
+                    <label class="govsa-input__label govsa-input--error" for="">Lable</label>
                     <input class="govsa-input govsa-border--red" type="text" placeholder="Input text |">
                     <span class="govsa-errorMessage">Error message</span>
+                </div>
+                <div class="col-12">
+                    <label class="govsa-input__label govsa-input--disabled" for="">disabled</label>
+                    <input class="govsa-input" type="text" disabled placeholder="Input text |">
                 </div>
             </div>
             <div class="col-lg-6" dir="rtl">
@@ -1217,9 +1221,13 @@
                     <input class="govsa-input" type="text" placeholder="أدخل النص">
                 </div>
                 <div class="col-12">
-                    <label class="govsa-input__label" for="">عنوان</label>
-                    <input class="govsa-input govsa-border--red" type="text" placeholder="أدخل النص">
+                    <label class="govsa-input__label govsa-input--error" for="">عنوان</label>
+                    <input class="govsa-input" type="text" placeholder="أدخل النص">
                     <span class="govsa-errorMessage">رسالة خطأ</span>
+                </div>
+                <div class="col-12">
+                    <label class="govsa-input__label govsa-input--disabled" for="">عنوان</label>
+                    <input class="govsa-input" type="text" disabled placeholder="أدخل النص">
                 </div>
             </div>
         </div>
@@ -1235,356 +1243,430 @@
 
         <div class="row">
             <div class="col-lg-6 col-md-12">
-                <table class='table govsa-table table-hover scrollable-table'>
-                    <thead>
-                        <tr>
-                            <th>Column title</th>
-                            <th>Column title</th>
-                            <th>Column title</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                Line content
-                            </td>
-                            <td>
-                                Line content
-                            </td>
-                            <td>
-                                Line content
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Line content
-                            </td>
-                            <td>
-                                Line content
-                            </td>
-                            <td>
-                                Line content
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Line content
-                            </td>
-                            <td>
-                                Line content
-                            </td>
-                            <td>
-                                Line content
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Line content
-                            </td>
-                            <td>
-                                Line content
-                            </td>
-                            <td>
-                                Line content
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Line content
-                            </td>
-                            <td>
-                                Line content
-                            </td>
-                            <td>
-                                Line content
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Line content
-                            </td>
-                            <td>
-                                Line content
-                            </td>
-                            <td>
-                                Line content
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Line content
-                            </td>
-                            <td>
-                                Line content
-                            </td>
-                            <td>
-                                Line content
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="govsa-table">
+                    <table class='table'>
+                        <thead>
+                            <tr>
+                                <th>Column title</th>
+                                <th>Column title</th>
+                                <th>Column title</th>
+                                <th>Column title</th>
+                                <th>Column title</th>
+                                <th>Column title</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                                <td>
+                                    Line content
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="col-lg-6 col-md-12">
-                <table class='table govsa-table table-hover scrollable-table text-right'>
-                    <thead>
-                        <tr>
-                            <th>عنوان </th>
-                            <th>عنوان </th>
-                            <th>عنوان </th>
-                        </tr>
-                    </thead>
-                    <tbody style="direction: rtl;">
-                        <tr>
-                            <td>
-                                خط المحتوى
-                            </td>
-                            <td>
-                                خط المحتوى
-                            </td>
-                            <td>
-                                خط المحتوى
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                خط المحتوى
-                            </td>
-                            <td>
-                                خط المحتوى
-                            </td>
-                            <td>
-                                خط المحتوى
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                خط المحتوى
-                            </td>
-                            <td>
-                                خط المحتوى
-                            </td>
-                            <td>
-                                خط المحتوى
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                خط المحتوى
-                            </td>
-                            <td>
-                                خط المحتوى
-                            </td>
-                            <td>
-                                خط المحتوى
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="col-lg-6 col-md-12" dir="rtl">
+                <div class="govsa-table">
+                    <table class='table'>
+                        <thead>
+                            <tr>
+                                <th>عنوان </th>
+                                <th>عنوان </th>
+                                <th>عنوان </th>
+                            </tr>
+                        </thead>
+                        <tbody style="direction: rtl;">
+                            <tr>
+                                <td>
+                                    خط المحتوى
+                                </td>
+                                <td>
+                                    خط المحتوى
+                                </td>
+                                <td>
+                                    خط المحتوى
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    خط المحتوى
+                                </td>
+                                <td>
+                                    خط المحتوى
+                                </td>
+                                <td>
+                                    خط المحتوى
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    خط المحتوى
+                                </td>
+                                <td>
+                                    خط المحتوى
+                                </td>
+                                <td>
+                                    خط المحتوى
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    خط المحتوى
+                                </td>
+                                <td>
+                                    خط المحتوى
+                                </td>
+                                <td>
+                                    خط المحتوى
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-6 col-md-12">
-                <table class='table govsa-table table-hover scrollable-table'>
-                    <thead>
-                        <tr>
-                            <th>
-                                <label class="govsa-checkbox"> title
-                                    <input type="checkbox">
-                                    <span class="govsa-checkbox__checkmark"></span>
-                                </label>
-                            </th>
-                            <th> title</th>
-                            <th> title</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <div>
-                                    <label class="govsa-checkbox">Label
+                <div class="govsa-table">
+                    <table class='table'>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <label class="govsa-checkbox"> title
                                         <input type="checkbox">
                                         <span class="govsa-checkbox__checkmark"></span>
                                     </label>
-                                </div>
+                                </th>
+                                <th> title</th>
+                                <th> title</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <label class="govsa-checkbox">Label
+                                            <input type="checkbox">
+                                            <span class="govsa-checkbox__checkmark"></span>
+                                        </label>
+                                    </div>
 
-                            </td>
-                            <td>Line content</td>
-                            <td>
-                                <div>
-                                    <span>Line content</span>
+                                </td>
+                                <td>Line content</td>
+                                <td>
+                                    <div>
+                                        <span>Line content</span>
 
-                                </div>
-                            </td>
-                            <td>
-                                <i class="govsa--delete pull-right"></i>
-                                <i class="govsa--edit mx-0 mx-md-4"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div>
-                                    <label class="govsa-checkbox">Label
-                                        <input type="checkbox">
-                                        <span class="govsa-checkbox__checkmark"></span>
-                                    </label>
-                                </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i class="govsa--delete pull-right"></i>
+                                    <i class="govsa--edit mx-0 mx-md-4"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <label class="govsa-checkbox">Label
+                                            <input type="checkbox">
+                                            <span class="govsa-checkbox__checkmark"></span>
+                                        </label>
+                                    </div>
 
-                            </td>
-                            <td>Line content</td>
-                            <td>
-                                <div>
-                                    <span>Line content</span>
+                                </td>
+                                <td>Line content</td>
+                                <td>
+                                    <div>
+                                        <span>Line content</span>
 
-                                </div>
-                            </td>
-                            <td>
-                                <i class="govsa--delete pull-right"></i>
-                                <i class="govsa--edit mx-0 mx-md-4"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div>
-                                    <label class="govsa-checkbox">Label
-                                        <input type="checkbox">
-                                        <span class="govsa-checkbox__checkmark"></span>
-                                    </label>
-                                </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i class="govsa--delete pull-right"></i>
+                                    <i class="govsa--edit mx-0 mx-md-4"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <label class="govsa-checkbox">Label
+                                            <input type="checkbox">
+                                            <span class="govsa-checkbox__checkmark"></span>
+                                        </label>
+                                    </div>
 
-                            </td>
-                            <td>Line content</td>
-                            <td>
-                                <div>
-                                    <span>Line content</span>
+                                </td>
+                                <td>Line content</td>
+                                <td>
+                                    <div>
+                                        <span>Line content</span>
 
-                                </div>
-                            </td>
-                            <td>
-                                <i class="govsa--delete pull-right"></i>
-                                <i class="govsa--edit mx-0 mx-md-4"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div>
-                                    <label class="govsa-checkbox">Label
-                                        <input type="checkbox">
-                                        <span class="govsa-checkbox__checkmark"></span>
-                                    </label>
-                                </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i class="govsa--delete pull-right"></i>
+                                    <i class="govsa--edit mx-0 mx-md-4"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <label class="govsa-checkbox">Label
+                                            <input type="checkbox">
+                                            <span class="govsa-checkbox__checkmark"></span>
+                                        </label>
+                                    </div>
 
-                            </td>
-                            <td>Line content</td>
-                            <td>
-                                <div>
-                                    <span>Line content</span>
+                                </td>
+                                <td>Line content</td>
+                                <td>
+                                    <div>
+                                        <span>Line content</span>
 
-                                </div>
-                            </td>
-                            <td>
-                                <i class="govsa--delete pull-right"></i>
-                                <i class="govsa--edit mx-0 mx-md-4"></i>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i class="govsa--delete pull-right"></i>
+                                    <i class="govsa--edit mx-0 mx-md-4"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="col-lg-6 col-md-12">
-                <table class='table govsa-table table-hover scrollable-table text-right'>
-                    <thead>
-                        <tr dir="rtl">
-                            <th></th>
-                            <th>عنوان المحتوى</th>
-                            <th>عنوان المحتوى</th>
-                            <th>
-                                <label class="govsa-checkbox">عنوان 
-                                    <input type="checkbox">
-                                    <span class="govsa-checkbox__checkmark"></span>
-                                </label>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody style="direction: rtl;">
+            <div class="col-lg-6 col-md-12  dir="rtl"">
+                <div class="govsa-table">
+                    <table class='table'>
+                        <thead>
+                            <tr dir="rtl">
+                                <th></th>
+                                <th>عنوان المحتوى</th>
+                                <th>عنوان المحتوى</th>
+                                <th>
+                                    <label class="govsa-checkbox">عنوان 
+                                        <input type="checkbox">
+                                        <span class="govsa-checkbox__checkmark"></span>
+                                    </label>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody style="direction: rtl;">
 
-                        <tr dir="rtl">
-                            <td>
-                                <label class="govsa-checkbox">خط المحتوى
-                                    <input type="checkbox">
-                                    <span class="govsa-checkbox__checkmark"></span>
-                                </label>
-                            </td>
-                            <td>خط المحتوى</td>
-                            <td>
-                                <div>
-                                    <span>خط المحتوى</span>
+                            <tr dir="rtl">
+                                <td>
+                                    <label class="govsa-checkbox">خط المحتوى
+                                        <input type="checkbox">
+                                        <span class="govsa-checkbox__checkmark"></span>
+                                    </label>
+                                </td>
+                                <td>خط المحتوى</td>
+                                <td>
+                                    <div>
+                                        <span>خط المحتوى</span>
 
-                                </div>
-                            </td>
-                            <td>
-                                <i class="govsa--delete pull-right"></i>
-                                <i class="govsa--edit mx-0 mx-md-4"></i>
-                            </td>
-                        </tr>
-                        <tr dir="rtl">
-                            <td>
-                                <label class="govsa-checkbox">خط المحتوى
-                                    <input type="checkbox">
-                                    <span class="govsa-checkbox__checkmark"></span>
-                                </label>
-                            </td>
-                            <td>خط المحتوى</td>
-                            <td>
-                                <div>
-                                    <span>خط المحتوى</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i class="govsa--delete pull-right"></i>
+                                    <i class="govsa--edit mx-0 mx-md-4"></i>
+                                </td>
+                            </tr>
+                            <tr dir="rtl">
+                                <td>
+                                    <label class="govsa-checkbox">خط المحتوى
+                                        <input type="checkbox">
+                                        <span class="govsa-checkbox__checkmark"></span>
+                                    </label>
+                                </td>
+                                <td>خط المحتوى</td>
+                                <td>
+                                    <div>
+                                        <span>خط المحتوى</span>
 
-                                </div>
-                            </td>
-                            <td>
-                                <i class="govsa--delete pull-right"></i>
-                                <i class="govsa--edit mx-0 mx-md-4"></i>
-                            </td>
-                        </tr>
-                        <tr dir="rtl">
-                            <td>
-                                <label class="govsa-checkbox">خط المحتوى
-                                    <input type="checkbox">
-                                    <span class="govsa-checkbox__checkmark"></span>
-                                </label>
-                            </td>
-                            <td>خط المحتوى</td>
-                            <td>
-                                <div>
-                                    <span>خط المحتوى</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i class="govsa--delete pull-right"></i>
+                                    <i class="govsa--edit mx-0 mx-md-4"></i>
+                                </td>
+                            </tr>
+                            <tr dir="rtl">
+                                <td>
+                                    <label class="govsa-checkbox">خط المحتوى
+                                        <input type="checkbox">
+                                        <span class="govsa-checkbox__checkmark"></span>
+                                    </label>
+                                </td>
+                                <td>خط المحتوى</td>
+                                <td>
+                                    <div>
+                                        <span>خط المحتوى</span>
 
-                                </div>
-                            </td>
-                            <td>
-                                <i class="govsa--delete pull-right"></i>
-                                <i class="govsa--edit mx-0 mx-md-4"></i>
-                            </td>
-                        </tr>
-                        <tr dir="rtl">
-                            <td>
-                                <label class="govsa-checkbox">خط المحتوى
-                                    <input type="checkbox">
-                                    <span class="govsa-checkbox__checkmark"></span>
-                                </label>
-                            </td>
-                            <td>خط المحتوى</td>
-                            <td>
-                                <div>
-                                    <span>خط المحتوى</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i class="govsa--delete pull-right"></i>
+                                    <i class="govsa--edit mx-0 mx-md-4"></i>
+                                </td>
+                            </tr>
+                            <tr dir="rtl">
+                                <td>
+                                    <label class="govsa-checkbox">خط المحتوى
+                                        <input type="checkbox">
+                                        <span class="govsa-checkbox__checkmark"></span>
+                                    </label>
+                                </td>
+                                <td>خط المحتوى</td>
+                                <td>
+                                    <div>
+                                        <span>خط المحتوى</span>
 
-                                </div>
-                            </td>
-                            <td>
-                                <i class="govsa--delete pull-right"></i>
-                                <i class="govsa--edit mx-0 mx-md-4"></i>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i class="govsa--delete pull-right"></i>
+                                    <i class="govsa--edit mx-0 mx-md-4"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 
@@ -2100,10 +2182,10 @@
                 <div class="accordion govsa-accordion" id="accordionExample">
                     <div class="card">
                         <button class="collapsed card-header" id="headingOne" data-toggle="collapse"
-                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Lable #1 <i class=" govsa-icon govsa--arrowdown"></i>
+                            data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Lable #1 <i class=" govsa-icon govsa--Color"></i>
                         </button>
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
                             data-parent="#accordionExample">
                             <div class="card-body">
                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
@@ -2114,7 +2196,7 @@
                     <div class="card">
                         <button class="card-header collapsed" id="headingTwo" data-toggle="collapse"
                             data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Lable #2 <i class=" govsa-icon govsa--arrowdown"></i>
+                            Lable #2 <i class=" govsa-icon govsa--Color"></i>
                         </button>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                             data-parent="#accordionExample">
@@ -2127,7 +2209,7 @@
                     <div class="card">
                         <button class="collapsed card-header" id="headingThree" data-toggle="collapse"
                             data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Lable #3 <i class=" govsa-icon govsa--arrowdown"></i>
+                            Lable #3 <i class=" govsa-icon govsa--Color"></i>
                         </button>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                             data-parent="#accordionExample">
@@ -2143,10 +2225,10 @@
                 <div class="accordion govsa-accordion" id="accordionExample">
                     <div class="card">
                         <button class="collapsed card-header" id="headingOne" data-toggle="collapse"
-                            data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
-                            Lable #1 <i class=" govsa-icon govsa--arrowdown"></i>
+                            data-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1">
+                            Lable #1 <i class=" govsa-icon govsa--Color"></i>
                         </button>
-                        <div id="collapseOne1" class="collapse show" aria-labelledby="headingOne"
+                        <div id="collapseOne1" class="collapse" aria-labelledby="headingOne"
                             data-parent="#accordionExample">
                             <div class="card-body">
                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
@@ -2162,10 +2244,10 @@
                 <div class="accordion govsa-accordion" id="accordionExample">
                     <div class="card">
                         <button class="collapsed card-header" id="headingOne" data-toggle="collapse"
-                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                             عنوان #1 <i class=" govsa-icon govsa--arrowdown"></i>
+                            data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                             عنوان #1 <i class=" govsa-icon govsa--Color"></i>
                         </button>
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
                             data-parent="#accordionExample">
                             <div class="card-body">
                                 لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا.
@@ -2175,7 +2257,7 @@
                     <div class="card">
                         <button class="card-header collapsed" id="headingTwo" data-toggle="collapse"
                             data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                           عنوان #2 <i class=" govsa-icon govsa--arrowdown"></i>
+                           عنوان #2 <i class=" govsa-icon govsa--Color"></i>
                         </button>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                             data-parent="#accordionExample">
@@ -2187,7 +2269,7 @@
                     <div class="card">
                         <button class="collapsed card-header" id="headingThree" data-toggle="collapse"
                             data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            عنوان #3 <i class=" govsa-icon govsa--arrowdown"></i>
+                            عنوان #3 <i class=" govsa-icon govsa--Color"></i>
                         </button>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                             data-parent="#accordionExample">
@@ -2202,10 +2284,10 @@
                 <div class="accordion govsa-accordion" id="accordionExample">
                     <div class="card">
                         <button class="collapsed card-header" id="headingOne" data-toggle="collapse"
-                            data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
-                            عنوان #1 <i class=" govsa-icon govsa--arrowdown"></i>
+                            data-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1">
+                            عنوان #1 <i class=" govsa-icon govsa--Color"></i>
                         </button>
-                        <div id="collapseOne1" class="collapse show" aria-labelledby="headingOne"
+                        <div id="collapseOne1" class="collapse" aria-labelledby="headingOne"
                             data-parent="#accordionExample">
                             <div class="card-body">
                                 لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا.
@@ -2373,8 +2455,8 @@
         </div>
         <h3>Search</h3>
         <div class="row my-3">
-            <div class="col-md-6">
-                <div class="input-group mb-3">
+            <div class="col-md-6 mb-3">
+                <div class="input-group">
                     <input type="text" class="govsa-input govsa-search__input " placeholder="search">
                     <div class="input-group-append">
                         <button class="govsa-clear__button d-none" type="button"><i class="govsa--closed"></i></button>
@@ -2425,8 +2507,9 @@
                         <a class="govsa-link" href=""> Advanced Search</a>
                     </div>
                 </div>
-
-                <div class="input-group mb-3">
+            </div>
+            <div class="col-md-6">
+                <div class="input-group">
                     <input type="text" class="govsa-input govsa-search__input" disabled placeholder="search">
                     <div class="input-group-append">
                         <button class="govsa-clear__button d-none" type="button" disabled><i
@@ -2439,8 +2522,8 @@
             </div>
         </div>
         <div class="row my-3" dir="rtl">
-            <div class="col-md-6">
-                <div class="input-group mb-3">
+            <div class="col-md-6 mb-3">
+                <div class="input-group">
                     <input type="text" class="govsa-input govsa-search__input" placeholder="البحث">
                     <div class="input-group-append">
                         <button class="govsa-clear__button d-none" type="button"><i class="govsa--closed"></i></button>
@@ -2491,8 +2574,9 @@
                         <a class="govsa-link" href="">بحث متقدم</a>
                     </div>
                 </div>
-
-                <div class="input-group mb-3">
+            </div>
+            <div class="col-md-6">
+                <div class="input-group">
                     <input type="text" class="govsa-input govsa-search__input" disabled placeholder="بحث">
                     <div class="input-group-append">
                         <button class="govsa-clear__button d-none" type="button" disabled><i
@@ -2507,7 +2591,7 @@
         <h5>search small</h5>
         <div class="row my-3">
             <div class="col-md-2">
-                <div class="input-group mb-3 govsa-search--small">
+                <div class="input-group govsa-search--small">
                     <input type="text" class="govsa-input govsa-search__input" placeholder="search">
                     <div class="input-group-append">
                         <button class="govsa-clear__button d-none" type="button"><i class="govsa--closed"></i></button>
@@ -2548,8 +2632,9 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="input-group mb-3 govsa-search--small">
+            </div>
+            <div class="col-md-2">
+                <div class="input-group govsa-search--small">
                     <input type="text" class="govsa-input govsa-search__input" disabled placeholder="search">
                     <div class="input-group-append">
                         <button class="govsa-clear__button d-none" type="button" disabled><i
@@ -2563,7 +2648,7 @@
         </div>
         <div class="row my-3" dir="rtl">
             <div class="col-md-2">
-                <div class="input-group mb-3 govsa-search--small">
+                <div class="input-group govsa-search--small">
                     <input type="text" class="govsa-input govsa-search__input" placeholder="البحث">
                     <div class="input-group-append">
                         <button class="govsa-clear__button d-none" type="button"><i class="govsa--closed"></i></button>
@@ -2604,8 +2689,9 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="input-group mb-3 govsa-search--small">
+            </div>
+            <div class="col-md-2">
+                <div class="input-group govsa-search--small">
                     <input type="text" class="govsa-input govsa-search__input" disabled placeholder="بحث">
                     <div class="input-group-append">
                         <button class="govsa-clear__button d-none" type="button" disabled><i

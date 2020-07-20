@@ -44,14 +44,38 @@ for (var i = 0; i < clearButton.length; i++) {
             this.parentElement.nextElementSibling.children[i].style.borderBottomRightRadius= "8px";
         } else {
             this.parentElement.previousElementSibling.style.borderBottomRightRadius= "8px";
-            this.parentElement.nextElementSibling.children[i].style.borderBottomLeftRadius= "3px";
+            this.parentElement.nextElementSibling.children[i].style.borderBottomLeftRadius= "8px";
         }
     }
   });
 }
 
+// when click outside serach
+document.addEventListener("click", function(){
+    var resultsBox = document.getElementsByClassName("govsa-search__results");
+    for (var i = 0; i < resultsBox.length; i++) {
+        resultsBox[i].classList.add("d-none");
+        // resultsBox[i].previousElementSibling.children[i].nextElementSibling.children[i].classList.add("d-none");
 
-    
+        // if (document.dir == "ltr") {
+            // resultsBox[i].previousElementSibling.children[i].style.borderBottomLeftRadius= "10px";
+            // resultsBox[i].previousElementSibling.children[i].nextElementSibling.nextElementSibling.children[i].style.borderBottomRightRadius= "8px";
+        // } else {
+            // resultsBox[i].previousElementSibling.children[i].style.borderBottomRightRadius= "8px";
+            // resultsBox[i].previousElementSibling.children[i].nextElementSibling.nextElementSibling.children[i].style.borderBottomLeftRadius= "8px";
+        // }
+        }
+});
+
+var resultsBox2= document.getElementsByClassName("govsa-search__results");
+for (var i = 0; i < resultsBox2.length; i++) {
+    resultsBox2[i].addEventListener("click", function(e){
+        e.stopPropagation();
+    });
+}
+
+
+
 
 // $(".govsa-search__input").on('input', function () {
 //     if ($(this).val() == "") {
@@ -98,5 +122,3 @@ for (var i = 0; i < clearButton.length; i++) {
     //     $(this).parent().next().children(".govsa-search__button").css("border-radius", "8px 0px 0px 8px");
     // }
 //});
-
-
