@@ -5,10 +5,3 @@ for (var i = 0; i < buttons.length; i++) {
     this.parentNode.remove();
   });
 }
-
-// to remove tag jquery
-// $(".colsed-tag").click(function() {
-//   $(this).parent(".govsa-tag").remove();
-// });
-
-
