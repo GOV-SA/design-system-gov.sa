@@ -1,5 +1,5 @@
 import './file-upload';
-import './header-search';
+import './header';
 import './search';
 import './side-navigation';
 import './tag';

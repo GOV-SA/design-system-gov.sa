@@ -47,6 +47,7 @@ GOV.SA-design-system/
 ```bash
 ├── js/
 │   ├── file-upload.js 
+│   ├── header.js 
 │   ├── search.js 
 │   ├── side-navigation.js 
 │   ├── tag.js 
@@ -59,7 +60,7 @@ GOV.SA-design-system/
 How to you use the GOV.SA design system depends on the needs of your project.
 
 You have two options to get the design system:
--   [Download the design system](#download-the-design-system)  if you are not familiar with npm and package management.
+-   [Download the design system](#download-the-design-system) if you are not familiar with npm and package management.
 -   [Use the design system npm package](#install-using-npm) if you are familiar with using npm and package management.
 
 We recommend that you install GOV.SA design system using npm because it is easier way to be installed and updated and you will be able to select individual SCSS and JS of GOV.SA design system.
@@ -214,7 +215,8 @@ if you want to import individual component (for example a button), add the below
 JavaScript architecture:
 ```bash
 ├── js/
-│   ├── file-upload.js 
+│   ├── file-upload.js
+│   ├── header.js  
 │   ├── search.js 
 │   ├── side-navigation.js 
 │   ├── tag.js 
