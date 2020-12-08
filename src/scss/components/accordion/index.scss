@@ -1,26 +1,24 @@
 .govsa-accordion {
   .card {
     border: none;
-
+    border-radius: 0px;
     .card-header {
       background-color: $white;
-      border: 1px solid $darkBlue;
+      border-radius: 0px;
+      border: none;
+      border-bottom: 1px solid $darkBlue;
       padding: 0.5rem 0.75rem;
       color: $darkBlue;
       text-align: inherit;
+      margin-bottom: 0px;
 
       i {
         float: right;
         color: $darkBlue;
-        font-size: 8px;
-        margin: 8px 0px 0px 0px;
-        [dir="rtl"] & {
-          float: left;
-          margin: 6px 0px 0px 0px;
-        }
+        margin: 5px 0px 0px 0px;
       }
 
-      &:hover {
+      &:hover { 
         background-color: $darkBlue-tint;
         color: $white;
         cursor: pointer;
@@ -32,60 +30,35 @@
         }
       }
 
-      &:active {
-        border: 1px solid $yellow;
-        
-      }
       &:focus{
         outline: none;
         text-decoration: underline;
       }
 
       &[aria-expanded="true"] {
+        border-bottom: none;
         i {
-          -ms-transform: rotate(180deg);
+          -ms-transform: rotate(135deg);
           /* IE 9 */
-          -webkit-transform: rotate(180deg);
+          -webkit-transform: rotate(135deg);
           /* Safari 3-8 */
-          transform: rotate(180deg);
+          transform: rotate(135deg);
         }
       }
 
     }
 
     .card-body {
-      border: 1px solid $darkBlue;
-      margin-top: 4px;
-      margin-bottom: 4px;
+      border: none;
+      border-bottom: 1px solid $darkBlue;
       padding-top: 0.5rem;
       font-size: 14px;
       color: $darkBlue;
     }
 
     &:first-of-type {
-      .card-header:first-child {
-        border-top-left-radius: 8px !important;
-        border-top-right-radius: 8px !important;
-
-        &[aria-expanded="true"] {
-          border-top-left-radius: 8px !important;
-          border-top-right-radius: 8px !important;
-        }
-      }
-    }
-
-    &:last-of-type {
-      .card-body {
-        border-radius: 0px 0px 8px 8px;
-      }
-
-      .card-header {
-        border-radius: 0px 0px 8px 8px !important;
-        margin-bottom: 0px;
-
-        &[aria-expanded="true"] {
-          border-radius: 0px !important;
-        }
+      .card-header{
+        border-top: 1px solid $darkBlue;
       }
     }
 

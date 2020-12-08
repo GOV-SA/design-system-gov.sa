@@ -47,6 +47,7 @@ GOV.SA-design-system/
 ```bash
 ├── js/
 │   ├── file-upload.js 
+│   ├── header.js 
 │   ├── search.js 
 │   ├── side-navigation.js 
 │   ├── tag.js 
@@ -214,7 +215,8 @@ if you want to import individual component (for example a button), add the below
 JavaScript architecture:
 ```bash
 ├── js/
-│   ├── file-upload.js 
+│   ├── file-upload.js
+│   ├── header.js  
 │   ├── search.js 
 │   ├── side-navigation.js 
 │   ├── tag.js 
